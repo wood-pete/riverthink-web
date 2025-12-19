@@ -6,7 +6,7 @@ export default function Home() {
       <img
         src={logoSrc}
         alt="Riverthink logo"
-        className="w-[520px] max-w-[95vw] h-auto drop-shadow-sm object-contain"
+        className="w-[520px] max-w-[95vw] h-auto object-contain"
       />
     </div>
   );
