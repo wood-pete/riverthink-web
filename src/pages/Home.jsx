@@ -1,5 +1,5 @@
 export default function Home() {
-  const logoSrc = `${import.meta.env.BASE_URL}riverthink-logo.png`;
+  const logoSrc = 'riverthink-logo.png';
 
   return (
     <div className="flex min-h-screen items-center justify-center">
