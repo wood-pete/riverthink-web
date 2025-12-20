@@ -18,6 +18,7 @@ export default function Home() {
         <nav className="flex items-center gap-4 text-sm font-semibold text-slate-800">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
+          <Link href="/blog">Blog</Link>
         </nav>
       </header>
 
@@ -28,14 +29,20 @@ export default function Home() {
             alt="Riverthink logo"
             className="h-auto w-[520px] max-w-[95vw] object-contain"
           />
-          <a
-            href="https://labs.riverthink.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-slate-600 transition-colors hover:text-slate-800"
-          >
-            labs.riverthink.com
-          </a>
+          <div className="flex items-center gap-3 text-sm text-slate-600">
+            <a
+              href="https://labs.riverthink.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-slate-800"
+            >
+              labs.riverthink.com
+            </a>
+            <span className="text-slate-300">•</span>
+            <Link href="/blog" className="transition-colors hover:text-slate-800">
+              Blog
+            </Link>
+          </div>
         </div>
       </main>
     </div>

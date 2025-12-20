@@ -16,6 +16,7 @@ export default function About() {
         <nav className="flex items-center gap-4 text-sm font-semibold text-slate-800">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
+          <Link href="/blog">Blog</Link>
         </nav>
         <a
           href="https://labs.riverthink.com"
