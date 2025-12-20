@@ -82,3 +82,8 @@ export async function getStaticProps({ params }) {
     },
   };
 }
+
+// Disable client-side JS on this page so the HTML stays fully visible to crawlers.
+export const config = {
+  unstable_runtimeJS: false,
+};
