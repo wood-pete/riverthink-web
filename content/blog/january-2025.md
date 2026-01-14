@@ -1,4 +1,3 @@
-```md
 ---
 title: Healthcare AI Reaches a Turning Point as LLMs and Agentic Systems Enter Clinical Reality
 date: "2026-01-14"
@@ -64,4 +63,3 @@ The removal of misleading search summaries shows the limits of general AI when a
 What connects these stories is not technology alone, but **intent**. The industry is learning to ask better questions. Where should AI speak directly to patients, if at all. Where should it support clinicians behind the scenes. Where can it safely explore possibilities in laboratories and research environments.
 
 This moment does not signal an end state. It signals a recalibration. LLMs and agentic AI are no longer novelties in healthcare. They are tools being shaped by regulation, ethics, and real world constraints. The progress of January 2026 shows that the future of healthcare AI will be defined less by bold claims and more by careful integration into systems that already carry profound responsibility.
-```
