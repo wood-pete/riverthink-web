@@ -1,7 +1,7 @@
 ---
 title: "Building the Future of Intelligent Systems: A Deep Dive into Agent Integration Patterns"
 date: "2026-01-11"
-hero: "/blog/agentic-ripples.svg"
+hero: "/blog/mcpanda2a.png"
 ---
 
 # Building the Future of Intelligent Systems: A Deep Dive into Agent Integration Patterns

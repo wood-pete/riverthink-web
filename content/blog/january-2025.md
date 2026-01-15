@@ -44,6 +44,8 @@ The significance here is scale. This is not a pilot or proof of concept. It is a
 
 It also shows how healthcare AI is diversifying. Language models support people. Agentic systems support discovery. Both are needed, but they operate in very different risk profiles and timelines.
 
+ ![alt](/blog/llm.jpg)
+
 ## Seeing and Hearing Medicine with MedGemma
 
 Completing this picture, Google Research released **MedGemma 1.5** in January 2026, extending AI capabilities into medical imaging and clinical speech. This update builds on earlier MedGemma models by improving interpretation of medical images and introducing advanced medical speech to text functionality.
