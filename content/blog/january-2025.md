@@ -1,7 +1,7 @@
 ---
 title: Healthcare AI Reaches a Turning Point as LLMs and Agentic Systems Enter Clinical Reality
 date: "2026-01-14"
-hero: "/blog/january-news.png"
+hero: "/blog/llm.jpg"
 ---
 
 # Healthcare AI Reaches a Turning Point as LLMs and Agentic Systems Enter Clinical Reality
