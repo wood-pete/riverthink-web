@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next build && rm -rf docs && mv out docs && touch docs/.nojekyll",
+    "copy-blog-images": "node scripts/copy-blog-images.js",
+    "dev": "npm run copy-blog-images && next dev",
+    "build": "npm run copy-blog-images && next build",
+    "export": "npm run copy-blog-images && next build && rm -rf docs && mv out docs && touch docs/.nojekyll",
     "start": "next start"
   },
   "dependencies": {
