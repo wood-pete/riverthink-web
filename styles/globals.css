@@ -56,3 +56,30 @@ textarea:focus {
 .blog-content a {
   @apply text-riverNavy underline decoration-2 underline-offset-4 transition-colors hover:text-riverRed;
 }
+
+.blog-content blockquote {
+  @apply relative my-8 border-l-4 border-riverNavy bg-slate-50 py-6 pl-12 pr-8 italic text-slate-600;
+}
+
+.blog-content blockquote::before {
+  content: '\201C';
+  @apply absolute left-3 top-2 text-5xl leading-none text-riverNavy/30;
+  font-family: Georgia, serif;
+}
+
+.blog-content blockquote p {
+  @apply mt-0;
+}
+
+.blog-content blockquote p + p {
+  @apply mt-4;
+}
+
+.blog-content code {
+  @apply block my-8 bg-slate-100 p-6 rounded-lg text-xl leading-relaxed text-slate-700;
+  font-family: inherit;
+}
+
+.blog-content code::first-letter {
+  @apply float-left text-5xl font-semibold leading-none text-riverNavy mr-3 mt-1;
+}
