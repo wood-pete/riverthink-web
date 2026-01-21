@@ -35,7 +35,7 @@ The implementation is elegantly simple yet powerful:
 1. **Agent B** sets up a LangGraph workflow that processes incoming messages and returns structured responses
 2. **Agent A** maintains its own LangGraph workflow that calls Agent B via the A2A client
 3. Messages flow through the A2A protocol with proper task tracking and event queuing
-4. Each agent exposes an `AgentCard` that describes its capabilities, skills, and communication preferences
+4. Each agent exposes an **AgentCard** that describes its capabilities, skills, and communication preferences
 5. The system handles streaming responses, cancellation, and error recovery automatically
 
 The beauty of this pattern lies in its modularity. Agent B doesn't need to know anything about Agent A beyond the protocol specification. Agent A can delegate to multiple specialized agents without managing complex integration code.

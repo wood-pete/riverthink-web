@@ -53,6 +53,22 @@ export default function BlogPost({ post }) {
             className="blog-content mt-8"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+          
+          <div className="mt-12 border-t border-slate-200 pt-8">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">About the Author</h2>
+            <div className="flex items-center gap-4">
+              <img 
+                src="/blog/pwood.PNG" 
+                alt="Peter Wood" 
+                className="w-[90px] h-[90px] rounded-full object-cover" 
+              />
+              <div>
+                <p className="text-slate-700">
+                  <strong>Peter Wood</strong> is a healthcare technology leader specialising in data platforms, operational intelligence, and agent-driven automation. He has led large-scale digital transformation programmes with major hospital groups and global technology partners, translating advanced analytics and AI into measurable improvements in clinical operations, capacity, and patient flow.
+                </p>
+              </div>
+            </div>
+          </div>
         </article>
         <div className="mt-12">
           <Link href="/blog" className="text-sm font-semibold text-riverNavy">
