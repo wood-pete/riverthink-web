@@ -102,23 +102,24 @@ textarea:focus {
 
 /* Custom quote style - elegant centered quotation */
 .blog-content .quote {
-  @apply my-8 bg-slate-50 text-center italic text-slate-600 text-xl leading-relaxed p-8 rounded-lg;
+  @apply my-8 bg-slate-50 text-center italic text-slate-600 text-xl leading-relaxed p-8 rounded-lg relative;
   font-family: Georgia, serif;
 }
 
 .blog-content .quote::before {
   content: '\201C';
-  @apply text-4xl text-riverNavy/40;
-  margin-right: 0.1em;
+  @apply text-5xl text-riverNavy/40 absolute;
+  top: 0.5rem;
+  left: 0.75rem;
+  line-height: 1;
 }
 
 .blog-content .quote::after {
   content: '\201D';
-  @apply text-4xl text-riverNavy/40;
-  margin-left: 0.1em;
-  display: inline;
-  vertical-align: baseline;
-  line-height: 0;
+  @apply text-5xl text-riverNavy/40 absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  line-height: 1;
 }
 
 .blog-content .quote p {
