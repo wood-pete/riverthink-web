@@ -8,7 +8,7 @@ hero: "/blog/january-news.png"
 
 January 2026 marks a clear inflection point for artificial intelligence in healthcare. Over the course of just a few weeks, four major developments revealed how large language models and agentic AI are moving from broad experimentation into domains where trust, safety, and measurable impact matter deeply. Together, these updates tell a connected story about maturity. They show an industry learning where AI fits, where it does not, and how it must be governed when human health is involved.
 
-Rather than a single breakthrough, this moment reflects a transition. AI is no longer only about impressive demonstrations. It is about accountability, regulation, and integration into clinical and scientific workflows.
+<div class="quote">Rather than a single breakthrough, this moment reflects a transition. AI is no longer only about impressive demonstrations. It is about accountability, regulation, and integration into clinical and scientific workflows.</div>
 
 ## When General AI Meets Health Risk
 

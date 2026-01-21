@@ -12,7 +12,9 @@ For decades, healthcare software has focused on documentation, billing, and repo
 
 A key driver of this shift is the maturity of large language models that have been trained on millions of healthcare references, research papers, clinical guidelines, and case studies. These models bring a form of statistical memory that no individual clinician can match. They do not replace judgment, but they dramatically expand the accessible knowledge base at the point of care.
 
-> Consider routine care pathways. Medication reconciliation, standard post operative monitoring, chronic disease follow ups, discharge planning, and routine diagnostics follow patterns that are well understood and heavily documented. These pathways consume a large proportion of healthcare capacity, yet they often rely on manual coordination and human memory. Software defined care targets this space first, where consistency and scale matter most.
+<div class="quote">
+Consider routine care pathways. Medication reconciliation, standard post operative monitoring, chronic disease follow ups, discharge planning, and routine diagnostics follow patterns that are well understood and heavily documented. These pathways consume a large proportion of healthcare capacity, yet they often rely on manual coordination and human memory. Software defined care targets this space first, where consistency and scale matter most.
+</div>
 
 Agentic services play a central role. An agentic system can monitor patient context, detect when predefined criteria are met, and initiate appropriate actions. This might include proposing reflex lab orders when certain clinical thresholds are crossed, alerting teams to emerging risks, or coordinating downstream tasks across departments. The system does not act blindly. It acts within guardrails defined by clinical governance and policy.
 
@@ -22,7 +24,7 @@ Workflow automation extends this further. Instead of static pathways, workflows 
 
 Reflex orders for labs and diagnostics illustrate the efficiency gains clearly. In many settings, clinicians already follow well established rules for when certain tests should be ordered. Encoding these rules into software reduces delay and variation. It also ensures that routine decisions are applied consistently, while still allowing clinicians to intervene when nuance is required.
 
-`The distinction between routine and complex care is critical. Software defined care delivers its greatest gains in routine treatments where evidence is strong and variation adds little value. Complex cases, rare conditions, and ethically sensitive decisions still demand deep human expertise, empathy, and shared decision making. The goal is not to automate everything, but to free human intelligence for the situations where it matters most.`
+<div class="grey-box">The distinction between routine and complex care is critical. Software defined care delivers its greatest gains in routine treatments where evidence is strong and variation adds little value. Complex cases, rare conditions, and ethically sensitive decisions still demand deep human expertise, empathy, and shared decision making. The goal is not to automate everything, but to free human intelligence for the situations where it matters most.</div>
 
 This raises an uncomfortable but necessary question. In the future, will more decisions be shaped by a doctor with ten years of experience, or by an LLM trained on ten million books and case studies? The honest answer is that it will be both. The clinician brings context, accountability, and human judgment. The model brings breadth, recall, and pattern recognition at a scale no human can achieve. Software defined care is about combining these strengths rather than choosing between them.
 
