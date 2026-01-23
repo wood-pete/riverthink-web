@@ -73,7 +73,7 @@ Four themes consistently emerge when organisations move beyond experimentation:
 
 If there is one lesson learned early, it is that retrofitting governance after agents are in production is far harder than establishing it upfront.
 
-## Questions to ask you API gateway experts
+## Questions to ask your API gateway experts
 
 <details>
 <summary>1. How do you govern agent to tool and agent to agent interactions at runtime?</summary>
