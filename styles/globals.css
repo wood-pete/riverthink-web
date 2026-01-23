@@ -125,3 +125,63 @@ textarea:focus {
 .blog-content .quote p {
   @apply inline;
 }
+
+/* Table styling with light grey header */
+.blog-content table {
+  @apply my-6 w-full border-collapse border border-slate-200 rounded-lg overflow-hidden text-sm;
+}
+
+.blog-content thead {
+  @apply bg-slate-200;
+}
+
+.blog-content th {
+  @apply border border-slate-200 px-4 py-3 text-left font-semibold text-slate-900;
+}
+
+.blog-content td {
+  @apply border border-slate-200 px-4 py-3 text-slate-700;
+}
+
+.blog-content tbody tr:nth-child(even) {
+  @apply bg-slate-50;
+}
+
+.blog-content tbody tr:hover {
+  @apply bg-slate-100;
+}
+
+/* Pullquote - floated quotation box with black outline */
+.blog-content .pullquote {
+  @apply bg-slate-900 border-2 border-slate-900 p-6 my-4 italic text-slate-300 text-lg leading-relaxed relative;
+  width: 45%;
+  min-width: 250px;
+  max-width: 350px;
+  font-family: Georgia, serif;
+}
+
+.blog-content .pullquote-left {
+  @apply float-left mr-6 mb-2;
+}
+
+.blog-content .pullquote-right {
+  @apply float-right ml-6 mb-2;
+}
+
+.blog-content .pullquote::before {
+  content: '\201C';
+  @apply text-4xl text-slate-500 absolute leading-none;
+  top: 0.5rem;
+  left: 0.75rem;
+}
+
+.blog-content .pullquote::after {
+  content: '\201D';
+  @apply text-4xl text-slate-500 absolute leading-none;
+  bottom: 0.25rem;
+  right: 0.75rem;
+}
+
+.blog-content .pullquote p {
+  @apply mt-0 mb-0 pl-4 pr-4;
+}
