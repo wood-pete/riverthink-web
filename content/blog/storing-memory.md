@@ -86,7 +86,6 @@ Vector memory should be added deliberately, and only where semantic recall over 
 
 LangGraph Persistence and Checkpointing Concepts — LangChain  
 https://langchain-ai.github.io/langgraph/concepts/persistence/  
-https://langchain-ai.github.io/langgraph/concepts/checkpointing/
 
 LangChain RAG and Vector Retrieval Patterns  
 https://python.langchain.com/docs/use_cases/question_answering/
@@ -95,4 +94,4 @@ Model Context Protocol (MCP) — Externalised Context and Tools
 https://modelcontextprotocol.io/
 
 Anthropic Research: Agent Architectures and Tool Use  
-https://www.anthropic.com/research/agents
+https://www.anthropic.com/engineering/building-effective-agents

@@ -128,9 +128,3 @@ https://langchain-ai.github.io/langgraph/
 
 Event Driven Architecture by Martin Fowler  
 https://martinfowler.com/articles/201701-event-driven.html
-
-Gartner Operational AI research notes  
-https://www.gartner.com/en/information-technology/insights/operational-ai
-
-HIMSS Command Centre and digital operations frameworks  
-https://www.himss.org/resources
