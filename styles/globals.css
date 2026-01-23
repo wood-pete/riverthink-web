@@ -168,6 +168,12 @@ textarea:focus {
   @apply float-right ml-6 mb-2;
 }
 
+.blog-content .pullquote-center {
+  @apply mx-auto my-8;
+  width: 80%;
+  max-width: 600px;
+}
+
 .blog-content .pullquote::before {
   content: '\201C';
   @apply text-4xl text-slate-500 absolute leading-none;

@@ -58,7 +58,7 @@ export default function BlogIndex({ posts }) {
                     <span>Agentic AI</span>
                     {post.meta.date ? (
                       <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-700">
-                        {new Date(post.meta.date).toLocaleDateString()}
+                        {post.meta.formattedDate}
                       </span>
                     ) : null}
                   </div>
@@ -81,9 +81,22 @@ export default function BlogIndex({ posts }) {
 
 export async function getStaticProps() {
   const posts = await getAllPosts();
+  const postsWithFormattedDates = posts.map((post) => ({
+    ...post,
+    meta: {
+      ...post.meta,
+      formattedDate: post.meta.date
+        ? new Date(post.meta.date).toLocaleDateString('en-GB', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+          })
+        : null,
+    },
+  }));
   return {
     props: {
-      posts,
+      posts: postsWithFormattedDates,
     },
   };
 }

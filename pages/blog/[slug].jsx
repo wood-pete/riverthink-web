@@ -35,11 +35,7 @@ export default function BlogPost({ post }) {
           <h1 className="mt-2 text-4xl font-bold text-slate-900">{post.meta.title}</h1>
           {post.meta.date ? (
             <p className="mt-2 text-sm text-slate-500">
-              {new Date(post.meta.date).toLocaleDateString(undefined, {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              })}
+              {post.meta.formattedDate}
             </p>
           ) : null}
           {post.meta.hero ? (
@@ -92,9 +88,22 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const post = await getPostBySlug(params.slug);
+  const formattedDate = post.meta.date
+    ? new Date(post.meta.date).toLocaleDateString('en-GB', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })
+    : null;
   return {
     props: {
-      post,
+      post: {
+        ...post,
+        meta: {
+          ...post.meta,
+          formattedDate,
+        },
+      },
     },
   };
 }
