@@ -185,3 +185,43 @@ textarea:focus {
 .blog-content .pullquote p {
   @apply mt-0 mb-0 pl-4 pr-4;
 }
+
+/* Accordion/Expandable section using native details/summary */
+.blog-content details {
+  @apply my-6 border border-slate-300 rounded-lg overflow-hidden;
+}
+
+.blog-content details summary {
+  @apply px-5 py-4 bg-slate-300 font-semibold text-slate-900 cursor-pointer select-none;
+  @apply hover:bg-slate-400 transition-colors duration-150;
+  list-style: none;
+}
+
+.blog-content details summary::-webkit-details-marker {
+  display: none;
+}
+
+.blog-content details summary::before {
+  content: '▸';
+  @apply inline-block mr-3 text-xl text-slate-500 transition-transform duration-200;
+}
+
+.blog-content details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.blog-content details[open] summary {
+  @apply border-b border-slate-300;
+}
+
+.blog-content details .accordion-content {
+  @apply px-5 py-4 bg-slate-100;
+}
+
+.blog-content details .accordion-content p:first-child {
+  @apply mt-0;
+}
+
+.blog-content details .accordion-content p:last-child {
+  @apply mb-0;
+}

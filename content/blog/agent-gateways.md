@@ -73,9 +73,64 @@ Four themes consistently emerge when organisations move beyond experimentation:
 
 If there is one lesson learned early, it is that retrofitting governance after agents are in production is far harder than establishing it upfront.
 
-## Architectural next steps
+## Questions to ask you API gateway experts
+
+<details>
+<summary>1. How do you govern agent to tool and agent to agent interactions at runtime?</summary>
+<div class="accordion-content">
+
+Agent support is not about exposing tools, it is about controlling behaviour during execution. Without runtime governance, multi step agent workflows quickly become opaque and risky.
+
+**Listen for**
+
+- Native support for MCP and A2A with runtime policy enforcement
+- Per agent and per tool authorisation that persists across sessions
+
+</div>
+</details>
+
+<details>
+<summary>2. How do you provide observability and auditability across multi step agent workflows?</summary>
+<div class="accordion-content">
+
+Once agents reason and act across multiple steps, traditional API logging is insufficient. Organisations need visibility that supports operational assurance, investigation, and compliance.
+
+**Listen for**
+
+- End to end tracing across reasoning, tool calls, and responses
+- Replayable execution and audit trails
+
+</div>
+</details>
+
+
+<details>
+<summary>3. How do you enforce cost, usage, and safety limits for agents in production? </summary>
+<div class="accordion-content">
+Unbounded agent execution creates immediate financial and operational risk. Cost and safety controls must be enforced at runtime, not left to application logic.
+
+**Listen for**  
+
+- Token and budget enforcement per agent and per tool  
+- Prompt and response filtering with policy driven guardrails  
+
+</div>
+</details>
+
+<details>
+<summary>4. How does your agent support integrate with existing API, DevSecOps, and platform engineering practices?</summary>
+<div class="accordion-content">
+Agent governance cannot operate as a parallel control plane. If it does not integrate with existing delivery, security, and identity models, it will not scale beyond pilots.
+
+**Listen for**  
+
+- Infrastructure as code and GitOps compatibility  
+- Alignment with existing API gateway and IAM investments  
+</div>
+</details>
 
 Most organisations will evolve their existing API gateways rather than replace them. The practical move is to assess which agent gateway capabilities are required now, such as MCP support, machine identity, cost controls, and deep observability, and which can follow later. Framing agent gateways as the next evolution of API management keeps control with architecture and platform teams, while still enabling rapid agent adoption.
+
 
 ---
 
