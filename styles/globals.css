@@ -21,6 +21,32 @@ textarea:focus {
   @apply outline-none ring-2 ring-riverRed ring-offset-2 ring-offset-white;
 }
 
+/* Shimmer text effect - light passing over text */
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    currentColor 0%,
+    currentColor 40%,
+    #e2e8f0 50%,
+    currentColor 60%,
+    currentColor 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
 .blog-content {
   @apply text-lg leading-relaxed text-slate-700;
 }

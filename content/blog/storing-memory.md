@@ -7,6 +7,8 @@ Vector databases have become almost synonymous with LLM memory. That association
 
 The underlying issue is simple but often overlooked. Memory and knowledge are different problems, and they benefit from very different storage and retrieval strategies.
 
+
+
 ## Memory and Knowledge Solve Different Jobs
 
 Knowledge retrieval focuses on finding relevant information by meaning, typically from unstructured sources such as policies, research papers, or historical conversations. Memory, in contrast, is about preserving facts, state, preferences, and outcomes over time so that future decisions are consistent, safe, and correct.
