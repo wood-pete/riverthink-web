@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">AWS agentic services map</title>
+  <desc id="desc">A layered map showing Amazon Bedrock Agents, AgentCore, and related AWS agentic services.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#03152e"/>
+      <stop offset="0.6" stop-color="#0c2e59"/>
+      <stop offset="1" stop-color="#5f2d09"/>
+    </linearGradient>
+    <radialGradient id="leftGlow" cx="0" cy="0" r="1" gradientTransform="translate(410 340) rotate(90) scale(560 820)">
+      <stop offset="0" stop-color="#45c8ff" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#45c8ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientTransform="translate(1130 430) rotate(90) scale(560 760)">
+      <stop offset="0" stop-color="#ff9f37" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#ff9f37" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fdfff"/>
+      <stop offset="1" stop-color="#2a8dff"/>
+    </linearGradient>
+    <linearGradient id="lineOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd086"/>
+      <stop offset="1" stop-color="#ff861f"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#020b18" flood-opacity="0.48"/>
+    </filter>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#9dd9ff" fill-opacity="0.16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <rect width="1536" height="1024" fill="url(#dots)" opacity="0.5"/>
+  <rect width="1536" height="1024" fill="url(#leftGlow)"/>
+  <rect width="1536" height="1024" fill="url(#rightGlow)"/>
+
+  <g opacity="0.26" stroke="#8bdcff" stroke-width="2">
+    <path d="M0 772C300 700 540 696 768 748"/>
+    <path d="M0 818C300 748 540 744 768 794"/>
+  </g>
+  <g opacity="0.26" stroke="#ffc174" stroke-width="2">
+    <path d="M1536 772C1240 700 1004 696 768 748"/>
+    <path d="M1536 818C1240 748 1004 744 768 794"/>
+  </g>
+
+  <g fill="#ffffff" font-family="Helvetica, Arial, sans-serif" filter="url(#cardShadow)">
+    <text x="100" y="118" font-size="44" font-weight="700" opacity="0.92">AWS Agentic Services</text>
+    <text x="100" y="182" font-size="92" font-weight="800" fill="#ffe0aa">Agents + AgentCore Stack</text>
+    <text x="100" y="234" font-size="33" font-weight="500" opacity="0.88">Build, coordinate, govern, and run production agent systems</text>
+  </g>
+
+  <g opacity="0.86" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="21">
+    <rect x="100" y="276" width="324" height="48" rx="24" fill="#295f97"/>
+    <text x="146" y="307" fill="#dbeeff">Agent Layer</text>
+    <rect x="440" y="276" width="324" height="48" rx="24" fill="#3578b5"/>
+    <text x="487" y="307" fill="#dbeeff">Runtime Layer</text>
+    <rect x="780" y="276" width="324" height="48" rx="24" fill="#4f90c6"/>
+    <text x="815" y="307" fill="#e8f6ff">Data + Workflow</text>
+    <rect x="1120" y="276" width="324" height="48" rx="24" fill="#f08b31"/>
+    <text x="1170" y="307" fill="#fff5e5">Safety + Ecosystem</text>
+  </g>
+
+  <g filter="url(#cardShadow)" font-family="Helvetica, Arial, sans-serif">
+    <rect x="124" y="360" width="302" height="116" rx="24" fill="#0f3b69" stroke="#66cbff" stroke-width="2"/>
+    <text x="154" y="410" fill="#f3fbff" font-size="29" font-weight="800">Bedrock Agents</text>
+    <text x="154" y="444" fill="#bfe6ff" font-size="19" font-weight="500">Planning + tool use</text>
+
+    <rect x="124" y="506" width="302" height="116" rx="24" fill="#104473" stroke="#66cbff" stroke-width="2"/>
+    <text x="154" y="556" fill="#f3fbff" font-size="27" font-weight="800">Multi-agent</text>
+    <text x="154" y="590" fill="#bfe6ff" font-size="19" font-weight="500">Supervisor + specialists</text>
+
+    <rect x="468" y="360" width="302" height="262" rx="24" fill="#175584" stroke="#72d3ff" stroke-width="2"/>
+    <text x="498" y="410" fill="#f6fcff" font-size="32" font-weight="800">AgentCore</text>
+    <text x="498" y="446" fill="#c8ecff" font-size="19" font-weight="500">Runtime, Memory, Identity</text>
+    <text x="498" y="474" fill="#c8ecff" font-size="19" font-weight="500">Gateway, Observability</text>
+    <text x="498" y="502" fill="#c8ecff" font-size="19" font-weight="500">Browser, Code Interpreter</text>
+    <text x="498" y="530" fill="#c8ecff" font-size="19" font-weight="500">Policy + Evaluations</text>
+
+    <rect x="812" y="360" width="302" height="116" rx="24" fill="#1d638f" stroke="#80dbff" stroke-width="2"/>
+    <text x="842" y="410" fill="#f7fcff" font-size="28" font-weight="800">Knowledge Bases</text>
+    <text x="842" y="444" fill="#d2f0ff" font-size="19" font-weight="500">Grounded retrieval</text>
+
+    <rect x="812" y="506" width="302" height="116" rx="24" fill="#24709b" stroke="#8de2ff" stroke-width="2"/>
+    <text x="842" y="556" fill="#f7fcff" font-size="28" font-weight="800">Bedrock Flows</text>
+    <text x="842" y="590" fill="#d2f0ff" font-size="19" font-weight="500">Visual orchestration</text>
+
+    <rect x="1156" y="360" width="262" height="116" rx="24" fill="#96511c" stroke="#ffc67d" stroke-width="2"/>
+    <text x="1184" y="410" fill="#fff8ed" font-size="28" font-weight="800">Guardrails</text>
+    <text x="1184" y="444" fill="#ffe4c0" font-size="19" font-weight="500">Policy + safety</text>
+
+    <rect x="1156" y="506" width="262" height="116" rx="24" fill="#a55b20" stroke="#ffc67d" stroke-width="2"/>
+    <text x="1184" y="556" fill="#fff8ed" font-size="24" font-weight="800">Marketplace</text>
+    <text x="1184" y="590" fill="#ffe4c0" font-size="19" font-weight="500">AI agents and tools</text>
+  </g>
+
+  <g opacity="0.88" stroke-linecap="round">
+    <path d="M426 418C450 418 462 418 468 418" stroke="url(#lineBlue)" stroke-width="3.5"/>
+    <path d="M426 564C450 564 462 564 468 564" stroke="url(#lineBlue)" stroke-width="3.5"/>
+    <path d="M770 490C785 490 798 466 812 420" stroke="url(#lineBlue)" stroke-width="3.5"/>
+    <path d="M770 500C785 500 798 522 812 566" stroke="url(#lineBlue)" stroke-width="3.5"/>
+    <path d="M1114 420C1131 420 1143 420 1156 420" stroke="url(#lineOrange)" stroke-width="3.5"/>
+    <path d="M1114 566C1131 566 1143 566 1156 566" stroke="url(#lineOrange)" stroke-width="3.5"/>
+  </g>
+
+  <g font-family="Helvetica, Arial, sans-serif" fill="#ffffff" opacity="0.85">
+    <text x="128" y="734" font-size="30" font-weight="700">From prototype agents to production systems:</text>
+    <text x="128" y="774" font-size="27" font-weight="500">Bedrock Agents define behavior. AgentCore operationalizes it.</text>
+  </g>
+</svg>

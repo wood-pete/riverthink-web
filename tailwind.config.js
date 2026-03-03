@@ -1,0 +1,18 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./pages/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        riverRed: '#b5151b',
+        riverNavy: '#1f2f4a',
+        riverGray: '#484848',
+      },
+      fontFamily: {
+        display: ['Oswald', '"Source Sans 3"', 'system-ui', 'sans-serif'],
+        body: ['"Source Sans 3"', 'Inter', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+};

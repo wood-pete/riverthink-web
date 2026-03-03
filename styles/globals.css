@@ -1,0 +1,365 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #f1f5f9;
+  background-color: #0d0d0d;
+}
+
+body {
+  @apply min-h-screen bg-[#0d0d0d] text-gray-100 font-body antialiased;
+}
+
+/* Override default link styles — components handle their own coloring */
+a {
+  @apply transition-colors duration-150;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  @apply outline-none ring-2 ring-riverRed ring-offset-2 ring-offset-black;
+}
+
+/* Shimmer text — light moving over dark text */
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 35%,
+    #b5151b 50%,
+    #ffffff 65%,
+    #ffffff 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* ─── Blog post title spotlight shimmer ─── */
+/* Base is dimmed gray; a pure-white spotlight sweeps through every ~5s */
+@keyframes title-shimmer {
+  0%   { background-position: 0% center; }
+  100% { background-position: 300% center; }
+}
+
+.shimmer-title {
+  background: linear-gradient(
+    100deg,
+    #ffffff 0%,
+    #ffffff 38%,
+    #e0e0e0 44%,
+    #aaaaaa 50%,
+    #e0e0e0 56%,
+    #ffffff 62%,
+    #ffffff 100%
+  );
+  background-size: 400% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: title-shimmer 5s linear infinite;
+}
+
+/* ─── Blog content — rendered on dark background ─── */
+
+.blog-content {
+  @apply text-lg leading-relaxed text-gray-300;
+}
+
+.blog-content h2 {
+  @apply mt-12 text-2xl font-bold uppercase tracking-wide text-white font-display;
+}
+
+.blog-content h3 {
+  @apply mt-8 text-xl font-bold uppercase tracking-wide text-white font-display;
+}
+
+.blog-content h4 {
+  @apply mt-6 text-base font-semibold text-gray-200;
+}
+
+.blog-content p {
+  @apply mt-4;
+}
+
+.blog-content ul {
+  @apply mt-4 list-disc space-y-2 pl-6 text-gray-300;
+}
+
+.blog-content ol {
+  @apply mt-4 list-decimal space-y-2 pl-6 text-gray-300;
+}
+
+.blog-content li {
+  @apply leading-relaxed;
+}
+
+.blog-content img {
+  @apply my-8 w-full rounded-lg border border-white/10 object-cover;
+}
+
+.blog-content strong {
+  @apply font-semibold text-white;
+}
+
+.blog-content em {
+  @apply italic text-gray-300;
+}
+
+.blog-content a {
+  @apply text-riverRed underline decoration-1 underline-offset-4 transition-colors hover:text-white;
+}
+
+/* Horizontal rule */
+.blog-content hr {
+  @apply my-6 border-0 border-t border-white/20;
+}
+
+/* Blockquote */
+.blog-content blockquote {
+  @apply relative my-10 rounded-2xl border border-riverRed/40 bg-white/5 px-6 py-5 italic text-gray-200;
+}
+
+.blog-content blockquote::before {
+  content: '';
+  @apply absolute -bottom-4 left-8 h-0 w-0;
+  border-top: 16px solid rgb(181 21 27 / 0.4);
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+}
+
+.blog-content blockquote::after {
+  content: '';
+  @apply absolute h-0 w-0;
+  bottom: -13px;
+  left: 35px;
+  border-top: 13px solid rgb(255 255 255 / 0.05);
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+}
+
+.blog-content blockquote p {
+  @apply mt-0;
+}
+
+.blog-content blockquote p + p {
+  @apply mt-4;
+}
+
+/* Code */
+.blog-content code {
+  @apply bg-black text-gray-300 px-2 py-0.5 rounded text-[0.875em] font-mono border border-white/10;
+}
+
+.blog-content pre {
+  @apply my-8 bg-black p-6 rounded-lg overflow-x-auto border border-white/10;
+}
+
+.blog-content pre code {
+  @apply block bg-transparent p-0 text-sm leading-relaxed text-gray-200 font-mono border-none;
+}
+
+/* Custom grey-box callout */
+.blog-content .grey-box {
+  @apply my-8 bg-white/5 border border-white/10 rounded-lg p-6 text-gray-300;
+}
+
+.blog-content .grey-box p:first-child {
+  @apply mt-0;
+}
+
+.blog-content .grey-box p:last-child {
+  @apply mb-0;
+}
+
+/* Elegant centered quote */
+.blog-content .quote {
+  @apply my-10 bg-white/5 text-center italic text-gray-300 text-xl leading-relaxed p-8 rounded-lg relative;
+  font-family: Georgia, serif;
+}
+
+.blog-content .quote::before {
+  content: '\201C';
+  @apply text-5xl text-riverRed/50 absolute;
+  top: 0.5rem;
+  left: 0.75rem;
+  line-height: 1;
+}
+
+.blog-content .quote::after {
+  content: '\201D';
+  @apply text-5xl text-riverRed/50 absolute;
+  bottom: 0.5rem;
+  right: 0.75rem;
+  line-height: 1;
+}
+
+.blog-content .quote p {
+  @apply inline;
+}
+
+/* Tables */
+.blog-content table {
+  @apply my-8 w-full border-collapse text-sm;
+}
+
+.blog-content thead {
+  @apply bg-white/10;
+}
+
+.blog-content th {
+  @apply border border-white/10 px-4 py-3 text-left font-semibold text-white;
+}
+
+.blog-content td {
+  @apply border border-white/10 px-4 py-3 text-gray-300;
+}
+
+.blog-content tbody tr:nth-child(even) {
+  @apply bg-white/5;
+}
+
+.blog-content tbody tr:hover {
+  @apply bg-white/10;
+}
+
+/* Pullquote */
+.blog-content .pullquote {
+  @apply bg-white/5 border-2 border-riverRed/40 p-6 my-6 italic text-gray-300 text-lg leading-relaxed relative;
+  width: 45%;
+  min-width: 250px;
+  max-width: 350px;
+  font-family: Georgia, serif;
+}
+
+.blog-content .pullquote-left {
+  @apply float-left mr-6 mb-2;
+}
+
+.blog-content .pullquote-right {
+  @apply float-right ml-6 mb-2;
+}
+
+.blog-content .pullquote-center {
+  @apply mx-auto my-8;
+  width: 80%;
+  max-width: 600px;
+}
+
+.blog-content .pullquote::before {
+  content: '\201C';
+  @apply text-4xl text-riverRed/50 absolute leading-none;
+  top: 0.5rem;
+  left: 0.75rem;
+}
+
+.blog-content .pullquote::after {
+  content: '\201D';
+  @apply text-4xl text-riverRed/50 absolute leading-none;
+  bottom: 0.25rem;
+  right: 0.75rem;
+}
+
+.blog-content .pullquote p {
+  @apply mt-0 mb-0 pl-4 pr-4;
+}
+
+@media (max-width: 768px) {
+  .blog-content .pullquote {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .blog-content .pullquote-left,
+  .blog-content .pullquote-right {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Footnotes */
+.blog-content [data-footnotes] {
+  @apply mt-16 border-t border-white/10 pt-8;
+}
+
+.blog-content [data-footnotes] ol {
+  @apply mt-0 space-y-2 pl-5 text-sm text-gray-500;
+}
+
+.blog-content [data-footnotes] li {
+  @apply leading-relaxed;
+}
+
+.blog-content [data-footnotes] p {
+  @apply mt-0 inline;
+}
+
+.blog-content .footnote-url-link {
+  @apply inline-flex items-center text-gray-500 no-underline hover:text-riverRed transition-colors ml-1;
+}
+
+.blog-content [data-footnotes] a[data-footnote-backref] {
+  @apply ml-1 no-underline text-gray-600 hover:text-gray-400;
+}
+
+/* Footnote reference superscripts in body text */
+.blog-content a[data-footnote-ref] {
+  @apply text-xs text-gray-500 no-underline hover:text-riverRed align-super;
+}
+
+/* Accordion / details */
+.blog-content details {
+  @apply my-6 border border-white/10 rounded-lg overflow-hidden;
+}
+
+.blog-content details summary {
+  @apply px-5 py-4 bg-white/10 font-semibold text-white cursor-pointer select-none;
+  @apply hover:bg-white/15 transition-colors duration-150;
+  list-style: none;
+}
+
+.blog-content details summary::-webkit-details-marker {
+  display: none;
+}
+
+.blog-content details summary::before {
+  content: '▸';
+  @apply inline-block mr-3 text-xl text-riverRed transition-transform duration-200;
+}
+
+.blog-content details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.blog-content details[open] summary {
+  @apply border-b border-white/10;
+}
+
+.blog-content details .accordion-content {
+  @apply px-5 py-4 bg-white/5;
+}
+
+.blog-content details .accordion-content p:first-child {
+  @apply mt-0;
+}
+
+.blog-content details .accordion-content p:last-child {
+  @apply mb-0;
+}
