@@ -1,5 +1,5 @@
 ---
-title: Martha Lane Fox on Skills, Access and the Next Digital Era
+title: Baroness Martha Lane Fox on Skills, Access and the Next Digital Era
 date: "2026-03-04"
 hero: "/blog/london-tech-show-martha-lane-fox-hero.jpg"
 tags: ["LondonTechShow", "Future Work", "Executive Brief"] 
