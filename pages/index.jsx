@@ -8,7 +8,7 @@ import { getAllPosts } from '../lib/posts';
 const FOCUS_AREAS = [
   {
     title: 'Agent Orchestration',
-    desc: 'From single LLMs to multi-agent systems with role assignment, control flow, and policy-as-code governance — the BMW levels of agentic maturity.',
+    desc: 'From single LLMs to multi-agent systems with role assignment, control flow, and policy-as-code governance — spanning the full levels of agentic maturity.',
   },
   {
     title: 'Security & Governance',
