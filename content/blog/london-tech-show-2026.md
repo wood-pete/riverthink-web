@@ -20,7 +20,7 @@ In 1998 Martha was helping build **lastminute.com**, one of the earliest online 
 The real challenge was persuading people that buying something online was even possible.
 
 <div class="quote">
-“The challenge wasn't building the business. The challenge was persuading people they could safely buy something on the internet.”
+The challenge wasn't building the business. The challenge was persuading people they could safely buy something on the internet.
 </div>
 
 Customers genuinely worried that entering their credit card details into a website might cause the money to vanish into the ether.
@@ -44,7 +44,7 @@ Until one customer phoned customer services furious.
 He had booked a trip using details saved from a previous holiday. Unfortunately the earlier trip had not been with his wife.
 
 <div class="pullquote pullquote-right">
-“He blamed me for the breakup of his marriage. That felt like quite a stretch.”
+He blamed me for the breakup of his marriage. That felt like quite a stretch.
 </div>
 
 Technology moves quickly. Human life sometimes catches up a little more slowly.
@@ -80,7 +80,7 @@ During the COVID years this became painfully visible. Families shared a single p
 Connectivity had quietly become essential infrastructure.
 
 <div class="quote">
-“Access to technology is becoming a fundamental human right.”
+Access to technology is becoming a fundamental human right.
 </div>
 
 In the AI era this question becomes even more urgent.
@@ -92,7 +92,7 @@ In the AI era this question becomes even more urgent.
 Martha believes the technology landscape has shifted once again.
 
 <div class="quote">
-“We're now living in an AI first world.”
+We're now living in an AI first world.
 </div>
 
 Artificial intelligence tools now appear at extraordinary speed. Systems released a few months ago already feel outdated as new capabilities arrive.
@@ -107,8 +107,8 @@ Which leads to Martha’s most striking observation.
 
 ## The price of initiative has collapsed
 
-<div class="quote">
-“The price of initiative has collapsed.”
+<div class="pullquote pullquote-right">
+The price of initiative has collapsed.
 </div>
 
 To illustrate the point Martha described a simple weekend experiment.
@@ -136,7 +136,7 @@ Those who understand what these tools can do.
 And those who have never tried them.
 
 <div class="quote">
-“The real difference will be between people who understand what is possible and people who don’t.”
+The real difference will be between people who understand what is possible and people who don’t.
 </div>
 
 Access matters.
@@ -166,7 +166,7 @@ The ability to ask questions.
 Comfort with ambiguity.
 
 <div class="quote">
-“The most important skills in the future are the ability to ask questions, to interrogate things and to imagine what might be possible.”
+The most important skills in the future are the ability to ask questions, to interrogate things and to imagine what might be possible.
 </div>
 
 Technical expertise will remain vital. Engineers and researchers continue to shape the foundations of modern technology.
@@ -188,7 +188,7 @@ That absence carries economic consequences.
 Products built by narrow teams risk missing entire groups of users.
 
 <div class="pullquote pullquote-right">
-“Hundreds of billions are wasted when we fail to include diverse voices in the workforce.”
+Hundreds of billions are wasted when we fail to include diverse voices in the workforce.
 </div>
 
 More diverse teams create stronger ideas, better products and healthier technology ecosystems.
@@ -234,7 +234,7 @@ Now the AI era.
 Each wave created disruption. Each wave also created opportunity.
 
 <div class="quote">
-“I want to tilt towards the light.”
+I want to tilt towards the light.
 </div>
 
 The AI era offers extraordinary possibilities. Creativity is expanding. Barriers to building ideas are falling. Entire industries are beginning to rethink how work happens.
