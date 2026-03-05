@@ -5,7 +5,7 @@ hero: "/blog/london-tech-show-martha-lane-fox-hero.jpg"
 tags: ["LondonTechShow", "Future Work", "Executive Brief"] 
 ---
 
-## At the **London Tech Show 2026 at ExCeL**, the stage lights turned to **Martha Lane Fox**, one of the UK’s most influential technology leaders and a co founder of lastminute.com. Martha has lived through the entire arc of the modern internet, from the early ecommerce experiments of the late 1990s to today’s rapidly evolving AI landscape.
+## At the **London Tech Show 2026 at ExCeL**, the stage lights turned to **Baroness Martha Lane Fox**, one of the UK’s most influential technology leaders and a co founder of lastminute.com. Martha has lived through the entire arc of the modern internet, from the early ecommerce experiments of the late 1990s to today’s rapidly evolving AI landscape.
 
 Her talk offered something rare. Perspective.
 
