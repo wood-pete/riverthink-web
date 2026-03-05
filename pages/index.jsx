@@ -55,6 +55,7 @@ const HERO_TITLES = [
   ['Trusted', 'AI Systems.', 'Built Right.'],
   ['Practical', 'Agent Networks.', 'In Action.'],
   ['Guided', 'Autonomy.', 'With Control.'],
+  ['Agentic', 'Intelligence.', 'Value Created.'],
 ];
 
 export default function Home({ latestPosts, heroImage }) {
@@ -106,10 +107,10 @@ export default function Home({ latestPosts, heroImage }) {
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
       <Head>
-        <title>Riverthink — Data Platforms & Agentic AI, In Practice</title>
+        <title>Riverthink — Data Platforms & Agentic Intelligence, In Practice</title>
         <meta
           name="description"
-          content="Riverthink covers data platforms and agentic AI — from modern data architecture and orchestration patterns to governance, security, and the infrastructure of autonomous work."
+          content="Riverthink covers data platforms and agentic intelligence — from modern data architecture and orchestration patterns to governance, security, and the infrastructure of autonomous work."
         />
       </Head>
 
@@ -137,7 +138,7 @@ export default function Home({ latestPosts, heroImage }) {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-28 w-full">
           <p className="text-riverRed text-[11px] font-bold uppercase tracking-[0.4em] mb-8">
-            Data Platforms &nbsp;·&nbsp; Agentic AI
+            Data Platforms &nbsp;·&nbsp; Agentic Intelligence
           </p>
 
           <h1
@@ -149,7 +150,7 @@ export default function Home({ latestPosts, heroImage }) {
           </h1>
 
           <p className="text-gray-300 text-lg md:text-xl max-w-xl leading-relaxed mb-12">
-            Riverthink covers data platforms and agentic AI — from modern data architecture
+            Riverthink covers data platforms and agentic intelligence — from modern data architecture
             and orchestration to governance, security, and the infrastructure that makes
             autonomous work real.
           </p>
@@ -308,7 +309,7 @@ export default function Home({ latestPosts, heroImage }) {
             <span className="block">{quoteLineTwo}"</span>
           </p>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed mb-10">
-            The shift to agentic AI is built on data platforms that were designed for it.
+            The shift to agentic intelligence is built on data platforms that were designed for it.
             Orchestration, governance, and the right data infrastructure are what make
             autonomous systems safe and effective at scale.
           </p>

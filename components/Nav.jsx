@@ -14,7 +14,7 @@ export default function Nav({ active }) {
       <div className="hidden md:block bg-black border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
           <span className="text-[11px] uppercase tracking-[0.3em] text-gray-500">
-            Agentic AI — Research &amp; Analysis
+            Agentic Intelligence — Research &amp; Analysis
           </span>
           <div className="flex items-center gap-4 text-[11px] uppercase tracking-widest text-gray-500">
             <span>riverthink.com</span>

@@ -37,7 +37,7 @@ export default function About() {
         <title>About — Riverthink</title>
         <meta
           name="description"
-          content="Riverthink covers data platforms and agentic AI — practical analysis of modern data architecture, orchestration patterns, governance, and the infrastructure of autonomous work."
+          content="Riverthink covers data platforms and agentic intelligence — practical analysis of modern data architecture, orchestration patterns, governance, and the infrastructure of autonomous work."
         />
       </Head>
 
@@ -48,7 +48,7 @@ export default function About() {
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-riverRed" />
         <div className="max-w-7xl mx-auto">
           <p className="text-riverRed text-[11px] font-bold uppercase tracking-[0.35em] mb-5">
-            Data Platforms &nbsp;·&nbsp; Agentic AI
+            Data Platforms &nbsp;·&nbsp; Agentic Intelligence
           </p>
           <h1 className="font-display text-6xl md:text-8xl font-black uppercase text-white leading-[0.9]">
             Thinking
@@ -69,7 +69,7 @@ export default function About() {
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
                 Riverthink is a space for ideas to flow, clarify, and turn into momentum. It
-                covers two converging disciplines: data platforms and agentic AI. The first is
+                covers two converging disciplines: data platforms and agentic intelligence. The first is
                 about how organisations store, move, and make sense of data at scale. The second
                 is about what happens when AI systems start acting on it autonomously.
               </p>
@@ -138,7 +138,7 @@ export default function About() {
                 <p>
                   His work translates advanced analytics and AI into measurable improvements in
                   clinical operations, capacity management, and patient flow. Peter brings a
-                  practitioner&apos;s perspective to agentic AI — grounded in the governance,
+                  practitioner&apos;s perspective to agentic intelligence — grounded in the governance,
                   integration, and data challenges that enterprises actually face.
                 </p>
                 <p>

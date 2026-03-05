@@ -12,7 +12,7 @@ export default function Footer() {
             className="h-8 w-auto brightness-0 invert mb-5"
           />
           <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-            A space for ideas at the frontier of agentic AI — where autonomous systems,
+            A space for ideas at the frontier of agentic intelligence — where autonomous systems,
             orchestration patterns, and governance converge into practical insight.
           </p>
           <div className="flex items-center gap-3 mt-6 text-[11px] uppercase tracking-widest text-gray-600">

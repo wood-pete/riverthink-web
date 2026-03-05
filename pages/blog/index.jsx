@@ -33,8 +33,8 @@ export default function BlogIndex({ posts }) {
             from the Edge
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            Deep analysis of agentic AI systems, orchestration patterns, security frameworks, and
-            the infrastructure of autonomous work.
+            Deep analysis of agentic intelligence, orchestration patterns, human impact, security frameworks, and
+            the infrastructure of autonomous ecosystems.
           </p>
         </div>
       </section>
