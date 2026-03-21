@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic orchestration hero</title>
+  <desc id="desc">Blue and amber enterprise AI scene showing orchestrated agents, cars, and connected systems.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#03152e"/>
+      <stop offset="0.5" stop-color="#0b2c57"/>
+      <stop offset="1" stop-color="#5a1f06"/>
+    </linearGradient>
+    <radialGradient id="leftGlow" cx="0" cy="0" r="1" gradientTransform="translate(450 420) rotate(90) scale(620 860)">
+      <stop offset="0" stop-color="#3fb9ff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#3fb9ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="0" cy="0" r="1" gradientTransform="translate(1110 460) rotate(90) scale(560 760)">
+      <stop offset="0" stop-color="#ff9d2e" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ff9d2e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gridBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#43c3ff"/>
+      <stop offset="1" stop-color="#1e7bff"/>
+    </linearGradient>
+    <linearGradient id="gridOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffbc55"/>
+      <stop offset="1" stop-color="#ff7a1a"/>
+    </linearGradient>
+    <linearGradient id="carBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4ad2ff"/>
+      <stop offset="1" stop-color="#1665da"/>
+    </linearGradient>
+    <linearGradient id="carOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd27a"/>
+      <stop offset="1" stop-color="#ff7b1b"/>
+    </linearGradient>
+    <linearGradient id="robot" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#b7c9dc"/>
+    </linearGradient>
+    <filter id="softBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#020b18" flood-opacity="0.5"/>
+    </filter>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#9dd9ff" fill-opacity="0.16"/>
+    </pattern>
+  </defs>
+
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <rect width="1536" height="1024" fill="url(#dots)" opacity="0.5"/>
+  <rect width="1536" height="1024" fill="url(#leftGlow)"/>
+  <rect width="1536" height="1024" fill="url(#rightGlow)"/>
+
+  <g opacity="0.3" stroke="#89d8ff" stroke-width="2">
+    <path d="M0 740C260 680 540 660 768 720"/>
+    <path d="M0 785C260 730 540 710 768 770"/>
+    <path d="M0 830C260 780 540 760 768 820"/>
+  </g>
+  <g opacity="0.28" stroke="#ffbc66" stroke-width="2">
+    <path d="M1536 740C1270 680 1000 660 768 720"/>
+    <path d="M1536 785C1270 730 1000 710 768 770"/>
+    <path d="M1536 830C1270 780 1000 760 768 820"/>
+  </g>
+
+  <g opacity="0.45" stroke="#8ad9ff" stroke-width="1.6">
+    <path d="M130 170L665 500"/>
+    <path d="M210 120L665 500"/>
+    <path d="M290 90L665 500"/>
+    <path d="M370 75L665 500"/>
+  </g>
+  <g opacity="0.45" stroke="#ffc170" stroke-width="1.6">
+    <path d="M1400 160L870 500"/>
+    <path d="M1320 120L870 500"/>
+    <path d="M1240 90L870 500"/>
+    <path d="M1160 75L870 500"/>
+  </g>
+
+  <g filter="url(#softBlur)">
+    <circle cx="768" cy="610" r="90" fill="#ffffff" fill-opacity="0.44"/>
+  </g>
+  <circle cx="768" cy="610" r="11" fill="#ffffff"/>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(215 545)">
+      <rect x="0" y="38" width="300" height="92" rx="34" fill="url(#carBlue)"/>
+      <rect x="42" y="0" width="180" height="58" rx="24" fill="#9ce1ff"/>
+      <circle cx="62" cy="134" r="23" fill="#061a33"/>
+      <circle cx="234" cy="134" r="23" fill="#061a33"/>
+      <circle cx="62" cy="134" r="10" fill="#78a7cf"/>
+      <circle cx="234" cy="134" r="10" fill="#78a7cf"/>
+      <circle cx="258" cy="82" r="10" fill="#34ff9a"/>
+    </g>
+
+    <g transform="translate(1005 568)">
+      <rect x="0" y="34" width="280" height="88" rx="32" fill="url(#carOrange)"/>
+      <rect x="38" y="0" width="165" height="54" rx="22" fill="#ffe0ad"/>
+      <circle cx="58" cy="126" r="22" fill="#2f1604"/>
+      <circle cx="220" cy="126" r="22" fill="#2f1604"/>
+      <circle cx="58" cy="126" r="9" fill="#b58f6a"/>
+      <circle cx="220" cy="126" r="9" fill="#b58f6a"/>
+      <circle cx="242" cy="76" r="9" fill="#34ff9a"/>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)" transform="translate(1110 280)">
+    <ellipse cx="95" cy="370" rx="78" ry="15" fill="#050d19" fill-opacity="0.5"/>
+    <rect x="15" y="145" width="162" height="196" rx="42" fill="url(#robot)" stroke="#8aa1b8" stroke-width="5"/>
+    <rect x="36" y="44" width="122" height="122" rx="36" fill="url(#robot)" stroke="#8aa1b8" stroke-width="5"/>
+    <rect x="53" y="78" width="88" height="36" rx="18" fill="#0b294f"/>
+    <circle cx="80" cy="96" r="7" fill="#47d8ff"/>
+    <circle cx="114" cy="96" r="7" fill="#47d8ff"/>
+    <rect x="-10" y="182" width="30" height="112" rx="14" fill="url(#robot)" stroke="#8aa1b8" stroke-width="4"/>
+    <rect x="172" y="182" width="30" height="112" rx="14" fill="url(#robot)" stroke="#8aa1b8" stroke-width="4"/>
+    <line x1="96" y1="44" x2="96" y2="14" stroke="#8aa1b8" stroke-width="4"/>
+    <circle cx="96" cy="6" r="9" fill="#ff8b22"/>
+  </g>
+
+  <g opacity="0.85" stroke-linecap="round">
+    <path d="M515 610C590 590 652 588 768 610" stroke="url(#gridBlue)" stroke-width="4"/>
+    <path d="M1025 610C940 590 880 588 768 610" stroke="url(#gridOrange)" stroke-width="4"/>
+    <path d="M324 603C470 585 600 586 768 610" stroke="#66d3ff" stroke-opacity="0.8" stroke-width="2.5" stroke-dasharray="7 12"/>
+    <path d="M1210 602C1060 585 940 585 768 610" stroke="#ffc36d" stroke-opacity="0.8" stroke-width="2.5" stroke-dasharray="7 12"/>
+  </g>
+
+  <g fill="#ffffff" font-family="Helvetica, Arial, sans-serif" filter="url(#shadow)">
+    <text x="100" y="120" font-size="44" font-weight="700" opacity="0.92">Agentic Orchestration</text>
+    <text x="100" y="186" font-size="92" font-weight="800" fill="#ffe2ac">BMW Levels for AI Autonomy</text>
+    <text x="100" y="238" font-size="34" font-weight="500" opacity="0.88">From Assistive Agents to Reliable End-to-End Autonomy</text>
+  </g>
+
+  <g opacity="0.85">
+    <rect x="100" y="276" width="144" height="44" rx="22" fill="#1f4f86"/>
+    <rect x="252" y="276" width="144" height="44" rx="22" fill="#2f6ba9"/>
+    <rect x="404" y="276" width="144" height="44" rx="22" fill="#3f88ca"/>
+    <rect x="556" y="276" width="144" height="44" rx="22" fill="#6a98c8"/>
+    <rect x="708" y="276" width="144" height="44" rx="22" fill="#f0862d"/>
+    <text x="147" y="306" fill="#dceeff" font-size="20" font-family="Helvetica, Arial, sans-serif" font-weight="700">L1</text>
+    <text x="299" y="306" fill="#dceeff" font-size="20" font-family="Helvetica, Arial, sans-serif" font-weight="700">L2</text>
+    <text x="451" y="306" fill="#dceeff" font-size="20" font-family="Helvetica, Arial, sans-serif" font-weight="700">L3</text>
+    <text x="603" y="306" fill="#dceeff" font-size="20" font-family="Helvetica, Arial, sans-serif" font-weight="700">L4</text>
+    <text x="755" y="306" fill="#fff5e4" font-size="20" font-family="Helvetica, Arial, sans-serif" font-weight="700">L5</text>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" fill="none">
+  <rect width="720" height="360" rx="28" fill="#f8fafc"/>
+  <g opacity="0.08">
+    <circle cx="120" cy="240" r="120" fill="#b5151b"/>
+    <circle cx="320" cy="120" r="140" fill="#1f2f4a"/>
+    <circle cx="560" cy="240" r="160" fill="#b5151b"/>
+  </g>
+  <path d="M120 190c120-60 200-30 300 20s160 40 200-30" stroke="#1f2f4a" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+  <path d="M90 220c110 40 200 80 340 0s220-70 260-30" stroke="#b5151b" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+  <g fill="#fff" stroke="#1f2f4a" stroke-width="3" opacity="0.9">
+    <circle cx="120" cy="190" r="18"/>
+    <circle cx="280" cy="230" r="18"/>
+    <circle cx="440" cy="206" r="18"/>
+    <circle cx="600" cy="150" r="18"/>
+  </g>
+  <g fill="#b5151b">
+    <circle cx="160" cy="260" r="8"/>
+    <circle cx="260" cy="280" r="8"/>
+    <circle cx="430" cy="280" r="8"/>
+    <circle cx="560" cy="240" r="8"/>
+  </g>
+  <text x="60" y="316" fill="#1f2f4a" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Feedback lines</text>
+</svg>
