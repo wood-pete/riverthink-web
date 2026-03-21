@@ -2,7 +2,7 @@
 title: What Neon Taught Me About AI and Real Skills
 date: "2026-03-21"
 hero: "/blog/agentic-ripples.svg"
-tags: agenticai, executive, architecture 
+tags: ["Agentic AI", "AI Strategy", "Executive Brief"]
 ---
 
 # What a Flickering Neon Light Taught Me About AI and Real Skills
