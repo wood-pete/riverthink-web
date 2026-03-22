@@ -1,164 +1,166 @@
 ---
-title: "Google ADK vs LangChain: The Rise of Structured Agent Engineering"
+title: "Google ADK vs LangChain vs LangGraph: The New Stack for Agent Engineering"
 date: "2026-03-22"
 hero: "/blog/EBBFD461-BFFB-420C-B7FB-13F3F248768E.png"
-tags: ["Agentic AI", "AI Engineering", "LLM Frameworks", "Enterprise AI"]
+tags: ["Agentic AI", "AI Architecture", "LLM Frameworks", "Enterprise AI"]
 ---
 
+# Google ADK vs LangChain vs LangGraph: The New Stack for Agent Engineering
 
+There has been a quiet shift in how we build with large language models. Not long ago, most systems began with a prompt, perhaps a few tools, and a chain stitched together to produce something useful. It worked, often surprisingly well, and for many teams that was enough.
 
-# Google ADK vs LangChain: The Rise of Structured Agent Engineering
+Then systems started to grow. What began as a simple interaction turned into multiple steps, dependencies, retries, and edge cases. At that point, the idea of a chain began to feel slightly optimistic, in the same way a whiteboard sketch sometimes survives longer than it should.
 
-The past two years have seen an explosion of frameworks designed to make large language models useful in real systems. Many of us started with LangChain, wiring prompts together, adding tools, layering memory, and gradually building something that resembled an application.
-
-Then Google introduced the Agent Development Kit (ADK), and it felt like a shift in posture. Not just another framework, but a more opinionated way of thinking about agents as structured, composable systems rather than prompt pipelines.
-
-This is where things get interesting.
+This is where the conversation moves from LangChain to LangGraph, and now to Google’s Agent Development Kit. Each represents a stage in the same evolution.
 
 ---
 
-## A Subtle Shift in How We Build Agents
+## From Prompts to Systems
 
-LangChain arrived at a time when experimentation mattered more than structure. It gave developers a way to connect LLMs to tools, documents, and APIs quickly. You could move fast, iterate, and discover patterns as you went.
+LangChain made it possible to connect models to the world. It gave developers a way to integrate tools, retrieval, and reasoning without building everything from scratch. It was, and still is, the fastest way to get something working.
 
-Google ADK starts from a different assumption. It assumes we already know that agents will be systems, not scripts.
+But as systems matured, a pattern emerged. Developers began to reimplement the same ideas repeatedly:
+
+- State management  
+- Multi step workflows  
+- Conditional execution  
+- Error handling and retries  
+
+LangGraph appeared as a response to this, bringing structure to orchestration and making execution visible.
 
 <div class="quote">
-“LangChain helps you discover what works. ADK assumes you already care how it scales.”
+“LangChain helps you start. LangGraph helps you control. ADK expects you to design.”
 </div>
 
-Where LangChain feels like assembling components, ADK feels closer to designing architecture.
+Google ADK takes this further by assuming that agents are not experiments but systems that must behave predictably.
 
 ---
 
-## What is Google ADK
+## Understanding the Stack
 
-Google’s Agent Development Kit is a framework for building production grade agents with a strong emphasis on structure, orchestration, and clarity of execution. It introduces a more formal model for defining how agents behave, how they interact with tools, and how workflows are composed.
+Rather than competing frameworks, these tools form a layered stack that reflects increasing maturity.
 
-Rather than thinking in terms of chains, ADK encourages thinking in terms of:
+| Layer              | Framework       | Purpose                                      |
+|--------------------|----------------|----------------------------------------------|
+| Components         | LangChain      | Tools, LLMs, retrieval, integrations         |
+| Orchestration      | LangGraph      | State, control flow, execution graphs        |
+| Agent Runtime      | Google ADK     | Structured agents, contracts, workflows      |
 
-- Agents as first class entities  
-- Explicit workflows and execution graphs  
-- Strong typing of inputs and outputs  
-- Deterministic orchestration alongside LLM reasoning  
-
-This leads to a system that looks less like a prompt experiment and more like a distributed application.
+Each layer builds on the one below it, introducing more control and more responsibility.
 
 ---
 
-## LangChain: The Flexible Pioneer
+## LangChain: Where Ideas Take Shape
 
-LangChain still plays a critical role. It remains one of the most widely used frameworks because of its flexibility and ecosystem.
+LangChain remains widely used because it optimises for speed and flexibility. It allows developers to quickly connect LLMs to tools and data sources, creating useful applications with minimal overhead.
 
-It provides:
+It offers:
 
 - Rapid prototyping of LLM applications  
-- Extensive integrations with vector stores, APIs, and tools  
-- Chains and agents that can be composed dynamically  
-- A large community and evolving patterns  
+- Extensive integrations  
+- Flexible agent patterns  
+- Minimal upfront structure  
 
-In many ways, LangChain is the toolkit you reach for when exploring a new idea.
+This flexibility is often exactly what is needed in early stages, when the goal is discovery rather than control.
+
+---
+
+## LangGraph: Where Control Emerges
+
+LangGraph introduces explicit orchestration. Instead of relying on the model to decide everything, developers define a graph where nodes represent steps and edges define transitions.
+
+This approach brings clarity:
+
+- Execution paths are defined rather than inferred  
+- State is explicit and inspectable  
+- Complex workflows become manageable  
+- Debugging becomes significantly easier  
 
 <div class="pullquote pullquote-right">
-“LangChain is where ideas are born. ADK is where they are forced to behave.”
+“At some point, every chain becomes a graph. The only question is whether you admit it.”
 </div>
 
----
-
-## The Core Architectural Differences
-
-The distinction becomes clearer when we look at how each framework approaches system design.
-
-| Dimension                  | LangChain                                      | Google ADK                                      |
-|---------------------------|-----------------------------------------------|------------------------------------------------|
-| Design Philosophy         | Flexible, exploratory                          | Structured, opinionated                        |
-| Abstraction Model         | Chains and tools                               | Agents and workflows                           |
-| Execution Model           | Dynamic, often implicit                        | Explicit orchestration graphs                  |
-| Typing                    | Loose, often JSON based                        | Strongly typed inputs and outputs              |
-| Production Readiness      | Requires layering                              | Built with production in mind                  |
-| Debuggability             | Emerging tooling                               | Designed for traceability                      |
+LangGraph does not remove flexibility. It channels it into a form that can be reasoned about.
 
 ---
 
-## Where ADK Changes the Game
+## Google ADK: Where Structure Becomes Non Negotiable
 
-The most important differentiator is not performance or features. It is how ADK treats the agent as a system with boundaries.
+Google ADK builds on similar principles but takes a more opinionated approach. It treats agents as structured components within a broader system, with clear contracts and defined behaviour.
 
-### 1. Explicit Workflows
+Key characteristics include:
 
-In LangChain, workflows often emerge organically. In ADK, workflows are defined explicitly. You know what happens, in what order, and under what conditions.
+- Strongly typed inputs and outputs  
+- Explicit agent definitions  
+- Structured workflows  
+- A defined runtime model  
 
-This reduces ambiguity and improves reliability in production environments.
-
-### 2. Strong Contracts
-
-ADK introduces structured inputs and outputs. This might sound minor, but it changes everything.
-
-Instead of passing loosely defined JSON between steps, you define clear contracts. This enables validation, testing, and integration with other systems.
-
-### 3. Deterministic + Agentic Hybrid
-
-ADK blends deterministic logic with LLM driven reasoning. You can define fixed steps alongside flexible decision making.
-
-This is particularly relevant in enterprise systems where some processes must always behave predictably.
+Where LangGraph provides a graph engine, ADK provides a framework for building consistent, production ready agent systems.
 
 ---
 
-## How To Explain The Difference
+## The Architectural Differences
 
-If we simplify the difference:
+The distinctions between the three approaches become clearer when viewed together.
 
-- LangChain is closer to a scripting layer for LLMs  
-- ADK is closer to an application framework for agents  
-
-That distinction becomes critical as systems grow in complexity.
+| Dimension              | LangChain                          | LangGraph                             | Google ADK                          |
+|------------------------|------------------------------------|----------------------------------------|--------------------------------------|
+| Primary Focus          | Integration                        | Orchestration                          | Agent architecture                   |
+| Abstraction Level      | High level components              | Low level control                      | Structured system design             |
+| Execution Model        | Prompt driven                      | Graph driven                           | Workflow driven                      |
+| State Handling         | Implicit                           | Explicit shared state                  | Structured inputs and outputs        |
+| Typing                 | Loose                              | Optional                               | Strong emphasis                      |
+| Production Readiness   | Requires layering                  | Requires design                        | Built with production in mind        |
 
 ---
 
 ## Where Each Fits
 
-There is no winner here. The choice depends on the stage and intent of the system.
-
 <details>
-<summary>When to Use LangChain</summary>
+<summary>LangChain: Early Exploration</summary>
 <div class="accordion-content">
 
-LangChain is a strong fit when exploring ideas, building prototypes, or integrating diverse tools quickly. It supports rapid iteration and helps teams discover what patterns work before committing to structure.
+LangChain is well suited to early stage development where speed and flexibility matter. It allows teams to test ideas, integrate tools quickly, and understand what works before introducing structure.
 
 </div>
 </details>
 
 <details>
-<summary>When to Use Google ADK</summary>
+<summary>LangGraph: Workflow Orchestration</summary>
 <div class="accordion-content">
 
-ADK becomes more compelling when building production systems that require reliability, governance, and maintainability. It supports clearer architecture and aligns well with enterprise engineering practices.
+LangGraph becomes valuable when systems require control over execution. It supports complex workflows, branching logic, and stateful interactions that go beyond simple chains.
+
+</div>
+</details>
+
+<details>
+<summary>Google ADK: Production Systems</summary>
+<div class="accordion-content">
+
+ADK is designed for production environments where reliability, governance, and maintainability are required. It enforces structure and aligns with established engineering practices.
 
 </div>
 </details>
 
 ---
 
-## The Broader Trend
+## The Direction of Travel
 
-What we are seeing is the natural evolution of a new engineering discipline.
+What is emerging is a layered engineering model for agents:
 
-Early tools optimise for speed and discovery. Later tools optimise for structure and scale.
+- LangChain lowers the barrier to entry  
+- LangGraph introduces control and visibility  
+- ADK enforces structure and consistency  
 
-ADK represents that second phase.
+Each stage reflects increasing maturity in how systems are designed and operated.
 
-And if we are honest, many of us have already felt the need for it. After the third or fourth LangChain prototype grows into something critical, the lack of structure becomes very noticeable.
-
-There is a certain moment when you realise your “chain” has quietly become a system. That is usually when things get serious.
+There is also a moment many teams recognise. A system that began as a simple chain becomes increasingly complex, with hidden state and unpredictable behaviour. Introducing structure tends to resolve this quickly, even if it requires revisiting earlier decisions.
 
 ---
 
-## A Final Thought
+## References
 
-The emergence of ADK signals something bigger than a new framework. It reflects a shift in how we think about building with AI.
-
-Agents are no longer experiments. They are becoming core components of enterprise architecture.
-
-And with that comes a need for discipline, structure, and design.
-
-Which, depending on how your last prototype behaved in production, might be rather welcome.
+1. Google Agent Development Kit Documentation — https://google.github.io/adk-docs/  
+2. LangChain Documentation — https://python.langchain.com  
+3. LangGraph Documentation — https://langchain-ai.github.io/langgraph/  
