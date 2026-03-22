@@ -1,9 +1,11 @@
 ---
 title: "Google ADK vs LangChain: The Rise of Structured Agent Engineering"
 date: "2026-03-22"
-hero: "/blog/agentic-ripples.svg"
+hero: "/blog/EBBFD461-BFFB-420C-B7FB-13F3F248768E.png"
 tags: ["Agentic AI", "AI Engineering", "LLM Frameworks", "Enterprise AI"]
 ---
+
+
 
 # Google ADK vs LangChain: The Rise of Structured Agent Engineering
 
