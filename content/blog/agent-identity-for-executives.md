@@ -1,7 +1,7 @@
 ---
 title: Agent Identity in Healthcare A - The Control Layer Executives Demand
 date: "2026-03-22"
-hero: "/blog/agent-identity.png"
+hero: "/blog/1DBF4F05-738D-4336-8342-2BF729EA66A5.png"
 tags: ["Agentic AI", "Healthcare AI", "Identity & Access", "Executive Brief"]
 ---
 
