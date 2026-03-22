@@ -268,8 +268,6 @@ Because in an ecosystem where agents collaborate, delegate, and execute autonomo
 
 Identity is what allows intelligence to scale without losing accountability.
 
----
-
 [^1]: McKinsey & Company, *The future of healthcare operations with AI*, 2023.
 [^2]: NHS England, *Data Security and Protection Toolkit Guidelines*, 2024.
 [^3]: European Commission, *EU AI Act Overview*, 2025.
