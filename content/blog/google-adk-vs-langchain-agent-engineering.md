@@ -102,7 +102,7 @@ This is particularly relevant in enterprise systems where some processes must al
 
 ---
 
-## A Practical Mental Model
+## How To Explain The Difference
 
 If we simplify the difference:
 
