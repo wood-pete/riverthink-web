@@ -1,17 +1,17 @@
 ---
-title: Agent Identity in Healthcare A - The Control Layer Executives Demand
+title: Agent Identity in Healthcare AI - The Control Layer Executives Demand
 date: "2026-03-22"
 hero: "/blog/1DBF4F05-738D-4336-8342-2BF729EA66A5.png"
 tags: ["Agentic AI", "Healthcare AI", "Identity & Access", "Executive Brief"]
 ---
 
-# Agent Identity in Healthcare AI: The Control Layer Executives Cannot Ignore
+# Agent Identity in Healthcare AI: The Control Layer Executives Need
 
 In the current wave of enterprise AI adoption, attention often gravitates toward model capability. Larger context windows, stronger reasoning, and improved tool use dominate the narrative. Yet beneath this visible progress, a quieter structural shift is unfolding. It is one that will define whether agentic systems scale safely inside healthcare organisations or introduce new forms of operational risk.
 
 That shift is the emergence of **agent identity as a first class architectural concern**.
 
-For CIOs and CTOs, this is not a theoretical discussion. It is a control layer decision that directly impacts governance, auditability, and clinical safety.
+For CIOs and CTOs, this is a decision that directly impacts governance, auditability, and clinical safety.
 
 ---
 
@@ -60,11 +60,9 @@ Without this, the system loses its ability to answer critical questions:
 - Under what authority was a decision made?  
 - How did a recommendation propagate across systems?  
 
-This is not simply a technical gap. It is a governance failure.
-
 ---
 
-## The Healthcare Context: Why It Matters More
+## The Healthcare Context
 
 Healthcare environments amplify the importance of identity due to regulatory and operational constraints.
 
@@ -111,24 +109,25 @@ This creates a verifiable chain of custody for every action.
 
 Below is a simplified view of identity propagation in a healthcare agent workflow.
 
-<svg width="100%" height="260" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
-  <rect x="20" y="80" width="160" height="60" fill="#1f3a5f"/>
+<svg width="100%" height="260" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid white;">
+  <rect x="20" y="80" width="160" height="60" fill="#b5151b"/>
   <text x="30" y="115" fill="white" font-size="12">Discharge Agent</text>
 
-  <rect x="220" y="40" width="160" height="60" fill="#2e6f95"/>
-  <text x="230" y="75" fill="white" font-size="12">Bed Allocation Agent</text>
+  <rect x="220" y="40" width="160" height="60" fill="white"/>
+  <text x="230" y="75" fill="#111111" font-size="12">Bed Allocation Agent</text>
 
-  <rect x="420" y="80" width="160" height="60" fill="#3fa7a3"/>
-  <text x="430" y="115" fill="white" font-size="12">EHR System</text>
+  <rect x="420" y="80" width="160" height="60" fill="#cccccc"/>
+  <text x="430" y="115" fill="#111111" font-size="12">EHR System</text>
 
-  <rect x="620" y="40" width="160" height="60" fill="#7ac74f"/>
+  <rect x="620" y="40" width="160" height="60" fill="#b5151b"/>
   <text x="630" y="75" fill="white" font-size="12">Compliance Agent</text>
 
   <line x1="180" y1="110" x2="220" y2="70" stroke="#ccc" stroke-width="2"/>
   <line x1="380" y1="70" x2="420" y2="110" stroke="#ccc" stroke-width="2"/>
   <line x1="580" y1="110" x2="620" y2="70" stroke="#ccc" stroke-width="2"/>
 
-  <text x="250" y="30" font-size="10" fill="#333">Identity + Delegation Context</text>
+  <rect x="0" y="230" width="800" height="30" fill="white"/>
+  <text x="400" y="250" font-size="12" fill="black" text-anchor="middle" font-weight="bold">Identity + Delegation Context</text>
 </svg>
 
 
@@ -172,7 +171,7 @@ Delegation becomes a controlled decision rather than a hard coded instruction.
 
 This is the beginning of what many describe as an **agent marketplace**.
 
-Not commercial in nature, but architectural.
+Not commercial in nature, but an architectural philosophy. 
 
 ---
 
@@ -206,7 +205,7 @@ Industry studies indicate that AI driven automation can improve operational effi
 
 ---
 
-## Governance: The Non Negotiable Layer
+## Governance
 
 An agent ecosystem without governance becomes unstable very quickly.
 
@@ -226,13 +225,13 @@ To manage this, organisations must enforce:
 
 Or, put more bluntly, agents require the same discipline as humans. Possibly more.
 
-(And unlike humans, they do not complain about password rotation, which is a small but welcome mercy.)
+(And unlike humans, they do not complain about password rotation, which is a small but welcome mercy!)
 
 ---
 
 ## Architectural Priorities for CIOs and CTOs
 
-The introduction of agent identity is not an incremental change. It is a foundational layer that must be designed deliberately.
+The introduction of agent identity is a foundational layer that must be designed deliberately.
 
 Key priorities include:
 
@@ -251,7 +250,7 @@ Key priorities include:
 - **Policy Enforcement Layer**  
   Apply clinical, operational, and financial constraints  
 
-These are not optional enhancements. They are prerequisites for safe deployment in healthcare environments.
+These are prerequisites for safe deployment in healthcare environments.
 
 ---
 
