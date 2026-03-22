@@ -109,6 +109,30 @@ Each interaction must carry:
 
 This creates a verifiable chain of custody for every action.
 
+Below is a simplified view of identity propagation in a healthcare agent workflow.
+
+<svg width="100%" height="260" viewBox="0 0 800 260" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="80" width="160" height="60" fill="#1f3a5f"/>
+  <text x="30" y="115" fill="white" font-size="12">Discharge Agent</text>
+
+  <rect x="220" y="40" width="160" height="60" fill="#2e6f95"/>
+  <text x="230" y="75" fill="white" font-size="12">Bed Allocation Agent</text>
+
+  <rect x="420" y="80" width="160" height="60" fill="#3fa7a3"/>
+  <text x="430" y="115" fill="white" font-size="12">EHR System</text>
+
+  <rect x="620" y="40" width="160" height="60" fill="#7ac74f"/>
+  <text x="630" y="75" fill="white" font-size="12">Compliance Agent</text>
+
+  <line x1="180" y1="110" x2="220" y2="70" stroke="#ccc" stroke-width="2"/>
+  <line x1="380" y1="70" x2="420" y2="110" stroke="#ccc" stroke-width="2"/>
+  <line x1="580" y1="110" x2="620" y2="70" stroke="#ccc" stroke-width="2"/>
+
+  <text x="250" y="30" font-size="10" fill="#333">Identity + Delegation Context</text>
+</svg>
+
+
+
 ## From Orchestration to an Agent Capability Ecosystem
 
 Once identity is established, a second capability becomes possible.
