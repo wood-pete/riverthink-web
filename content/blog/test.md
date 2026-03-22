@@ -1,13 +1,11 @@
 ---
 title: What Neon Taught Me About AI and Real Skills
 date: "2026-03-21"
-hero: "/blog/agentic-ripples.svg"
+hero: "/blog/8A0BAD40-71E0-4D0B-A7F8-47340A7B0238.png"
 tags: ["Agentic AI", "AI Strategy", "Executive Brief"]
 ---
 
 # What a Flickering Neon Light Taught Me About AI and Real Skills
-
-![Hero Image](https://images.unsplash.com/photo-1581093458791-9d09b6a8d7c2?q=80&w=1600&auto=format&fit=crop)
 
 This morning it was a flickering neon strip in the garage. There was a faint buzz, an occasional strobe effect, and just enough inconsistency to make it irritating rather than urgent. The sort of problem you feel you should be able to solve.
 
