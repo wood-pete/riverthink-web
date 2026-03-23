@@ -81,6 +81,9 @@ export default function About() {
                 You&apos;ll find analysis here that goes beyond the hype — grounded in real
                 implementation experience across healthcare, finance, and enterprise technology.
               </p>
+              <p className="text-gray-400 text-sm font-bold border-t border-white/10 pt-4 mt-4">
+                Opinions expressed are personal and do not represent the views of any associated faculties, societies, vendors, businesses, or employers.
+              </p>
             </div>
           </div>
 
