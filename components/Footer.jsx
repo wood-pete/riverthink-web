@@ -92,7 +92,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-gray-600 uppercase tracking-widest">
+      <div className="max-w-7xl mx-auto mt-8 mb-6 text-[11px] text-gray-600 leading-relaxed">
+        Opinions expressed are personal and do not represent the views of any associated faculties, societies, vendors, businesses, or employers.
+      </div>
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-gray-600 uppercase tracking-widest">
         <span>© 2026 Riverthink. All rights reserved.</span>
         <span>Thinking at the Edge</span>
       </div>

@@ -76,19 +76,19 @@ textarea:focus {
 /* ─── Blog content — rendered on dark background ─── */
 
 .blog-content {
-  @apply text-lg leading-relaxed text-gray-300;
+  @apply text-base sm:text-lg leading-relaxed text-gray-300;
 }
 
 .blog-content h2 {
-  @apply mt-12 text-2xl font-bold uppercase tracking-wide text-white font-display;
+  @apply mt-12 text-xl sm:text-2xl font-bold uppercase tracking-wide text-white font-display;
 }
 
 .blog-content h3 {
-  @apply mt-8 text-xl font-bold uppercase tracking-wide text-white font-display;
+  @apply mt-8 text-lg sm:text-xl font-bold uppercase tracking-wide text-white font-display;
 }
 
 .blog-content h4 {
-  @apply mt-6 text-base font-semibold text-gray-200;
+  @apply mt-6 text-sm sm:text-base font-semibold text-gray-200;
 }
 
 .blog-content p {

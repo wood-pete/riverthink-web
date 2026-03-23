@@ -144,6 +144,9 @@ export default function About() {
                 <p>
                   Riverthink is where those ideas find structure, language, and a path forward.
                 </p>
+                <p className="text-gray-500 text-sm italic border-t border-white/10 pt-4 mt-4">
+                  Opinions expressed are personal and do not represent the views of any associated faculties, societies, vendors, businesses, or employers.
+                </p>
               </div>
 
               <div className="flex flex-wrap items-center gap-6">
