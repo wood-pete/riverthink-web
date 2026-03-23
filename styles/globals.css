@@ -76,7 +76,7 @@ textarea:focus {
 /* ─── Blog content — rendered on dark background ─── */
 
 .blog-content {
-  @apply text-base sm:text-lg leading-relaxed text-gray-300;
+  @apply text-lg sm:text-xl leading-relaxed text-gray-300;
 }
 
 .blog-content h2 {
