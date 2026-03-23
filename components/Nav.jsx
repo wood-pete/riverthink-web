@@ -65,6 +65,14 @@ export default function Nav({ active }) {
             >
               Discord
             </a>
+            <a
+              href="https://riverthink.substack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors duration-150"
+            >
+              Substack
+            </a>
           </nav>
 
           {/* CTA */}
@@ -87,6 +95,14 @@ export default function Nav({ active }) {
               className="text-gray-400 hover:text-white transition-colors duration-150"
             >
               Discord
+            </a>
+            <a
+              href="https://riverthink.substack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors duration-150"
+            >
+              Substack
             </a>
           </nav>
         </div>

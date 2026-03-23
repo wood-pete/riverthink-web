@@ -73,6 +73,16 @@ export default function Footer() {
                 Discord
               </a>
             </li>
+            <li>
+              <a
+                href="https://riverthink.substack.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors duration-150"
+              >
+                Substack
+              </a>
+            </li>
           </ul>
         </div>
 
