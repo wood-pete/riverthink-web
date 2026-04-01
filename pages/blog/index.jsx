@@ -7,6 +7,43 @@ import { getAllPosts } from '../../lib/posts';
 
 const PAGE_SIZE = 6;
 
+function Pagination({ page, totalPages, goTo }) {
+  if (totalPages <= 1) return null;
+  return (
+    <div className="flex items-center justify-between">
+      <button
+        onClick={() => goTo(page - 1)}
+        disabled={page === 1}
+        className="text-[11px] font-bold uppercase tracking-[0.25em] text-gray-400 hover:text-white disabled:opacity-25 disabled:cursor-not-allowed transition-colors duration-150"
+      >
+        ← Previous
+      </button>
+      <div className="flex items-center gap-2">
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+          <button
+            key={p}
+            onClick={() => goTo(p)}
+            className={`w-8 h-8 text-[11px] font-bold uppercase tracking-widest transition-colors duration-150 ${
+              p === page
+                ? 'bg-riverRed text-white'
+                : 'text-gray-400 hover:text-white border border-white/10 hover:border-white/30'
+            }`}
+          >
+            {p}
+          </button>
+        ))}
+      </div>
+      <button
+        onClick={() => goTo(page + 1)}
+        disabled={page === totalPages}
+        className="text-[11px] font-bold uppercase tracking-[0.25em] text-gray-400 hover:text-white disabled:opacity-25 disabled:cursor-not-allowed transition-colors duration-150"
+      >
+        Next →
+      </button>
+    </div>
+  );
+}
+
 export default function BlogIndex({ posts }) {
   const [page, setPage] = useState(1);
 
@@ -55,6 +92,11 @@ export default function BlogIndex({ posts }) {
       {/* ── Post Grid ── */}
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
+          {/* Top pagination */}
+          <div className="mb-10 pb-10 border-b border-white/10">
+            <Pagination page={page} totalPages={totalPages} goTo={goTo} />
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {pagePosts.map((post) => (
               <article
@@ -115,42 +157,10 @@ export default function BlogIndex({ posts }) {
             ))}
           </div>
 
-          {/* ── Pagination ── */}
-          {totalPages > 1 && (
-            <div className="mt-14 flex items-center justify-between border-t border-white/10 pt-10">
-              <button
-                onClick={() => goTo(page - 1)}
-                disabled={page === 1}
-                className="text-[11px] font-bold uppercase tracking-[0.25em] text-gray-400 hover:text-white disabled:opacity-25 disabled:cursor-not-allowed transition-colors duration-150"
-              >
-                ← Previous
-              </button>
-
-              <div className="flex items-center gap-2">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-                  <button
-                    key={p}
-                    onClick={() => goTo(p)}
-                    className={`w-8 h-8 text-[11px] font-bold uppercase tracking-widest transition-colors duration-150 ${
-                      p === page
-                        ? 'bg-riverRed text-white'
-                        : 'text-gray-400 hover:text-white border border-white/10 hover:border-white/30'
-                    }`}
-                  >
-                    {p}
-                  </button>
-                ))}
-              </div>
-
-              <button
-                onClick={() => goTo(page + 1)}
-                disabled={page === totalPages}
-                className="text-[11px] font-bold uppercase tracking-[0.25em] text-gray-400 hover:text-white disabled:opacity-25 disabled:cursor-not-allowed transition-colors duration-150"
-              >
-                Next →
-              </button>
-            </div>
-          )}
+          {/* Bottom pagination */}
+          <div className="mt-14 pt-10 border-t border-white/10">
+            <Pagination page={page} totalPages={totalPages} goTo={goTo} />
+          </div>
         </div>
       </section>
 
