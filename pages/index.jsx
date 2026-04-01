@@ -276,7 +276,6 @@ export default function Home({ latestPosts, heroImage }) {
                   <h3 className="font-display text-xl font-bold uppercase text-white leading-tight mb-3 group-hover:text-riverRed transition-colors duration-150">
                     <Link href={`/blog/${post.slug}`}>{post.meta.title}</Link>
                   </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed flex-1">{post.excerpt}</p>
                   <div className="mt-6 pt-4 border-t border-white/10">
                     <Link
                       href={`/blog/${post.slug}`}
