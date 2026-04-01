@@ -7,9 +7,9 @@ export default function Footer() {
         {/* Brand */}
         <div className="md:col-span-5">
           <img
-            src="/riverthink-logo.png"
+            src="/new_logo_riverthink.jpg"
             alt="Riverthink"
-            className="h-8 w-auto brightness-0 invert mb-5"
+            className="h-8 w-auto mb-5"
           />
           <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
             A space for ideas at the frontier of agentic intelligence — where autonomous systems,
