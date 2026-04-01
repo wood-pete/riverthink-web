@@ -1,10 +1,23 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import { getAllPosts } from '../../lib/posts';
 
+const PAGE_SIZE = 6;
+
 export default function BlogIndex({ posts }) {
+  const [page, setPage] = useState(1);
+
+  const totalPages = Math.ceil(posts.length / PAGE_SIZE);
+  const pagePosts = posts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
+  function goTo(p) {
+    setPage(p);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
       <Head>
@@ -43,7 +56,7 @@ export default function BlogIndex({ posts }) {
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {posts.map((post) => (
+            {pagePosts.map((post) => (
               <article
                 key={post.slug}
                 className="group bg-[#111111] overflow-hidden flex flex-col"
@@ -101,6 +114,43 @@ export default function BlogIndex({ posts }) {
               </article>
             ))}
           </div>
+
+          {/* ── Pagination ── */}
+          {totalPages > 1 && (
+            <div className="mt-14 flex items-center justify-between border-t border-white/10 pt-10">
+              <button
+                onClick={() => goTo(page - 1)}
+                disabled={page === 1}
+                className="text-[11px] font-bold uppercase tracking-[0.25em] text-gray-400 hover:text-white disabled:opacity-25 disabled:cursor-not-allowed transition-colors duration-150"
+              >
+                ← Previous
+              </button>
+
+              <div className="flex items-center gap-2">
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+                  <button
+                    key={p}
+                    onClick={() => goTo(p)}
+                    className={`w-8 h-8 text-[11px] font-bold uppercase tracking-widest transition-colors duration-150 ${
+                      p === page
+                        ? 'bg-riverRed text-white'
+                        : 'text-gray-400 hover:text-white border border-white/10 hover:border-white/30'
+                    }`}
+                  >
+                    {p}
+                  </button>
+                ))}
+              </div>
+
+              <button
+                onClick={() => goTo(page + 1)}
+                disabled={page === totalPages}
+                className="text-[11px] font-bold uppercase tracking-[0.25em] text-gray-400 hover:text-white disabled:opacity-25 disabled:cursor-not-allowed transition-colors duration-150"
+              >
+                Next →
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
