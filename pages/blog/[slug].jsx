@@ -154,9 +154,9 @@ export default function BlogPost({ post, otherPosts }) {
             About the Author
           </p>
           <div className="flex flex-col sm:flex-row items-start gap-6">
-            <div className="shrink-0 overflow-hidden w-20 h-20 rounded-full">
+            <div className="shrink-0 overflow-hidden w-20 h-20 rounded-full ring-2 ring-white">
               <img
-                src="/blog/pwood.PNG"
+                src="/peterwood.PNG"
                 alt="Peter Wood"
                 className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
               />

@@ -116,12 +116,12 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 items-start">
             {/* Photo */}
-            <div className="md:col-span-1">
-              <div className="overflow-hidden aspect-square">
+            <div className="md:col-span-1 flex justify-center md:justify-start">
+              <div className="overflow-hidden rounded-full w-64 h-64 ring-2 ring-white shrink-0">
                 <img
-                  src="/blog/pwood.PNG"
+                  src="/peterwood.PNG"
                   alt="Peter Wood"
-                  className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500 scale-100 hover:scale-105"
+                  className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
                 />
               </div>
             </div>
