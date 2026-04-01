@@ -30,9 +30,9 @@ export default function Nav({ active }) {
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
             <img
-              src="/riverthink-logo.png"
+              src="/new_logo_riverthink.jpg"
               alt="Riverthink"
-              className="h-7 w-auto brightness-0 invert"
+              className="h-7 w-auto"
             />
           </Link>
 
