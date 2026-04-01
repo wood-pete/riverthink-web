@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Nav from '../../components/Nav';
@@ -44,15 +44,26 @@ function Pagination({ page, totalPages, goTo }) {
   );
 }
 
-export default function BlogIndex({ posts }) {
+export default function BlogIndex({ posts, allTags }) {
   const [page, setPage] = useState(1);
+  const [tag, setTag] = useState('');
 
-  const totalPages = Math.ceil(posts.length / PAGE_SIZE);
-  const pagePosts = posts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const filteredPosts = useMemo(
+    () => tag ? posts.filter((p) => p.meta.tags && p.meta.tags.includes(tag)) : posts,
+    [posts, tag]
+  );
+
+  const totalPages = Math.ceil(filteredPosts.length / PAGE_SIZE);
+  const pagePosts = filteredPosts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   function goTo(p) {
     setPage(p);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function handleTagChange(e) {
+    setTag(e.target.value);
+    setPage(1);
   }
 
   return (
@@ -92,9 +103,23 @@ export default function BlogIndex({ posts }) {
       {/* ── Post Grid ── */}
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
-          {/* Top pagination */}
-          <div className="mb-10 pb-10 border-b border-white/10">
-            <Pagination page={page} totalPages={totalPages} goTo={goTo} />
+          {/* Top controls: pagination + filter */}
+          <div className="mb-10 pb-10 border-b border-white/10 flex flex-col sm:flex-row sm:items-center gap-6">
+            <div className="flex-1">
+              <Pagination page={page} totalPages={totalPages} goTo={goTo} />
+            </div>
+            <div className="shrink-0">
+              <select
+                value={tag}
+                onChange={handleTagChange}
+                className="bg-[#111111] border border-white/10 text-gray-400 text-[11px] font-bold uppercase tracking-[0.2em] px-4 py-2 hover:border-white/30 focus:outline-none focus:border-riverRed transition-colors duration-150 cursor-pointer"
+              >
+                <option value="">All Topics</option>
+                {allTags.map((t) => (
+                  <option key={t} value={t}>{t}</option>
+                ))}
+              </select>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -114,9 +139,9 @@ export default function BlogIndex({ posts }) {
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
                     {post.meta.tags && post.meta.tags.length > 0 && (
                       <div className="absolute top-4 left-4 flex flex-wrap gap-1">
-                        {post.meta.tags.map((tag) => (
-                          <span key={tag} className={`text-[10px] font-bold uppercase tracking-widest px-3 py-1 ${tag === 'Round Up' ? 'bg-yellow-500 text-black' : tag === 'Executive Brief' ? 'bg-white text-black' : 'bg-riverRed text-white'}`}>
-                            {tag}
+                        {post.meta.tags.map((t) => (
+                          <span key={t} className={`text-[10px] font-bold uppercase tracking-widest px-3 py-1 ${t === 'Round Up' ? 'bg-yellow-500 text-black' : t === 'Executive Brief' ? 'bg-white text-black' : 'bg-riverRed text-white'}`}>
+                            {t}
                           </span>
                         ))}
                       </div>
@@ -126,9 +151,9 @@ export default function BlogIndex({ posts }) {
                   <div className="aspect-video bg-gradient-to-br from-riverNavy/30 to-black flex items-end p-6">
                     {post.meta.tags && post.meta.tags.length > 0 && (
                       <div className="flex flex-wrap gap-1">
-                        {post.meta.tags.map((tag) => (
-                          <span key={tag} className={`text-[10px] font-bold uppercase tracking-widest px-3 py-1 ${tag === 'Round Up' ? 'bg-yellow-500 text-black' : tag === 'Executive Brief' ? 'bg-white text-black' : 'bg-riverRed text-white'}`}>
-                            {tag}
+                        {post.meta.tags.map((t) => (
+                          <span key={t} className={`text-[10px] font-bold uppercase tracking-widest px-3 py-1 ${t === 'Round Up' ? 'bg-yellow-500 text-black' : t === 'Executive Brief' ? 'bg-white text-black' : 'bg-riverRed text-white'}`}>
+                            {t}
                           </span>
                         ))}
                       </div>
@@ -184,9 +209,15 @@ export async function getStaticProps() {
         : null,
     },
   }));
+
+  const allTags = Array.from(
+    new Set(postsWithFormattedDates.flatMap((p) => p.meta.tags || []))
+  ).sort();
+
   return {
     props: {
       posts: postsWithFormattedDates,
+      allTags,
     },
   };
 }
