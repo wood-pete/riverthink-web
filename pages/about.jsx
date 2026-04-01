@@ -191,7 +191,7 @@ export default function About() {
             },
             {
               title: 'Open by Default',
-              body: 'The source for this site is available on GitHub. Ideas should be in the open — not behind paywalls. Explore, fork, and build on it.',
+              body: 'All examples and demos published on Riverthink are open source and available on GitHub. Ideas should be in the open — explore, fork, and build on them.',
             },
           ].map((item) => (
             <div key={item.title} className="bg-[#111111] p-8 group">
