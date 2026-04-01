@@ -44,7 +44,7 @@ function Pagination({ page, totalPages, goTo }) {
   );
 }
 
-export default function BlogIndex({ posts, allTags }) {
+export default function BlogIndex({ posts, allTags = [] }) {
   const [page, setPage] = useState(1);
   const [tag, setTag] = useState('');
 
@@ -211,7 +211,11 @@ export async function getStaticProps() {
   }));
 
   const allTags = Array.from(
-    new Set(postsWithFormattedDates.flatMap((p) => p.meta.tags || []))
+    new Set(
+      postsWithFormattedDates.flatMap((p) =>
+        Array.isArray(p.meta.tags) ? p.meta.tags : []
+      )
+    )
   ).sort();
 
   return {
