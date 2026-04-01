@@ -160,20 +160,20 @@ export default function About() {
                   Read the Blog →
                 </Link>
                 <a
-                  href="https://github.com/riverthink?tab=repositories"
+                  href="https://riverthink.substack.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors duration-150"
                 >
-                  GitHub →
+                  Substack →
                 </a>
                 <a
-                  href="https://labs.riverthink.com"
+                  href="https://discord.gg/dvFqe2Avv7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors duration-150"
                 >
-                  Labs →
+                  Discord →
                 </a>
               </div>
             </div>
