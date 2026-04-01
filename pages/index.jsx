@@ -314,7 +314,7 @@ export default function Home({ latestPosts, heroImage }) {
           </p>
           <div className="flex items-center justify-center gap-4">
             <img
-              src="/blog/pwood.PNG"
+              src="/peterwood.PNG"
               alt="Peter Wood"
               className="w-12 h-12 rounded-full object-cover grayscale"
             />
