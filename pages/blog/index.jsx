@@ -94,8 +94,8 @@ export default function BlogIndex({ posts, allTags = [] }) {
             from the Edge
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            Deep analysis of agentic intelligence, orchestration patterns, human impact, security frameworks, and
-            the infrastructure of autonomous ecosystems.
+            Deep analysis of agentic intelligence, leadership, orchestration patterns, human impact, security
+            frameworks, and the infrastructure of autonomous ecosystems.
           </p>
         </div>
       </section>

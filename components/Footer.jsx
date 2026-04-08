@@ -94,8 +94,8 @@ export default function Footer() {
           <ul className="space-y-3 text-sm text-gray-400">
             <li>Agent Orchestration</li>
             <li>Security &amp; Governance</li>
-            <li>MCP &amp; A2A Protocols</li>
-            <li>Agent Data Architecture</li>
+            <li>Leadership</li>
+            <li>Data Architecture</li>
             <li>Healthcare AI</li>
             <li>Digital Workforce</li>
           </ul>

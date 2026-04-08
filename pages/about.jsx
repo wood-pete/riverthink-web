@@ -9,8 +9,8 @@ const TOPICS = [
     'Multi-agent systems, task decomposition, control flow, and the BMW levels of agentic maturity — from prompt chaining to policy-as-code.',
   ],
   [
-    'MCP & A2A Protocols',
-    'The emerging standards for tool access and agent-to-agent communication: Model Context Protocol and Agent-to-Agent in production.',
+    'Leadership',
+    'Technology and business leadership for AI-era organisations — aligning strategy, operating models, and execution so data platforms and agentic systems deliver measurable outcomes.',
   ],
   [
     'Security & Governance',
@@ -37,7 +37,7 @@ export default function About() {
         <title>About — Riverthink</title>
         <meta
           name="description"
-          content="Riverthink covers data platforms and agentic intelligence — practical analysis of modern data architecture, orchestration patterns, governance, and the infrastructure of autonomous work."
+          content="Riverthink covers data platforms, agentic AI, and leadership — practical analysis of modern data architecture, orchestration patterns, governance, and the leadership needed for autonomous work."
         />
       </Head>
 
@@ -48,7 +48,7 @@ export default function About() {
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-riverRed" />
         <div className="max-w-7xl mx-auto">
           <p className="text-riverRed text-[11px] font-bold uppercase tracking-[0.35em] mb-5">
-            Data Platforms &nbsp;·&nbsp; Agentic Intelligence
+            Data Platforms &nbsp;·&nbsp; Agentic AI &nbsp;·&nbsp; Leadership
           </p>
           <h1 className="font-display text-6xl md:text-8xl font-black uppercase text-white leading-[0.9]">
             Thinking
@@ -69,9 +69,11 @@ export default function About() {
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
                 Riverthink is a space for ideas to flow, clarify, and turn into momentum. It
-                covers two converging disciplines: data platforms and agentic intelligence. The first is
-                about how organisations store, move, and make sense of data at scale. The second
-                is about what happens when AI systems start acting on it autonomously.
+                covers three converging disciplines: data platforms, agentic AI, and leadership.
+                Data platforms are about how organisations store, move, and make sense of data at
+                scale. Agentic AI is about what happens when intelligent systems start acting on that
+                data autonomously. Leadership is about how teams, decisions, and accountability
+                evolve so this transformation delivers outcomes safely.
               </p>
               <p>
                 The name reflects a philosophy. Ideas should move like water — finding the path,

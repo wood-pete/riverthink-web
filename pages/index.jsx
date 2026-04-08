@@ -58,7 +58,7 @@ const HERO_TITLES = [
   ['Agentic', 'Intelligence.', 'Value Created.'],
 ];
 
-export default function Home({ latestPosts, heroImage }) {
+export default function Home({ latestPosts, heroImage, totalPosts }) {
   const [heroTitleIndex, setHeroTitleIndex] = useState(0);
   const [isHeroTitleFading, setIsHeroTitleFading] = useState(false);
   const [heroLineOne, heroLineTwo, heroLineThree] = HERO_TITLES[heroTitleIndex];
@@ -107,10 +107,10 @@ export default function Home({ latestPosts, heroImage }) {
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
       <Head>
-        <title>Riverthink — Data Platforms & Agentic Intelligence, In Practice</title>
+        <title>Riverthink — Data Platforms, Agentic AI & Leadership</title>
         <meta
           name="description"
-          content="Riverthink covers data platforms and agentic intelligence — from modern data architecture and orchestration patterns to governance, security, and the infrastructure of autonomous work."
+          content="Riverthink covers data platforms, agentic AI, and leadership — from modern data architecture and orchestration patterns to governance, security, and leading organisations through autonomous transformation."
         />
       </Head>
 
@@ -136,9 +136,9 @@ export default function Home({ latestPosts, heroImage }) {
         {/* Red left bar */}
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-riverRed z-10" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-28 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pt-16 md:pt-20 pb-28 w-full">
           <p className="text-riverRed text-[11px] font-bold uppercase tracking-[0.4em] mb-8">
-            Data Platforms &nbsp;·&nbsp; Agentic Intelligence
+            Data Platforms &nbsp;·&nbsp; Agentic AI &nbsp;·&nbsp; Leadership
           </p>
 
           <h1
@@ -150,9 +150,9 @@ export default function Home({ latestPosts, heroImage }) {
           </h1>
 
           <p className="text-gray-300 text-lg md:text-xl max-w-xl leading-relaxed mb-12">
-            Riverthink covers data platforms and agentic intelligence — from modern data architecture
-            and orchestration to governance, security, and the infrastructure that makes
-            autonomous work real.
+            Riverthink covers data platforms, agentic AI, and leadership — from modern data
+            architecture and orchestration to governance, security, and the leadership practices
+            that make autonomous work real.
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
@@ -173,8 +173,8 @@ export default function Home({ latestPosts, heroImage }) {
           {/* Stats */}
           <div className="mt-20 flex flex-wrap items-center gap-8 md:gap-16">
             {[
-              { value: '10+', label: 'Deep Dive Articles' },
-              { value: '6', label: 'Focus Areas' },
+              { value: String(totalPosts), label: 'Deep Dive Articles' },
+              { value: String(FOCUS_AREAS.length), label: 'Focus Areas' },
               { value: '2026', label: 'Ahead of the Curve' },
             ].map((stat, i) => (
               <div key={i} className="flex items-center gap-8 md:gap-16">
@@ -354,6 +354,7 @@ export async function getStaticProps() {
     props: {
       latestPosts,
       heroImage,
+      totalPosts: posts.length,
     },
   };
 }
