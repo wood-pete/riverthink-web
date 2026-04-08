@@ -1,7 +1,7 @@
 ---
 title: Designing Memory Architectures for Agentic AI Systems at Scale
 date: "2026-04-08"
-hero: "/blog/hero-default-team.png"
+hero: "/blog/memory-types.png"
 tags: ["Agentic AI", "AI Architecture", "Enterprise AI"]
 ---
 # Agentic AI Memory Systems That Power Intelligent Decision Loops
