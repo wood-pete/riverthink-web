@@ -1,5 +1,5 @@
 ---
-title: How Hospitals Can Run Randomised Trials for AI Agents
+title: Before You Trust AI in Hospitals, Run This One Type of Trial
 date: "2026-04-08"
 hero: "/blog/hero-default-team.png"
 tags: ["Hospital AI", "Randomised Trials", "Clinical Operations"]
