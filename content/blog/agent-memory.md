@@ -122,32 +122,8 @@ Privacy becomes particularly important when memory persists across sessions. Per
 
 Equally, the reuse of stale or contextually incorrect data introduces subtle risks. Decisions may appear consistent while quietly drifting away from reality. This is where governance, lifecycle management, and observability play a crucial role in maintaining trust in the system.
 
-## How These Memory Types Interact
-
-Memory types do not operate in isolation. They form a feedback system that continuously refines behaviour.
-
-<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
-  <rect x="50" y="120" width="120" height="40" fill="#444"/>
-  <text x="60" y="145" fill="white" font-size="12">Short Term</text>
-  
-  <rect x="220" y="80" width="180" height="40" fill="#666"/>
-  <text x="230" y="105" fill="white" font-size="12">Episodic / Long Term</text>
-  
-  <rect x="420" y="80" width="120" height="40" fill="#888"/>
-  <text x="430" y="105" fill="white" font-size="12">Semantic</text>
-
-  <line x1="170" y1="140" x2="220" y2="100" stroke="black"/>
-  <line x1="400" y1="100" x2="420" y2="100" stroke="black"/>
-</svg>
-
-Each interaction feeds episodic memory, which persists as long term knowledge. Over time, patterns are abstracted into semantic understanding. Short term memory orchestrates the loop in real time.
-
----
-
-### References
-
-[^1]: Tulving, E. (1972). Episodic and Semantic Memory  
-[^2]: Russell & Norvig, Artificial Intelligence A Modern Approach  
-[^3]: Lewis et al. (2020). Retrieval Augmented Generation for Knowledge Intensive NLP  
-[^4]: OpenAI & LangChain documentation on agent memory architectures  
-[^5]: Gartner (2024). Emerging Architectures for Autonomous AI Systems  
+## References
+Tulving, E. (1972). Episodic and Semantic Memory  
+Lewis, P. et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks  
+OpenAI (2024–2025). Function Calling, Memory, and Tool Use in LLMs  
+LangChain / LangGraph (2024–2025). Agent Memory and State Management Documentation  
