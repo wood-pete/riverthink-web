@@ -278,6 +278,18 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+  .blog-content table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .blog-content th,
+  .blog-content td {
+    white-space: nowrap;
+  }
+
   .blog-content .pullquote {
     width: 100%;
     min-width: 0;
