@@ -45,6 +45,7 @@ export default function Nav({ active }) {
           <nav className="hidden md:flex items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em]">
             <Link href="/" className={linkClass('home')}>Home</Link>
             <Link href="/about" className={linkClass('about')}>About</Link>
+            <Link href="/academy" className={linkClass('academy')}>Academy</Link>
             <Link href="/blog" className={linkClass('blog')}>Blog</Link>
             <a
               href="https://labs.riverthink.com"
@@ -82,10 +83,10 @@ export default function Nav({ active }) {
 
           {/* CTA */}
           <Link
-            href="/blog"
+            href="/academy"
             className="hidden md:inline-block bg-riverRed text-white text-[11px] font-bold uppercase tracking-[0.2em] px-5 py-2.5 hover:bg-red-700 transition-colors duration-150"
           >
-            Read Blog →
+            Join Academy →
           </Link>
 
           {/* Mobile menu button */}
@@ -133,6 +134,9 @@ export default function Nav({ active }) {
               <Link href="/about" className={linkClass('about')} onClick={closeMobileMenu}>
                 About
               </Link>
+              <Link href="/academy" className={linkClass('academy')} onClick={closeMobileMenu}>
+                Academy
+              </Link>
               <Link href="/blog" className={linkClass('blog')} onClick={closeMobileMenu}>
                 Blog
               </Link>
@@ -173,11 +177,11 @@ export default function Nav({ active }) {
                 Substack
               </a>
               <Link
-                href="/blog"
+                href="/academy"
                 className="mt-2 inline-flex items-center justify-center bg-riverRed text-white text-[11px] font-bold uppercase tracking-[0.2em] px-4 py-3 hover:bg-red-700 transition-colors duration-150"
                 onClick={closeMobileMenu}
               >
-                Read Blog →
+                Join Academy →
               </Link>
             </div>
           </nav>

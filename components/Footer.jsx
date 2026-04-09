@@ -44,6 +44,11 @@ export default function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/academy" className="hover:text-white transition-colors duration-150">
+                Academy
+              </Link>
+            </li>
+            <li>
               <a
                 href="https://labs.riverthink.com"
                 target="_blank"
