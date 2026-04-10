@@ -3,6 +3,7 @@ title: "AWS Agentic Services Map: A Practical Guide to Agents, AgentCore, and th
 date: "2026-02-26"
 hero: "/blog/aws-agentic-services-map-hero.jpg"
 tags: ["AI Strategy", "Agentic AI"]
+description: "A practical guide to AWS agentic services in 2026 — mapping Bedrock agents, AgentCore, and the surrounding infrastructure stack for teams building production AI on AWS."
 ---
 
 ## If you are trying to understand AWS agentic services in 2026, the key is to separate **agent building**, **agent runtime infrastructure**, and **agent governance/data plumbing**.

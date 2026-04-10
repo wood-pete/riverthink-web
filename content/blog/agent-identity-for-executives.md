@@ -3,6 +3,7 @@ title: Agent Identity in Healthcare AI - The Control Layer Executives Demand
 date: "2026-03-22"
 hero: "/blog/1DBF4F05-738D-4336-8342-2BF729EA66A5.png"
 tags: ["Agentic AI", "Healthcare AI", "Identity & Access", "Executive Brief"]
+description: "Agent identity is the missing control layer in healthcare AI. How IAM, OAuth, and policy frameworks must evolve when autonomous agents act on patient data across clinical systems."
 ---
 
 # Agent Identity in Healthcare AI: The Control Layer Executives Need

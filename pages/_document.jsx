@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en" className="h-full">
       <Head>
+        <link rel="icon" type="image/svg+xml" href="/riverthink-logo.svg" />
+        <link rel="apple-touch-icon" href="/riverthink-logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

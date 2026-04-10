@@ -3,6 +3,7 @@ title: "Google ADK vs LangChain vs LangGraph: The New Stack for Agent Engineerin
 date: "2026-03-22"
 hero: "/blog/EBBFD461-BFFB-420C-B7FB-13F3F248768E.png"
 tags: ["Agentic AI", "AI Architecture", "LLM Frameworks", "Enterprise AI"]
+description: "A direct comparison of Google ADK, LangChain, and LangGraph for enterprise agent engineering — capabilities, tradeoffs, and how to choose the right framework for production AI."
 ---
 
 # Google ADK vs LangChain vs LangGraph: The New Stack for Agent Engineering

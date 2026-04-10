@@ -3,6 +3,7 @@ title: Agent Native Data and Why Enterprises Are Relearning What Data Is For
 date: "2026-01-31"
 hero: "/blog/agent-native-data-hero.jpg"
 tags: ["Agentic AI", "AI Strategy", "Executive Brief"]
+description: "Enterprise data built for dashboards fails AI agents. A look at agent-native data architecture — structured for reasoning, retrieval, and autonomous decision-making rather than human consumption."
 ---
 
 ## Most enterprise conversations about data still orbit analytics, dashboards, and reporting. Even recent excitement around AI has largely reframed data as something to retrieve and summarise rather than something that actively shapes behaviour. Agent native data challenges that framing.

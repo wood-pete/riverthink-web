@@ -3,6 +3,7 @@ title: API Gateways Are Becoming Agent Gateways - MCP, A2A, and the New Control 
 date: "2026-01-24"
 hero: "/blog/agent-gateways-hero.jpg"
 tags: ["Agentic AI", "Security"]
+description: "How AI agents are changing what enterprise API gateways must do — covering MCP, A2A, and the new governance requirements for agent-to-tool and agent-to-agent interactions at scale."
 ---
 ## Enterprise integration is entering a new phase. For more than a decade, API gateways have been the practical centre of gravity for exposing services, enforcing security policies, and observing traffic across microservices and partner APIs. That model still matters, but the “client” on the other side of the gateway is changing. Increasingly, the caller is not a mobile app or a web front end. It is an AI agent planning a multi step task, invoking tools, streaming results, and delegating subtasks to other agents.
 

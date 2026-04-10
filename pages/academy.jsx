@@ -1,7 +1,7 @@
-import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 
 const COURSE_URL = 'https://www.udemy.com/course/data-agenticai-academy/?referralCode=0E8E22FA52ABB8F79F2D';
 
@@ -117,13 +117,28 @@ export default function AcademyPage() {
 
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
-      <Head>
-        <title>Academy — Riverthink</title>
-        <meta
-          name="description"
-          content="Explore the Data + Agentic AI Academy: a practical curriculum covering industry insight, critical thinking, data literacy, ETL, engineering essentials, methodologies, and agentic AI integration."
-        />
-      </Head>
+      <Seo
+        title="Data + Agentic AI Academy"
+        description="Explore the Data + Agentic AI Academy, a practical curriculum covering industry insight, critical thinking, data literacy, ETL, engineering essentials, methodologies, and agentic AI integration."
+        path="/academy/"
+        image="/og_academy.jpg"
+        imageAlt="Data + Agentic AI Academy"
+        imageWidth={1200}
+        imageHeight={630}
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'Course',
+          name: 'Data + Agentic AI Academy',
+          description:
+            'A practical curriculum covering industry insight, critical thinking, data literacy, ETL, engineering essentials, methodologies, and agentic AI integration.',
+          provider: {
+            '@type': 'Organization',
+            name: 'Riverthink',
+            url: 'https://riverthink.com/',
+          },
+          url: 'https://riverthink.com/academy/',
+        }}
+      />
 
       <Nav active="academy" />
 
@@ -170,6 +185,17 @@ export default function AcademyPage() {
                 className="border border-white/20 text-white font-bold uppercase tracking-[0.2em] text-[11px] px-8 py-4 hover:border-white hover:bg-white/5 transition-colors duration-150"
               >
                 See Course Details →
+              </a>
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Friverthink.com%2Facademy%2F"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-white/20 text-white font-bold uppercase tracking-[0.2em] text-[11px] px-8 py-4 hover:border-white hover:bg-white/5 transition-colors duration-150"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden="true">
+                  <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm-9.5 14.5H7V10h2.5v7.5ZM8.25 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm9.25 8.5H15V14c0-.84-.66-1.5-1.5-1.5S12 13.16 12 14v3.5H9.5V10H12v1.03c.5-.74 1.36-1.03 2.21-1.03 1.81 0 3.29 1.48 3.29 3.29v4.21Z" />
+                </svg>
+                Share on LinkedIn ↗
               </a>
             </div>
 

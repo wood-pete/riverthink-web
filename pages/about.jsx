@@ -1,7 +1,7 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 
 const TOPICS = [
   [
@@ -33,13 +33,32 @@ const TOPICS = [
 export default function About() {
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
-      <Head>
-        <title>About — Riverthink</title>
-        <meta
-          name="description"
-          content="Riverthink covers data platforms, agentic AI, and leadership — practical analysis of modern data architecture, orchestration patterns, governance, and the leadership needed for autonomous work."
-        />
-      </Head>
+      <Seo
+        title="Peter Wood — Healthcare Technology Leader"
+        description="Riverthink covers data platforms, agentic AI, and leadership with practical analysis of modern data architecture, orchestration patterns, governance, and the leadership needed for autonomous work."
+        path="/about/"
+        imageWidth={1200}
+        imageHeight={630}
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          name: 'Peter Wood',
+          url: 'https://riverthink.com/about/',
+          image: 'https://riverthink.com/peterwood.PNG',
+          jobTitle: 'Healthcare technology leader',
+          description: 'Healthcare technology leader specialising in data platforms, operational intelligence, and agent-driven automation. Peter has led large-scale digital transformation programmes with major hospital groups and global technology partners.',
+          knowsAbout: ['Agentic AI', 'Data Platforms', 'Healthcare Technology', 'Agent Orchestration', 'MCP', 'AI Governance'],
+          worksFor: {
+            '@type': 'Organization',
+            name: 'Riverthink',
+            url: 'https://riverthink.com/',
+          },
+          sameAs: [
+            'https://riverthink.substack.com',
+            'https://github.com/riverthink',
+          ],
+        }}
+      />
 
       <Nav active="about" />
 

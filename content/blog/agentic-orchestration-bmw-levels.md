@@ -3,6 +3,7 @@ title: "Agentic Orchestration 101: What It Is and How It Compares to BMW's Five 
 date: "2026-02-26"
 hero: "/blog/agentic-orchestration-bmw-levels-hero.jpg"
 tags: ["Agentic AI", "Human in the Loop"]
+description: "What BMW's five levels of driverless automation reveal about agentic AI maturity — a practical framework for assessing orchestration capability from prompt chaining to full autonomy."
 ---
 
 ## Agentic orchestration is the discipline of coordinating multiple AI agents, tools, and data systems so they can complete complex tasks reliably. Instead of one model answering one question, orchestration manages a full workflow: planning, delegation, execution, validation, escalation, and audit.

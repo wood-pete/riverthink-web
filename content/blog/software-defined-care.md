@@ -3,6 +3,7 @@ title: Is 'Software Defined Care' the Next Healthcare Operating Model
 date: "2026-01-18"
 hero: "/blog/software-defined-care-hero.jpg"
 tags: ["Healthcare","AI Strategy", "Executive Brief"]
+description: "Is software-defined care the next healthcare operating model? How software is becoming the primary coordination layer for clinical decisions, patient flow, and operational learning at scale."
 ---
 
 ## Are we at the beginning of a "software defined care" era, or is this simply another wave of digital health optimism? The question matters because something fundamental is shifting in how care is planned, delivered, and improved. This shift is not about replacing clinicians or reducing healthcare to code. It is about software becoming the primary coordination layer for care decisions, operational flow, and learning at scale.

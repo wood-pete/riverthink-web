@@ -3,6 +3,7 @@ title: You Don’t Need a Vector Store for Agent Memory in Most Agent Architectu
 date: "2026-01-25"
 hero: "/blog/storing-memory-hero.jpg"
 tags: ["Agentic AI", "AI Strategy"]
+description: "Vector stores are oversold for agent memory. When key-value, relational, and graph databases serve agentic AI better than embeddings — and how to design memory that fits the task."
 ---
 Vector databases have become almost synonymous with LLM memory. That association is understandable. Semantic search is powerful, and embeddings underpin modern retrieval augmented generation. However, once we move beyond chatbots and into agentic systems that operate real workflows, the assumption that all memory must live in a vector store starts to unravel.
 

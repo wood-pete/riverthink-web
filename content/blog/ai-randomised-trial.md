@@ -3,6 +3,7 @@ title: Before You Trust AI in Hospitals, Run This One Type of Trial
 date: "2026-04-08"
 hero: "/blog/hero-default-team.png"
 tags: ["Hospital AI", "Randomised Trials", "Clinical Operations"]
+description: "How hospitals can run pragmatic cluster randomised trials to test whether AI agents genuinely improve clinical outcomes, using stepped-wedge designs built for operational settings."
 ---
 
 # How Hospitals Can Run Randomised Trials for AI Agents

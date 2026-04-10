@@ -3,6 +3,7 @@ title: "Agentic AI: Orchestration, Oversight, and the Remaking of Work"
 date: "2026-02-27"
 hero: "/blog/agentic-ai-digital-workforce-hero-new.jpg"
 tags: ["Agentic AI", "Executive Brief", "AI Strategy"]
+description: "Agentic AI is not a smarter chatbot. It is a coordination system that reshapes knowledge work. A clear look at orchestration, oversight, and what autonomous AI systems mean in practice."
 ---
 
 There is a definition of agentic AI circulating inside most organisations right now, and it is the wrong one. The idea that agentic AI means a human asks a question, a large language model answers, and something useful happens — that describes a conversational AI interface. It does not describe an agentic system.

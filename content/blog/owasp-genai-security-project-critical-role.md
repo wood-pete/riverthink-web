@@ -3,6 +3,7 @@ title: "The OWASP GenAI Security Project: The Community That Is Setting the Stan
 date: "2026-02-26"
 hero: "/blog/owasp-genai-security-project-critical-role-hero.jpg"
 tags: ["Security", "Safety"]
+description: "The OWASP GenAI Security Project is setting the community standard for secure AI. Why its frameworks matter for every enterprise deploying LLMs and agents in regulated environments."
 ---
 
 ## Artificial intelligence is moving from experimentation into critical infrastructure. Boards are asking whether their organisations are safe. Regulators are starting to catch up. And yet, for most enterprises, the question of how to systematically evaluate and govern AI security risk still lacks a clear, authoritative answer.

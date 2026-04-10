@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import Seo from '../../components/Seo';
 import { getPostBySlug, getPostSlugs, getAllPosts } from '../../lib/posts';
 
 function LinkedInIcon() {
@@ -53,7 +53,7 @@ function RelatedPosts({ posts }) {
                 {p.meta.hero ? (
                   <img
                     src={p.meta.hero}
-                    alt=""
+                    alt={p.meta.heroAlt || p.meta.title}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                 ) : (
@@ -74,16 +74,56 @@ function RelatedPosts({ posts }) {
 export default function BlogPost({ post, otherPosts }) {
   const postUrl = `https://riverthink.com/blog/${post.slug}`;
   const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(postUrl)}`;
+  const description = post.meta.description || post.excerpt || 'A perspective on agentic AI from Riverthink.';
+  const structuredData = [
+    {
+      '@type': 'BlogPosting',
+      headline: post.meta.title,
+      description,
+      image: post.meta.hero ? [`https://riverthink.com${post.meta.hero}`] : undefined,
+      datePublished: post.meta.date || undefined,
+      dateModified: post.meta.updated || post.meta.date || undefined,
+      author: {
+        '@type': 'Person',
+        name: 'Peter Wood',
+        url: 'https://riverthink.com/about/',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Riverthink',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://riverthink.com/riverthink-logo.png',
+        },
+      },
+      mainEntityOfPage: postUrl,
+      keywords: post.meta.tags,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://riverthink.com/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://riverthink.com/blog/' },
+        { '@type': 'ListItem', position: 3, name: post.meta.title, item: postUrl },
+      ],
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
-      <Head>
-        <title>{post.meta.title} — Riverthink</title>
-        <meta
-          name="description"
-          content={post.excerpt || 'A perspective on agentic AI from Riverthink.'}
-        />
-      </Head>
+      <Seo
+        title={post.meta.title}
+        description={description}
+        path={`/blog/${post.slug}/`}
+        imageAlt={post.meta.heroAlt || post.meta.title}
+        imageWidth={1200}
+        imageHeight={630}
+        type="article"
+        publishedTime={post.meta.date}
+        modifiedTime={post.meta.updated || post.meta.date}
+        tags={post.meta.tags || []}
+        structuredData={structuredData}
+      />
 
       <Nav active="blog" />
 
@@ -136,7 +176,7 @@ export default function BlogPost({ post, otherPosts }) {
         <div className="relative w-full overflow-hidden bg-black" style={{ maxHeight: '55vh' }}>
           <img
             src={post.meta.hero}
-            alt=""
+            alt={post.meta.heroAlt || post.meta.title}
             className="w-full object-cover grayscale"
             style={{ maxHeight: '55vh' }}
           />
@@ -221,7 +261,14 @@ export async function getStaticProps({ params }) {
   const allPosts = await getAllPosts();
   const otherPosts = allPosts
     .filter((p) => p.slug !== params.slug)
-    .map((p) => ({ slug: p.slug, meta: { title: p.meta.title, hero: p.meta.hero } }));
+    .map((p) => ({
+      slug: p.slug,
+      meta: {
+        title: p.meta.title,
+        hero: p.meta.hero,
+        heroAlt: p.meta.heroAlt,
+      },
+    }));
 
   const formattedDate = post.meta.date
     ? new Date(post.meta.date).toLocaleDateString('en-GB', {

@@ -3,6 +3,7 @@ title: "OWASP Top 10 for LLMs (2025): Executive Summary and Why It Is Essential 
 date: "2026-02-26"
 hero: "/blog/owasp-top-10-llm-agent-essential-reading-hero.jpg"
 tags: ["Security", "Agentic AI"]
+description: "OWASP Top 10 for LLMs 2025 — an executive summary of the critical security risks in LLM and agent deployments, and why every AI engineering team must treat it as required reading."
 ---
 
 ## If you are building AI agents in production, the OWASP Top 10 for LLMs and GenAI is not optional reading. It is one of the clearest, community-driven security baselines for how modern LLM and agentic systems fail, and how teams should reduce those failures in real deployments.[^owasp-project][^owasp-llm-top10]

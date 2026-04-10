@@ -1,8 +1,8 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Seo from '../components/Seo';
 import { getAllPosts } from '../lib/posts';
 
 const FOCUS_AREAS = [
@@ -106,13 +106,21 @@ export default function Home({ latestPosts, heroImage, totalPosts }) {
 
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
-      <Head>
-        <title>Riverthink — Data Platforms, Agentic AI & Leadership</title>
-        <meta
-          name="description"
-          content="Riverthink covers data platforms, agentic AI, and leadership — from modern data architecture and orchestration patterns to governance, security, and leading organisations through autonomous transformation."
-        />
-      </Head>
+      <Seo
+        title="Data Platforms, Agentic AI and Leadership"
+        description="Riverthink covers data platforms, agentic AI, and leadership, from modern data architecture and orchestration patterns to governance, security, and leading organisations through autonomous transformation."
+        path="/"
+        imageWidth={1200}
+        imageHeight={630}
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Riverthink',
+          url: 'https://riverthink.com/',
+          description:
+            'Riverthink covers data platforms, agentic AI, and leadership, from modern data architecture and orchestration patterns to governance, security, and leading organisations through autonomous transformation.',
+        }}
+      />
 
       <Nav active="home" />
 
@@ -121,11 +129,11 @@ export default function Home({ latestPosts, heroImage, totalPosts }) {
         {/* Background image */}
         {heroImage && (
           <div className="absolute inset-0">
-            <img
-              src={heroImage}
-              alt=""
-              className="absolute inset-0 w-full h-full object-cover grayscale opacity-20"
-            />
+              <img
+                src={heroImage}
+                alt="Featured Riverthink article visual"
+                className="absolute inset-0 w-full h-full object-cover grayscale opacity-20"
+              />
             <div className="absolute inset-0 bg-gradient-to-r from-black via-black/85 to-black/40" />
           </div>
         )}
@@ -253,7 +261,7 @@ export default function Home({ latestPosts, heroImage, totalPosts }) {
                   <div className="relative overflow-hidden aspect-video">
                     <img
                       src={post.meta.hero}
-                      alt=""
+                      alt={post.meta.heroAlt || post.meta.title}
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-500"
                     />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />

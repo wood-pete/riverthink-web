@@ -3,6 +3,7 @@ title: "Spec-Driven Development: The Power Inversion Your Engineering Team Won't
 date: "2026-04-01"
 hero: "/blog/sdd.png"
 tags: ["Executive Brief", "Engineering Strategy", "Agentic AI", "Spec-Driven Development"]
+description: "Spec-driven development is inverting who holds power in software delivery. An executive guide to how structured specifications shift control from engineering to product and business leadership."
 ---
 
 # Spec-Driven Development: The Power Inversion Your Engineering Team Won't Tell You About

@@ -1,8 +1,8 @@
 import { useState, useMemo } from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import Seo from '../../components/Seo';
 import { getAllPosts } from '../../lib/posts';
 
 const PAGE_SIZE = 6;
@@ -68,13 +68,21 @@ export default function BlogIndex({ posts, allTags = [] }) {
 
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white">
-      <Head>
-        <title>Blog — Riverthink</title>
-        <meta
-          name="description"
-          content="Deep analysis of agentic AI systems, protocols, security patterns, and the architecture of autonomous work."
-        />
-      </Head>
+      <Seo
+        title="Agentic AI, Data Platforms & Leadership"
+        description="Deep analysis of agentic AI systems, protocols, security patterns, healthcare AI, and the architecture of autonomous work."
+        path="/blog/"
+        imageWidth={1200}
+        imageHeight={630}
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'Blog',
+          name: 'Riverthink Blog',
+          url: 'https://riverthink.com/blog/',
+          description:
+            'Deep analysis of agentic AI systems, protocols, security patterns, healthcare AI, and the architecture of autonomous work.',
+        }}
+      />
 
       <Nav active="blog" />
 
@@ -133,7 +141,7 @@ export default function BlogIndex({ posts, allTags = [] }) {
                   <div className="relative overflow-hidden aspect-video">
                     <img
                       src={post.meta.hero}
-                      alt=""
+                      alt={post.meta.heroAlt || post.meta.title}
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 scale-100 group-hover:scale-105 transition-all duration-500"
                     />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />

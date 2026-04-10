@@ -3,6 +3,7 @@ title: Designing Memory Architectures for Agentic AI Systems at Scale
 date: "2026-04-08"
 hero: "/blog/memory-types.png"
 tags: ["Agentic AI", "AI Architecture", "Enterprise AI"]
+description: "A practical guide to memory architectures for agentic AI — covering episodic, semantic, procedural, and working memory patterns for production systems at scale."
 ---
 # Agentic AI Memory Systems That Power Intelligent Decision Loops
 

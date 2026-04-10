@@ -3,6 +3,7 @@ title: What Neon Taught Me About AI and Real Skills
 date: "2026-03-21"
 hero: "/blog/8A0BAD40-71E0-4D0B-A7F8-47340A7B0238.png"
 tags: ["Agentic AI", "AI Strategy", "Executive Brief"]
+description: "A flickering neon light exposes the gap between AI-generated knowledge and genuine skill — and what it means when you can follow instructions perfectly but don't understand what you're doing."
 ---
 
 # What a Flickering Neon Light Taught Me About AI and Real Skills
