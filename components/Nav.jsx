@@ -82,12 +82,14 @@ export default function Nav({ active }) {
           </nav>
 
           {/* CTA */}
-          <Link
-            href="/academy"
+          <a
+            href="https://www.udemy.com/course/data-agenticai-academy/?referralCode=0E8E22FA52ABB8F79F2D"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-block bg-riverRed text-white text-[11px] font-bold uppercase tracking-[0.2em] px-5 py-2.5 hover:bg-red-700 transition-colors duration-150"
           >
             Join Academy →
-          </Link>
+          </a>
 
           {/* Mobile menu button */}
           <button
@@ -176,13 +178,15 @@ export default function Nav({ active }) {
               >
                 Substack
               </a>
-              <Link
-                href="/academy"
+              <a
+                href="https://www.udemy.com/course/data-agenticai-academy/?referralCode=0E8E22FA52ABB8F79F2D"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-2 inline-flex items-center justify-center bg-riverRed text-white text-[11px] font-bold uppercase tracking-[0.2em] px-4 py-3 hover:bg-red-700 transition-colors duration-150"
                 onClick={closeMobileMenu}
               >
                 Join Academy →
-              </Link>
+              </a>
             </div>
           </nav>
         )}
