@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
-const COURSE_URL = 'https://www.udemy.com/course/data-agenticai-academy';
+const COURSE_URL = 'https://www.udemy.com/course/data-agenticai-academy/?referralCode=0E8E22FA52ABB8F79F2D';
 
 const SECTIONS = [
   {

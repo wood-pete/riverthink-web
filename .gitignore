@@ -2,6 +2,7 @@
 .next
 node_modules
 public/blog
+public/sitemap.xml
 docs
 out
 .dist

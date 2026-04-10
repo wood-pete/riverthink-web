@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "copy-blog-images": "node scripts/copy-blog-images.js",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
     "dev": "npm run copy-blog-images && next dev",
-    "build": "npm run copy-blog-images && next build",
-    "export": "npm run copy-blog-images && next build && rm -rf docs && mv out docs && touch docs/.nojekyll",
+    "build": "npm run copy-blog-images && npm run generate-sitemap && next build",
+    "export": "npm run build && rm -rf docs && mv out docs && touch docs/.nojekyll",
     "start": "next start"
   },
   "dependencies": {
