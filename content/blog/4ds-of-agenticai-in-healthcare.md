@@ -36,6 +36,7 @@ This is where organisations decide what AI agents are genuinely trusted to handl
 
 Bed management, discharge coordination, documentation support, and patient communications all sit at different levels of acceptable autonomy.
 
+
 <div class=“pullquote pullquote-right”>
 Scaling inefficiency with AI still leaves you with inefficiency. It just arrives faster, with more dashboards.
 </div>
