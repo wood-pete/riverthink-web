@@ -2,7 +2,7 @@
 title: The 4 Ds Quietly Shaping Healthcare AI Deployments
 date: “2026-05-23”
 hero: "/blog/agent-native-data-hero.jpg"
-tags: [“Healthcare AI”, “Agentic AI”, “Operational Intelligence”, “Digital Transformation”]
+tags: ["Healthcare AI","Agentic AI","Operational Intelligence","Digital Transformation"]
 description: "The 4 Ds Quietly Shaping Healthcare AI Deployments"
 ---
 
@@ -37,7 +37,7 @@ This is where organisations decide what AI agents are genuinely trusted to handl
 Bed management, discharge coordination, documentation support, and patient communications all sit at different levels of acceptable autonomy.
 
 
-<div class=“pullquote pullquote-right”>
+<div class="pullquote pullquote-right">
 Scaling inefficiency with AI still leaves you with inefficiency. It just arrives faster, with more dashboards.
 </div>
 
