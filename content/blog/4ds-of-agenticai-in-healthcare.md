@@ -17,12 +17,12 @@ It almost always comes down to the “4 Ds”.
 Healthcare data still lives across fragmented systems, disconnected workflows, and decades of operational workarounds. One department records timestamps differently from another. Clinical context gets buried in free text. Operational data changes every few minutes. AI models then inherit all of that chaos with remarkable enthusiasm.
 
 <div class="pullquote pullquote-right">
-“AI scales whatever environment it enters. In healthcare, that includes the good processes and the gloriously complicated ones.”
+AI scales whatever environment it enters. In healthcare, that includes the good processes and the gloriously complicated ones.
 </div>
 
 ## Decisions
 
-Healthcare is full of nuanced judgement calls where experience, context, and human trust matter enormously. Clinicians rarely want an algorithm making decisions *for* them. They want systems that support judgement, surface risk earlier, and reduce cognitive burden during busy operational periods.
+Healthcare is full of nuanced judgement calls where experience, context, and human trust matter enormously. Clinicians rarely want an algorithm making decisions for them. They want systems that support judgement, surface risk earlier, and reduce cognitive burden during busy operational periods.
 
 ## Disruption
 
@@ -37,7 +37,7 @@ This is where organisations decide what AI agents are genuinely trusted to handl
 Bed management, discharge coordination, documentation support, and patient communications all sit at different levels of acceptable autonomy.
 
 <div class=“pullquote pullquote-right”>
-“Scaling inefficiency with AI still leaves you with inefficiency. It just arrives faster, with more dashboards.”
+Scaling inefficiency with AI still leaves you with inefficiency. It just arrives faster, with more dashboards.
 </div>
 
 The strongest deployments redesign workflows alongside the technology. They rethink escalation paths, operational ownership, and decision support from the ground up.
