@@ -1,9 +1,10 @@
-——-
-title: “The 4 Ds Quietly Shaping Healthcare AI Deployments”
+---
+title: The 4 Ds Quietly Shaping Healthcare AI Deployments
 date: “2026-05-23”
 hero: “/blog/hero-default-programmer.png”
 tags: [“Healthcare AI”, “Agentic AI”, “Operational Intelligence”, “Digital Transformation”]
-——-
+---
+
 # The 4 Ds Quietly Shaping Healthcare AI Deployments
 
 After working on AI deployments across healthcare operations, command centres, and clinical workflows, I keep seeing the same pattern emerge. The technology itself usually performs reasonably well. The real challenge arrives when AI collides with the reality of hospitals.
