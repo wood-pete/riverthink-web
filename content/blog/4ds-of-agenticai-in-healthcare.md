@@ -3,6 +3,7 @@ title: The 4 Ds Quietly Shaping Healthcare AI Deployments
 date: “2026-05-23”
 hero: "/blog/agent-native-data-hero.jpg"
 tags: [“Healthcare AI”, “Agentic AI”, “Operational Intelligence”, “Digital Transformation”]
+description: "The 4 Ds Quietly Shaping Healthcare AI Deployments"
 ---
 
 # The 4 Ds Quietly Shaping Healthcare AI Deployments
