@@ -15,7 +15,7 @@ It almost always comes down to the “4 Ds”.
 
 Healthcare data still lives across fragmented systems, disconnected workflows, and decades of operational workarounds. One department records timestamps differently from another. Clinical context gets buried in free text. Operational data changes every few minutes. AI models then inherit all of that chaos with remarkable enthusiasm.
 
-<div class=“quote”>
+<class="pullquote pullquote-right"
 “AI scales whatever environment it enters. In healthcare, that includes the good processes and the gloriously complicated ones.”
 </div>
 
