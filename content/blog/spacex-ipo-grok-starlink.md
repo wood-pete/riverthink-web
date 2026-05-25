@@ -104,9 +104,10 @@ It may become a globally distributed intelligence fabric spanning orbit, Earth, 
 
 ![](/blog/spacexecosystem.png)
 
+## References
 
-[^1]: Reuters reporting on SpaceX, xAI, and Austin fabrication initiatives.
-[^2]: Public xAI and Grok documentation covering agentic workflows, tool use, and multi agent orchestration.
-[^3]: Public reporting on Starlink latency and Low Earth Orbit networking architectures.
-[^4]: Tesla and Yahoo Finance reporting regarding A15 AI chip initiatives and embedded AI acceleration.
-[^5]: Research notes and public reporting on Project Kuiper, AWS infrastructure expansion, and Blue Origin orbital initiatives.
+1. Reuters reporting on SpaceX, xAI, and Austin fabrication initiatives.
+2. Public xAI and Grok documentation covering agentic workflows, tool use, and multi agent orchestration.
+3. Public reporting on Starlink latency and Low Earth Orbit networking architectures.
+4. Tesla and Yahoo Finance reporting regarding A15 AI chip initiatives and embedded AI acceleration.
+5. Research notes and public reporting on Project Kuiper, AWS infrastructure expansion, and Blue Origin orbital initiatives.
