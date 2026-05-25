@@ -25,9 +25,11 @@ The second layer is compute.
 
 Low Earth Orbit data centres are no longer science fiction. As agentic AI expands, the economics of traditional hyperscale cloud infrastructure begin looking increasingly strained. Persistent AI agents generate continuous compute demand, real time coordination traffic, and enormous energy consumption. Centralised cloud regions were designed for applications making periodic requests. Agents behave more like distributed digital workers operating continuously.
 
-That changes infrastructure assumptions completely.
+The third layer is silicon.
 
 At the same time, Tesla’s A15 AI chip strategy points towards intelligence moving directly into edge devices, vehicles, robotics, and autonomous systems. Embedded inference reduces dependency on remote cloud processing while enabling real time reasoning locally.
+
+And Terafab is the planned vertically integrated semiconductor manufacturing initiative involving Tesla, SpaceX, xAI, and Intel, designed to industrialise AI compute at unprecedented scale by bringing chip design, fabrication, memory production, advanced packaging, and testing together within a single AI focused production ecosystem. 
 
 <details>
 <summary>How the emerging SpaceX AI stack starts fitting together</summary>
