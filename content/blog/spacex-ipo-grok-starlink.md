@@ -1,4 +1,4 @@
-___
+---
 title: What the SpaceX IPO Could Mean for the Future of AI Agents
 date: "2026-05-25"
 hero: "/blog/spacex.png"
