@@ -90,7 +90,7 @@ Infrastructure shifts often look obvious in hindsight. Slightly less obvious whi
 Perhaps the most important signal is that multiple companies are converging on the same architecture direction independently. SpaceX is not alone.
 </div>
 
-Amazon is pursuing a remarkably similar trajectory through Project Kuiper, custom AI silicon, AWS infrastructure, robotics, and autonomous logistics. Blue Origin is also investing heavily in launch infrastructure and long duration orbital capability, while broader hyperscalers continue expanding edge AI, satellite partnerships, and distributed compute models.
+Amazon is pursuing a remarkably similar trajectory through Project Leo, custom AI silicon, AWS infrastructure, robotics, and autonomous logistics. Blue Origin is also investing heavily in launch infrastructure and long duration orbital capability, while broader hyperscalers continue expanding edge AI, satellite partnerships, and distributed compute models.
 
 That convergence matters.
 
