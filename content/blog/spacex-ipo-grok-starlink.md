@@ -102,6 +102,9 @@ The future AI platform may not be a single cloud region anymore.
 
 It may become a globally distributed intelligence fabric spanning orbit, Earth, vehicles, robotics, and billions of autonomous systems operating continuously together.
 
+![](/blog/spacexecosystem.pngIsolated.png)
+
+
 [^1]: Reuters reporting on SpaceX, xAI, and Austin fabrication initiatives.
 [^2]: Public xAI and Grok documentation covering agentic workflows, tool use, and multi agent orchestration.
 [^3]: Public reporting on Starlink latency and Low Earth Orbit networking architectures.
