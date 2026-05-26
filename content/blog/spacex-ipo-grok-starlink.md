@@ -1,35 +1,59 @@
 ---
-title: What the SpaceX IPO Could Mean for the Future of AI Agents
+title: Why the SpaceX IPO May Really Be About AI Infrastructure
 date: "2026-05-25"
 hero: "/blog/spacex.png"
 tags: ["Agentic AI", "Orbital Computing", "AI Infrastructure"]
 ---
 
-# How SpaceX Could Quietly Become the Global Platform for AI Agents
+# How SpaceX Could Quietly Become the Infrastructure Layer for AI Agents
 
 Most people still think of SpaceX as a rocket company.
 
 That increasingly feels like looking at Amazon in 2006 and concluding it mainly sold books.
 
-Beneath the launch vehicles and Starlink satellites, a much larger platform strategy appears to be forming. When SpaceX IPO materialises, investors may discover they are not simply buying exposure to rockets or broadband. They may be buying into the early foundations of a vertically integrated global infrastructure platform for AI agents.
+SpaceX is beginning to resemble something far larger: a vertically integrated infrastructure platform spanning connectivity, compute, orbital operations, AI models, robotics, manufacturing, and autonomous systems.
 
-And quietly, almost every layer is already appearing.
+When a SpaceX IPO eventually materialises, investors may discover they are not simply buying exposure to launch economics or broadband.
+
+They may be buying exposure to the early foundations of a globally distributed AI infrastructure stack.
+
+And quietly, many of the layers are already appearing.
 
 <div class="quote">
-"SpaceX may be building something larger than a space company. It may be building the delivery platform for planetary scale AI agents."
+The long-term value of SpaceX may not be rockets. It may be the infrastructure stack future AI agents depend upon.
 </div>
 
-The first layer is connectivity. Starlink already operates one of the largest distributed satellite networks ever created, providing low latency communication across regions where terrestrial infrastructure remains fragmented or overloaded.
+## 1. Connectivity: Starlink as the Coordination Fabric
 
-The second layer is compute.
+Starlink is no longer simply a satellite broadband network.
 
-Low Earth Orbit data centres are no longer science fiction. As agentic AI expands, the economics of traditional hyperscale cloud infrastructure begin looking increasingly strained. Persistent AI agents generate continuous compute demand, real time coordination traffic, and enormous energy consumption. Centralised cloud regions were designed for applications making periodic requests. Agents behave more like distributed digital workers operating continuously.
+It increasingly resembles a global low-latency coordination layer for distributed systems, autonomous platforms, robotics, vehicles, and persistent AI agents operating outside traditional terrestrial infrastructure.
 
-The third layer is silicon.
+As agentic systems evolve from isolated copilots into continuously operating digital workers, reliable low-latency communication becomes infrastructure rather than convenience.
+
+That changes the strategic importance of global networking entirely.
+
+## 2. Orbital Compute: The Infrastructure Economics of Persistent AI
+
+Low Earth Orbit compute infrastructure is beginning to transition from experimentation into serious strategic discussion. As agentic AI expands, the economics of traditional hyperscale cloud infrastructure begin looking increasingly strained. Persistent AI agents generate continuous compute demand, real time coordination traffic, and enormous energy consumption. Centralised cloud regions were designed for applications making periodic requests. Agents behave more like distributed digital workers operating continuously. The economic model for AI infrastructure changes significantly when millions of autonomous systems begin generating persistent inference traffic instead of occasional user requests
+
+## 3. Silicon: Edge Inference and Vertically Integrated Compute
 
 At the same time, Tesla’s A15 AI chip strategy points towards intelligence moving directly into edge devices, vehicles, robotics, and autonomous systems. Embedded inference reduces dependency on remote cloud processing while enabling real time reasoning locally.
 
-And Terafab is the planned vertically integrated semiconductor manufacturing initiative involving Tesla, SpaceX, xAI, and Intel, designed to industrialise AI compute at unprecedented scale by bringing chip design, fabrication, memory production, advanced packaging, and testing together within a single AI focused production ecosystem. 
+Terafab represents the next critical layer: silicon sovereignty. 
+
+The planned initiative involving Tesla, SpaceX, xAI, and Intel aims to vertically integrate large parts of the AI compute supply chain, including:
+
+- chip design
+- fabrication
+- memory production
+- advanced packaging
+- testing
+
+If successful, it would reduce dependency on fragmented semiconductor ecosystems while dramatically increasing long-term control over AI compute infrastructure.
+
+*[At time of writing neither Tesla nor TerraFab are part of the SpaceX IPO, but deeply linked]*
 
 <details>
 <summary>How the emerging SpaceX AI stack starts fitting together</summary>
@@ -44,6 +68,8 @@ xAI and Grok provide:
 - Frontier reasoning models
 - Multi agent orchestration
 - Tool use, memory, and autonomous workflows
+- Persistent agent memory and coordination
+- Autonomous operational reasoning loops
 
 The fabrication plant provides:
 - AI chip manufacturing capability
@@ -59,12 +85,50 @@ Orbital compute provides:
 - Distributed AI infrastructure in Low Earth Orbit
 - Reduced terrestrial networking congestion
 - Global synchronisation between agents
+- Resilient distributed inference capability
+- Reduced dependency on terrestrial hyperscale regions
 
 </div></details>
 
 Individually, each piece looks interesting.
 
 Together, they begin resembling a new infrastructure model entirely.
+
+![](/blog/spacex-stack.png)
+
+
+## Why This Matters for Enterprise AI
+
+Most enterprise AI discussions still focus on models.
+
+The larger shift may be infrastructure.
+
+Persistent AI agents require:
+- continuous inference
+- low latency networking
+- distributed coordination
+- resilient compute
+- embedded autonomy
+- massive telemetry flows
+
+That begins changing how infrastructure itself is designed.
+
+The future AI stack may become increasingly distributed across:
+- orbit
+- edge devices
+- robotics
+- vehicles
+- manufacturing systems
+- autonomous operational platforms
+
+Traditional cloud providers remain critical, but their role increasingly evolves towards:
+- concentrated model training
+- enterprise governance
+- identity and policy enforcement
+- historical analytics
+- transactional resilience
+
+Inference and operational intelligence may gradually decentralise outward.
 
 Traditional cloud providers still dominate enterprise infrastructure today. Yet the combination of orbital compute, embedded AI chips, satellite networking, and persistent agents may gradually decentralise compute away from giant terrestrial regions.
 
@@ -88,9 +152,26 @@ Ironically, after years spent centralising infrastructure into giant cloud campu
 
 Infrastructure shifts often look obvious in hindsight. Slightly less obvious while people are still arguing about rockets on television.
 
+## Strategic Risks and Constraints
+
+Of course, none of this is guaranteed.
+
+Building a vertically integrated AI infrastructure stack introduces enormous complexity and risk, including:
+- extreme capital intensity
+- regulatory exposure
+- infrastructure concentration risk
+- geopolitical dependency concerns
+- orbital governance challenges
+- AI safety and autonomy questions
+- semiconductor execution risk
+
+The opportunity may be enormous. So are the implications.
+
 <div class="pullquote pullquote-right">
 Perhaps the most important signal is that multiple companies are converging on the same architecture direction independently. SpaceX is not alone.
 </div>
+
+## Convergence, but not as we know it
 
 Amazon is pursuing a remarkably similar trajectory through Project Leo, custom AI silicon, AWS infrastructure, robotics, and autonomous logistics. Blue Origin is also investing heavily in launch infrastructure and long duration orbital capability, while broader hyperscalers continue expanding edge AI, satellite partnerships, and distributed compute models.
 
