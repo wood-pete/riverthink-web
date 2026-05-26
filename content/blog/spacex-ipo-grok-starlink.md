@@ -92,6 +92,7 @@ Orbital compute provides:
 
 Individually, each piece looks interesting.
 
+
 Together, they begin resembling a new infrastructure model entirely.
 
 ![](/blog/spacex-stack.png)
