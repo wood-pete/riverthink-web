@@ -48,28 +48,12 @@ export default function Nav({ active }) {
             <Link href="/academy" className={linkClass('academy')}>Academy</Link>
             <Link href="/blog" className={linkClass('blog')}>Blog</Link>
             <a
-              href="https://labs.riverthink.com"
+              href="https://x.com/riverthink"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors duration-150"
             >
-              Labs
-            </a>
-            <a
-              href="https://github.com/riverthink?tab=repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors duration-150"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://discord.gg/dvFqe2Avv7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors duration-150"
-            >
-              Discord
+              Follow on X
             </a>
             <a
               href="https://riverthink.substack.com"
@@ -143,31 +127,13 @@ export default function Nav({ active }) {
                 Blog
               </Link>
               <a
-                href="https://labs.riverthink.com"
+                href="https://x.com/riverthink"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-150"
                 onClick={closeMobileMenu}
               >
-                Labs
-              </a>
-              <a
-                href="https://github.com/riverthink?tab=repositories"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-150"
-                onClick={closeMobileMenu}
-              >
-                GitHub
-              </a>
-              <a
-                href="https://discord.gg/dvFqe2Avv7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-150"
-                onClick={closeMobileMenu}
-              >
-                Discord
+                Follow on X
               </a>
               <a
                 href="https://riverthink.substack.com"

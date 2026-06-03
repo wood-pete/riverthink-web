@@ -50,32 +50,12 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://labs.riverthink.com"
+                href="https://x.com/riverthink"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition-colors duration-150"
               >
-                Labs
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/riverthink?tab=repositories"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors duration-150"
-              >
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://discord.gg/dvFqe2Avv7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white transition-colors duration-150"
-              >
-                Discord
+                Follow on X
               </a>
             </li>
             <li>
