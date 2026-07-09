@@ -4,6 +4,11 @@ export default function Document() {
   return (
     <Html lang="en" className="h-full">
       <Head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7154443112908561"
+          crossOrigin="anonymous"
+        />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
