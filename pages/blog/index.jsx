@@ -5,6 +5,7 @@ import Seo from '../../components/Seo';
 
 const SUBSTACK_URL = 'https://riverthink.substack.com/';
 const SUBSTACK_FEED_URL = `${SUBSTACK_URL}feed`;
+const RSS_FALLBACK_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(SUBSTACK_FEED_URL)}`;
 const PAGE_SIZE = 6;
 
 function decodeXml(value = '') {
@@ -37,6 +38,38 @@ function parseSubstackFeed(xml) {
       image: enclosure ? decodeXml(enclosure[1]) : '',
     };
   }).filter((post) => post.title && post.url);
+}
+
+function parseRssFallback(payload) {
+  if (payload.status !== 'ok' || !Array.isArray(payload.items)) return [];
+
+  return payload.items.map((item) => ({
+    title: item.title || '',
+    description: (item.description || '').replace(/<[^>]+>/g, '').trim(),
+    url: item.link || '',
+    author: item.author || '',
+    publishedAt: item.pubDate || '',
+    image: item.enclosure?.link || item.thumbnail || '',
+  })).filter((post) => post.title && post.url);
+}
+
+async function loadSubstackPosts() {
+  const headers = { 'User-Agent': 'Riverthink.com RSS reader' };
+
+  try {
+    const response = await fetch(SUBSTACK_FEED_URL, { headers });
+    if (!response.ok) throw new Error(`Substack returned ${response.status}`);
+    const posts = parseSubstackFeed(await response.text());
+    if (posts.length === 0) throw new Error('Substack returned an empty feed');
+    return posts;
+  } catch (directError) {
+    console.warn(`Direct Substack RSS request failed: ${directError.message}. Trying fallback.`);
+    const response = await fetch(RSS_FALLBACK_URL, { headers });
+    if (!response.ok) throw new Error(`RSS fallback returned ${response.status}`);
+    const posts = parseRssFallback(await response.json());
+    if (posts.length === 0) throw new Error('RSS fallback returned an empty feed');
+    return posts;
+  }
 }
 
 function Pagination({ page, totalPages, goTo }) {
@@ -202,12 +235,7 @@ export default function BlogIndex({ posts = [], feedUnavailable = false }) {
 
 export async function getStaticProps() {
   try {
-    const response = await fetch(SUBSTACK_FEED_URL, {
-      headers: { 'User-Agent': 'Riverthink.com RSS reader' },
-    });
-    if (!response.ok) throw new Error(`Substack returned ${response.status}`);
-
-    const posts = parseSubstackFeed(await response.text()).map((post) => ({
+    const posts = (await loadSubstackPosts()).map((post) => ({
       ...post,
       formattedDate: new Date(post.publishedAt).toLocaleDateString('en-GB', {
         year: 'numeric',
@@ -219,7 +247,6 @@ export async function getStaticProps() {
 
     return { props: { posts, feedUnavailable: false } };
   } catch (error) {
-    console.warn(`Unable to load the Substack RSS feed: ${error.message}`);
-    return { props: { posts: [], feedUnavailable: true } };
+    throw new Error(`Unable to load the Substack RSS feed from either source: ${error.message}`);
   }
 }
