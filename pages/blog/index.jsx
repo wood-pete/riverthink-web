@@ -5,40 +5,10 @@ import Seo from '../../components/Seo';
 
 const SUBSTACK_URL = 'https://riverthink.substack.com/';
 const SUBSTACK_FEED_URL = `${SUBSTACK_URL}feed`;
+const SUBSTACK_ARCHIVE_URL = `${SUBSTACK_URL}api/v1/archive?sort=new&search=&offset=0&limit=50`;
+const SUBSTACK_ARCHIVE_RELAY_URL = `https://r.jina.ai/http://riverthink.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=50`;
 const RSS_FALLBACK_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(SUBSTACK_FEED_URL)}`;
 const PAGE_SIZE = 6;
-
-function decodeXml(value = '') {
-  return value
-    .replace(/^<!\[CDATA\[|\]\]>$/g, '')
-    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
-    .replace(/&#x([\da-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .trim();
-}
-
-function field(item, name) {
-  const match = item.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`, 'i'));
-  return match ? decodeXml(match[1]) : '';
-}
-
-function parseSubstackFeed(xml) {
-  return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map(([, item]) => {
-    const enclosure = item.match(/<enclosure\s[^>]*url=["']([^"']+)["']/i);
-    return {
-      title: field(item, 'title'),
-      description: field(item, 'description').replace(/<[^>]+>/g, '').trim(),
-      url: field(item, 'link'),
-      author: field(item, 'dc:creator'),
-      publishedAt: field(item, 'pubDate'),
-      image: enclosure ? decodeXml(enclosure[1]) : '',
-    };
-  }).filter((post) => post.title && post.url);
-}
 
 function parseRssFallback(payload) {
   if (payload.status !== 'ok' || !Array.isArray(payload.items)) return [];
@@ -53,22 +23,51 @@ function parseRssFallback(payload) {
   })).filter((post) => post.title && post.url);
 }
 
+function parseSubstackArchive(items) {
+  if (!Array.isArray(items)) return [];
+
+  return items.map((item) => ({
+    title: item.title || '',
+    description: item.description || item.truncated_body_text || '',
+    url: item.canonical_url || `${SUBSTACK_URL}p/${item.slug}`,
+    author: item.publishedBylines?.[0]?.name || 'Peter Wood',
+    publishedAt: item.post_date || '',
+    image: item.cover_image || '',
+  })).filter((post) => post.title && post.url);
+}
+
+function parseRelayedArchive(text) {
+  const marker = 'Markdown Content:\n';
+  const start = text.indexOf(marker);
+  if (start === -1) throw new Error('Archive relay response did not contain JSON');
+  return parseSubstackArchive(JSON.parse(text.slice(start + marker.length).trim()));
+}
+
 async function loadSubstackPosts() {
   const headers = { 'User-Agent': 'Riverthink.com RSS reader' };
 
   try {
-    const response = await fetch(SUBSTACK_FEED_URL, { headers });
-    if (!response.ok) throw new Error(`Substack returned ${response.status}`);
-    const posts = parseSubstackFeed(await response.text());
-    if (posts.length === 0) throw new Error('Substack returned an empty feed');
+    const response = await fetch(SUBSTACK_ARCHIVE_URL, { headers });
+    if (!response.ok) throw new Error(`Substack archive returned ${response.status}`);
+    const posts = parseSubstackArchive(await response.json());
+    if (posts.length === 0) throw new Error('Substack returned an empty archive');
     return posts;
-  } catch (directError) {
-    console.warn(`Direct Substack RSS request failed: ${directError.message}. Trying fallback.`);
-    const response = await fetch(RSS_FALLBACK_URL, { headers });
-    if (!response.ok) throw new Error(`RSS fallback returned ${response.status}`);
-    const posts = parseRssFallback(await response.json());
-    if (posts.length === 0) throw new Error('RSS fallback returned an empty feed');
-    return posts;
+  } catch (archiveError) {
+    console.warn(`Direct Substack archive request failed: ${archiveError.message}. Trying relay.`);
+    try {
+      const response = await fetch(SUBSTACK_ARCHIVE_RELAY_URL, { headers });
+      if (!response.ok) throw new Error(`Archive relay returned ${response.status}`);
+      const posts = parseRelayedArchive(await response.text());
+      if (posts.length === 0) throw new Error('Archive relay returned an empty archive');
+      return posts;
+    } catch (relayError) {
+      console.warn(`Substack archive relay failed: ${relayError.message}. Trying RSS fallback.`);
+      const response = await fetch(RSS_FALLBACK_URL, { headers });
+      if (!response.ok) throw new Error(`RSS fallback returned ${response.status}`);
+      const posts = parseRssFallback(await response.json());
+      if (posts.length === 0) throw new Error('RSS fallback returned an empty feed');
+      return posts;
+    }
   }
 }
 
