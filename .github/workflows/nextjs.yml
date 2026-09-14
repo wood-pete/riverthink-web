@@ -9,6 +9,12 @@ on:
   push:
     branches: ["main"]
 
+  # Refresh the Substack RSS content nightly at 02:00 Europe/London.
+  # GitHub cron uses UTC, so run at both possible UTC hours and use the
+  # schedule-check job below to select the correct one across GMT/BST.
+  schedule:
+    - cron: "0 1,2 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -25,8 +31,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  schedule-check:
+    runs-on: ubuntu-latest
+    outputs:
+      should-run: ${{ steps.check.outputs.should-run }}
+    steps:
+      - name: Check London deployment time
+        id: check
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" != "schedule" || "$(TZ=Europe/London date +%H)" == "02" ]]; then
+            echo "should-run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should-run=false" >> "$GITHUB_OUTPUT"
+          fi
+
   # Build job
   build:
+    needs: schedule-check
+    if: needs.schedule-check.outputs.should-run == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
