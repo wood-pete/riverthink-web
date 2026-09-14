@@ -40,6 +40,7 @@ export default function Seo({
   modifiedTime,
   tags = [],
   structuredData,
+  feedUrl,
 }) {
   const canonicalUrl = toAbsoluteUrl(path);
   const imageUrl = toAbsoluteUrl(image);
@@ -51,6 +52,15 @@ export default function Seo({
       <title key="title">{resolvedTitle}</title>
       <meta key="description" name="description" content={description} />
       <link key="canonical" rel="canonical" href={canonicalUrl} />
+      {feedUrl ? (
+        <link
+          key="rss-feed"
+          rel="alternate"
+          type="application/rss+xml"
+          title="Riverthink legacy blog archive"
+          href={toAbsoluteUrl(feedUrl)}
+        />
+      ) : null}
       <meta key="og:locale" property="og:locale" content="en_GB" />
       <meta key="og:type" property="og:type" content={type} />
       <meta key="og:site_name" property="og:site_name" content={SITE_NAME} />

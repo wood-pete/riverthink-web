@@ -118,6 +118,7 @@ export default function BlogIndex({ posts = [], feedUnavailable = false }) {
         title="Agentic AI, Data Platforms & Leadership"
         description="Deep analysis of agentic AI systems, protocols, security patterns, healthcare AI, and the architecture of autonomous work."
         path="/blog/"
+        feedUrl="/substack-import/feed.xml"
         imageWidth={1200}
         imageHeight={630}
         structuredData={{
