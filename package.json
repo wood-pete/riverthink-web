@@ -5,6 +5,7 @@
   "scripts": {
     "copy-blog-images": "node scripts/copy-blog-images.js",
     "generate-sitemap": "node scripts/generate-sitemap.js",
+    "generate-substack-import": "node scripts/generate-substack-import.mjs",
     "dev": "npm run copy-blog-images && next dev",
     "build": "npm run copy-blog-images && npm run generate-sitemap && next build",
     "export": "npm run build && rm -rf docs && mv out docs && touch docs/.nojekyll",
