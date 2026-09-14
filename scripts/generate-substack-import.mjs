@@ -156,6 +156,34 @@ ${posts.map((post) => postXml(post, status)).join('\n')}
 `;
 }
 
+function rss(posts) {
+  return `<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Riverthink legacy blog archive</title>
+    <link>${SITE_URL}/blog/</link>
+    <description>Riverthink articles prepared for migration to Substack</description>
+    <language>en-GB</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <atom:link href="${SITE_URL}/substack-import/feed.xml" rel="self" type="application/rss+xml" />
+${posts.map((post) => `    <item>
+      <title><![CDATA[${cdata(post.title)}]]></title>
+      <description><![CDATA[${cdata(post.description)}]]></description>
+      <link>${xml(post.sourceUrl)}</link>
+      <guid isPermaLink="true">${xml(post.sourceUrl)}</guid>
+      <dc:creator><![CDATA[${AUTHOR}]]></dc:creator>
+      <pubDate>${post.date.rfc822}</pubDate>
+      ${post.hero ? `<enclosure url="${xml(post.hero)}" length="0" type="image/${post.hero.toLowerCase().endsWith('.png') ? 'png' : 'jpeg'}" />` : ''}
+      <content:encoded><![CDATA[${cdata(post.html)}]]></content:encoded>
+    </item>`).join('\n')}
+  </channel>
+</rss>
+`;
+}
+
 function report(allPosts, included, excluded) {
   const lines = [
     '# Riverthink to Substack migration report',
@@ -201,11 +229,13 @@ const excluded = allPosts.filter((post) => post.excluded).sort((a, b) => a.date.
 
 const publishedXml = wxr(included, 'publish');
 const draftXml = wxr(included, 'draft');
+const rssXml = rss(included);
 await Promise.all([
   fs.writeFile(path.join(OUTPUT_DIR, 'riverthink-substack-import.xml'), publishedXml),
   fs.writeFile(path.join(OUTPUT_DIR, 'riverthink-substack-import-draft.xml'), draftXml),
   fs.writeFile(path.join(PUBLIC_OUTPUT_DIR, 'riverthink-substack-import.xml'), publishedXml),
   fs.writeFile(path.join(PUBLIC_OUTPUT_DIR, 'riverthink-substack-import-draft.xml'), draftXml),
+  fs.writeFile(path.join(PUBLIC_OUTPUT_DIR, 'feed.xml'), rssXml),
 ]);
 await fs.writeFile(path.join(OUTPUT_DIR, 'migration-report.md'), report(allPosts, included, excluded));
 

@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0"
-  xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-  xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:wp="http://wordpress.org/export/1.2/">
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Riverthink legacy blog</title>
-    <link>https://riverthink.com</link>
+    <title>Riverthink legacy blog archive</title>
+    <link>https://riverthink.com/blog/</link>
     <description>Riverthink articles prepared for migration to Substack</description>
-    <pubDate>Mon, 14 Sep 2026 16:01:50 GMT</pubDate>
     <language>en-GB</language>
-    <wp:wxr_version>1.2</wp:wxr_version>
-    <wp:base_site_url>https://riverthink.com</wp:base_site_url>
-    <wp:base_blog_url>https://riverthink.com</wp:base_blog_url>
+    <lastBuildDate>Mon, 14 Sep 2026 16:01:50 GMT</lastBuildDate>
+    <atom:link href="https://riverthink.com/substack-import/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title><![CDATA[Building the Future of Intelligent Systems: A Deep Dive into Agent Integration Patterns]]></title>
+      <description><![CDATA[A deep dive into Agent-to-Agent communication and Model Context Protocol — the two integration patterns shaping how enterprise AI agents collaborate, delegate, and orchestrate at scale.]]></description>
       <link>https://riverthink.com/blog/agentic-integration/</link>
-      <pubDate>Sun, 11 Jan 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/agentic-integration/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-agentic-integration</guid>
-      <description></description>
+      <pubDate>Sun, 11 Jan 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/agentic-integration-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/agentic-integration-hero.jpg" alt="Building the Future of Intelligent Systems: A Deep Dive into Agent Integration Patterns"></figure>
 <p>The future of enterprise AI isn't about isolated models making decisions in silos. It's about intelligent agents that communicate, collaborate, and orchestrate complex workflows across your entire technology stack. Today, we're exploring two transformative integration patterns that are reshaping how we build agentic systems: <strong>Agent-to-Agent (A2A) communication</strong> and the <strong>Model Context Protocol (MCP)</strong>.</p>
 <blockquote>
@@ -165,29 +162,15 @@
 <hr>
 <p><strong>About the Demos</strong>: These examples are built with production-quality frameworks and follow best practices for async Python development, error handling, and protocol implementation. They're designed to be both educational and adaptable to real-world use cases.</p>
 <p><strong>Try It Yourself</strong>: Both demos include complete setup instructions, test scripts, and sequence diagrams. <a href="https://github.com/riverthink/agenticintegration">Visit the repository</a> to get started, and join the community of developers building the next generation of agentic systems.</p>]]></content:encoded>
-      <excerpt:encoded><![CDATA[A deep dive into Agent-to-Agent communication and Model Context Protocol — the two integration patterns shaping how enterprise AI agents collaborate, delegate, and orchestrate at scale.]]></excerpt:encoded>
-      <wp:post_id>1007</wp:post_id>
-      <wp:post_date>2026-01-11 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-01-11 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[agentic-integration]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="deep-dive"><![CDATA[Deep Dive]]></category>
     </item>
     <item>
       <title><![CDATA[Healthcare AI Reaches a Turning Point as LLMs and Agentic Systems Enter Clinical Reality]]></title>
+      <description><![CDATA[Healthcare AI reached an inflection point in January 2026. Four developments showed how LLMs and agentic systems are moving from experimentation into governed, measurable clinical use.]]></description>
       <link>https://riverthink.com/blog/january-2025/</link>
-      <pubDate>Wed, 14 Jan 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/january-2025/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-january-2025</guid>
-      <description></description>
+      <pubDate>Wed, 14 Jan 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/january-2025-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/january-2025-hero.jpg" alt="Healthcare AI Reaches a Turning Point as LLMs and Agentic Systems Enter Clinical Reality"></figure>
 <p>January 2026 marks a clear inflection point for artificial intelligence in healthcare. Over the course of just a few weeks, four major developments revealed how large language models and agentic AI are moving from broad experimentation into domains where trust, safety, and measurable impact matter deeply. Together, these updates tell a connected story about maturity. They show an industry learning where AI fits, where it does not, and how it must be governed when human health is involved.</p>
 <div class="quote">Rather than a single breakthrough, this moment reflects a transition. AI is no longer only about impressive demonstrations. It is about accountability, regulation, and integration into clinical and scientific workflows.</div>
@@ -219,30 +202,15 @@
 <p>The removal of misleading search summaries shows the limits of general AI when applied without context. The launch of a HIPAA compliant clinical platform demonstrates how those limits can be addressed through governance and design. The NVIDIA and Lilly partnership illustrates AI’s role in accelerating scientific discovery where human experimentation alone struggles with scale. MedGemma 1.5 highlights the move toward multimodal systems that reflect how medicine actually works.</p>
 <p>What connects these stories is not technology alone, but <strong>intent</strong>. The industry is learning to ask better questions. Where should AI speak directly to patients, if at all. Where should it support clinicians behind the scenes. Where can it safely explore possibilities in laboratories and research environments.</p>
 <p>This moment does not signal an end state. It signals a recalibration. LLMs and agentic AI are no longer novelties in healthcare. They are tools being shaped by regulation, ethics, and real world constraints. The progress of January 2026 shows that the future of healthcare AI will be defined less by bold claims and more by careful integration into systems that already carry profound responsibility.</p>]]></content:encoded>
-      <excerpt:encoded><![CDATA[Healthcare AI reached an inflection point in January 2026. Four developments showed how LLMs and agentic systems are moving from experimentation into governed, measurable clinical use.]]></excerpt:encoded>
-      <wp:post_id>1013</wp:post_id>
-      <wp:post_date>2026-01-14 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-01-14 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[january-2025]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="hipaa"><![CDATA[HIPAA]]></category>
-      <category domain="post_tag" nicename="executive-brief"><![CDATA[Executive Brief]]></category>
-      <category domain="post_tag" nicename="round-up"><![CDATA[Round Up]]></category>
     </item>
     <item>
       <title><![CDATA[API Gateways Are Becoming Agent Gateways - MCP, A2A, and the New Control Plane for AI Agents]]></title>
+      <description><![CDATA[How AI agents are changing what enterprise API gateways must do — covering MCP, A2A, and the new governance requirements for agent-to-tool and agent-to-agent interactions at scale.]]></description>
       <link>https://riverthink.com/blog/agent-gateways/</link>
-      <pubDate>Sat, 24 Jan 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/agent-gateways/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-agent-gateways</guid>
-      <description></description>
+      <pubDate>Sat, 24 Jan 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/agent-gateways-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/agent-gateways-hero.jpg" alt="API Gateways Are Becoming Agent Gateways - MCP, A2A, and the New Control Plane for AI Agents"></figure>
 <h2>Enterprise integration is entering a new phase. For more than a decade, API gateways have been the practical centre of gravity for exposing services, enforcing security policies, and observing traffic across microservices and partner APIs. That model still matters, but the “client” on the other side of the gateway is changing. Increasingly, the caller is not a mobile app or a web front end. It is an AI agent planning a multi step task, invoking tools, streaming results, and delegating subtasks to other agents.</h2>
 <div class="pullquote pullquote-right">
@@ -404,29 +372,15 @@ Agent governance cannot operate as a parallel control plane. If it does not inte
 <a href="https://tyk.io/docs/tyk-governance/agent-management">https://tyk.io/docs/tyk-governance/agent-management</a></p>
 </li>
 </ol>]]></content:encoded>
-      <excerpt:encoded><![CDATA[How AI agents are changing what enterprise API gateways must do — covering MCP, A2A, and the new governance requirements for agent-to-tool and agent-to-agent interactions at scale.]]></excerpt:encoded>
-      <wp:post_id>1002</wp:post_id>
-      <wp:post_date>2026-01-24 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-01-24 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[agent-gateways]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="security"><![CDATA[Security]]></category>
     </item>
     <item>
       <title><![CDATA[You Don’t Need a Vector Store for Agent Memory in Most Agent Architectures]]></title>
+      <description><![CDATA[Vector stores are oversold for agent memory. When key-value, relational, and graph databases serve agentic AI better than embeddings — and how to design memory that fits the task.]]></description>
       <link>https://riverthink.com/blog/storing-memory/</link>
-      <pubDate>Sun, 25 Jan 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/storing-memory/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-storing-memory</guid>
-      <description></description>
+      <pubDate>Sun, 25 Jan 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/storing-memory-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/storing-memory-hero.jpg" alt="You Don’t Need a Vector Store for Agent Memory in Most Agent Architectures"></figure>
 <p>Vector databases have become almost synonymous with LLM memory. That association is understandable. Semantic search is powerful, and embeddings underpin modern retrieval augmented generation. However, once we move beyond chatbots and into agentic systems that operate real workflows, the assumption that all memory must live in a vector store starts to unravel.</p>
 <p>The underlying issue is simple but often overlooked. Memory and knowledge are different problems, and they benefit from very different storage and retrieval strategies.</p>
@@ -537,29 +491,15 @@ Agent governance cannot operate as a parallel control plane. If it does not inte
 <a href="https://modelcontextprotocol.io/">https://modelcontextprotocol.io/</a></p>
 <p>Anthropic Research: Agent Architectures and Tool Use<br>
 <a href="https://www.anthropic.com/engineering/building-effective-agents">https://www.anthropic.com/engineering/building-effective-agents</a></p>]]></content:encoded>
-      <excerpt:encoded><![CDATA[Vector stores are oversold for agent memory. When key-value, relational, and graph databases serve agentic AI better than embeddings — and how to design memory that fits the task.]]></excerpt:encoded>
-      <wp:post_id>1020</wp:post_id>
-      <wp:post_date>2026-01-25 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-01-25 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[storing-memory]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="ai-strategy"><![CDATA[AI Strategy]]></category>
     </item>
     <item>
       <title><![CDATA[Agent Native Data and Why Enterprises Are Relearning What Data Is For]]></title>
+      <description><![CDATA[Enterprise data built for dashboards fails AI agents. A look at agent-native data architecture — structured for reasoning, retrieval, and autonomous decision-making rather than human consumption.]]></description>
       <link>https://riverthink.com/blog/agent-native-data/</link>
-      <pubDate>Sat, 31 Jan 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/agent-native-data/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-agent-native-data</guid>
-      <description></description>
+      <pubDate>Sat, 31 Jan 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/agent-native-data-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/agent-native-data-hero.jpg" alt="Agent Native Data and Why Enterprises Are Relearning What Data Is For"></figure>
 <h2>Most enterprise conversations about data still orbit analytics, dashboards, and reporting. Even recent excitement around AI has largely reframed data as something to retrieve and summarise rather than something that actively shapes behaviour. Agent native data challenges that framing.</h2>
 <p>The term is intentionally provocative. It suggests that data is no longer designed primarily for people to read, analyse, or debate in meetings that could probably have been emails. Instead, it is designed for software agents that observe environments, reason over current conditions, and take actions inside real workflows.</p>
@@ -677,30 +617,15 @@ Agent native data is what happens when you stop asking what humans want to see a
 <a href="https://langchain-ai.github.io/langgraph/">https://langchain-ai.github.io/langgraph/</a></p>
 <p>Event Driven Architecture by Martin Fowler<br>
 <a href="https://martinfowler.com/articles/201701-event-driven.html">https://martinfowler.com/articles/201701-event-driven.html</a></p>]]></content:encoded>
-      <excerpt:encoded><![CDATA[Enterprise data built for dashboards fails AI agents. A look at agent-native data architecture — structured for reasoning, retrieval, and autonomous decision-making rather than human consumption.]]></excerpt:encoded>
-      <wp:post_id>1005</wp:post_id>
-      <wp:post_date>2026-01-31 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-01-31 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[agent-native-data]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="ai-strategy"><![CDATA[AI Strategy]]></category>
-      <category domain="post_tag" nicename="executive-brief"><![CDATA[Executive Brief]]></category>
     </item>
     <item>
       <title><![CDATA[Agentic Orchestration 101: What It Is and How It Compares to BMW's Five Levels of Driverless Automation]]></title>
+      <description><![CDATA[What BMW's five levels of driverless automation reveal about agentic AI maturity — a practical framework for assessing orchestration capability from prompt chaining to full autonomy.]]></description>
       <link>https://riverthink.com/blog/agentic-orchestration-bmw-levels/</link>
-      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/agentic-orchestration-bmw-levels/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-agentic-orchestration-bmw-levels</guid>
-      <description></description>
+      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/agentic-orchestration-bmw-levels-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/agentic-orchestration-bmw-levels-hero.jpg" alt="Agentic Orchestration 101: What It Is and How It Compares to BMW&apos;s Five Levels of Driverless Automation"></figure>
 <h2>Agentic orchestration is the discipline of coordinating multiple AI agents, tools, and data systems so they can complete complex tasks reliably. Instead of one model answering one question, orchestration manages a full workflow: planning, delegation, execution, validation, escalation, and audit.</h2>
 <p>If that sounds familiar, it should. The progression looks a lot like how autonomy evolves in cars.</p>
@@ -814,29 +739,15 @@ Agent native data is what happens when you stop asking what humans want to see a
 </li>
 </ol>
 </section>]]></content:encoded>
-      <excerpt:encoded><![CDATA[What BMW's five levels of driverless automation reveal about agentic AI maturity — a practical framework for assessing orchestration capability from prompt chaining to full autonomy.]]></excerpt:encoded>
-      <wp:post_id>1008</wp:post_id>
-      <wp:post_date>2026-02-26 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-02-26 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[agentic-orchestration-bmw-levels]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="human-in-the-loop"><![CDATA[Human in the Loop]]></category>
     </item>
     <item>
       <title><![CDATA[AWS Agentic Services Map: A Practical Guide to Agents, AgentCore, and the Surrounding Stack]]></title>
+      <description><![CDATA[A practical guide to AWS agentic services in 2026 — mapping Bedrock agents, AgentCore, and the surrounding infrastructure stack for teams building production AI on AWS.]]></description>
       <link>https://riverthink.com/blog/aws-agentic-services-map/</link>
-      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/aws-agentic-services-map/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-aws-agentic-services-map</guid>
-      <description></description>
+      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/aws-agentic-services-map-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/aws-agentic-services-map-hero.jpg" alt="AWS Agentic Services Map: A Practical Guide to Agents, AgentCore, and the Surrounding Stack"></figure>
 <h2>If you are trying to understand AWS agentic services in 2026, the key is to separate <strong>agent building</strong>, <strong>agent runtime infrastructure</strong>, and <strong>agent governance/data plumbing</strong>.</h2>
 <p>At a high level, AWS now offers a coherent stack centered on Amazon Bedrock Agents and Amazon Bedrock AgentCore, with adjacent services for orchestration, retrieval, and safety.<sup><a href="#user-content-fn-bedrock-agents" id="user-content-fnref-bedrock-agents" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-agentcore-overview" id="user-content-fnref-agentcore-overview" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
@@ -980,29 +891,15 @@ Agent native data is what happens when you stop asking what humans want to see a
 </li>
 </ol>
 </section>]]></content:encoded>
-      <excerpt:encoded><![CDATA[A practical guide to AWS agentic services in 2026 — mapping Bedrock agents, AgentCore, and the surrounding infrastructure stack for teams building production AI on AWS.]]></excerpt:encoded>
-      <wp:post_id>1011</wp:post_id>
-      <wp:post_date>2026-02-26 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-02-26 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[aws-agentic-services-map]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="ai-strategy"><![CDATA[AI Strategy]]></category>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
     </item>
     <item>
       <title><![CDATA[The OWASP GenAI Security Project: The Community That Is Setting the Standard for Secure AI]]></title>
+      <description><![CDATA[The OWASP GenAI Security Project is setting the community standard for secure AI. Why its frameworks matter for every enterprise deploying LLMs and agents in regulated environments.]]></description>
       <link>https://riverthink.com/blog/owasp-genai-security-project-critical-role/</link>
-      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/owasp-genai-security-project-critical-role/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-owasp-genai-security-project-critical-role</guid>
-      <description></description>
+      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/owasp-genai-security-project-critical-role-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/owasp-genai-security-project-critical-role-hero.jpg" alt="The OWASP GenAI Security Project: The Community That Is Setting the Standard for Secure AI"></figure>
 <h2>Artificial intelligence is moving from experimentation into critical infrastructure. Boards are asking whether their organisations are safe. Regulators are starting to catch up. And yet, for most enterprises, the question of how to systematically evaluate and govern AI security risk still lacks a clear, authoritative answer.</h2>
 <p>The OWASP GenAI Security Project is the closest thing the industry has to one.</p>
@@ -1256,29 +1153,15 @@ The OWASP GenAI Security Project went from a lab initiative to one of OWASP's on
 </li>
 </ol>
 </section>]]></content:encoded>
-      <excerpt:encoded><![CDATA[The OWASP GenAI Security Project is setting the community standard for secure AI. Why its frameworks matter for every enterprise deploying LLMs and agents in regulated environments.]]></excerpt:encoded>
-      <wp:post_id>1015</wp:post_id>
-      <wp:post_date>2026-02-26 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-02-26 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[owasp-genai-security-project-critical-role]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="security"><![CDATA[Security]]></category>
-      <category domain="post_tag" nicename="safety"><![CDATA[Safety]]></category>
     </item>
     <item>
       <title><![CDATA[OWASP Top 10 for LLMs (2025): Executive Summary and Why It Is Essential Reading for Agent Development]]></title>
+      <description><![CDATA[OWASP Top 10 for LLMs 2025 — an executive summary of the critical security risks in LLM and agent deployments, and why every AI engineering team must treat it as required reading.]]></description>
       <link>https://riverthink.com/blog/owasp-top-10-llm-agent-essential-reading/</link>
-      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/owasp-top-10-llm-agent-essential-reading/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-owasp-top-10-llm-agent-essential-reading</guid>
-      <description></description>
+      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/owasp-top-10-llm-agent-essential-reading-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/owasp-top-10-llm-agent-essential-reading-hero.jpg" alt="OWASP Top 10 for LLMs (2025): Executive Summary and Why It Is Essential Reading for Agent Development"></figure>
 <h2>If you are building AI agents in production, the OWASP Top 10 for LLMs and GenAI is not optional reading. It is one of the clearest, community-driven security baselines for how modern LLM and agentic systems fail, and how teams should reduce those failures in real deployments.<sup><a href="#user-content-fn-owasp-project" id="user-content-fnref-owasp-project" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-owasp-llm-top10" id="user-content-fnref-owasp-llm-top10" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></h2>
 <p>OWASP now positions this work under the broader GenAI Security Project, explicitly covering LLMs, agentic AI systems, and AI-driven applications. That scope makes it directly relevant for agent architects, platform teams, security leaders, and engineering executives making delivery and governance decisions.<sup><a href="#user-content-fn-owasp-project" id="user-content-fnref-owasp-project-2" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-owasp-flagship" id="user-content-fnref-owasp-flagship" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup></p>
@@ -1394,29 +1277,15 @@ The OWASP GenAI Security Project went from a lab initiative to one of OWASP's on
 </li>
 </ol>
 </section>]]></content:encoded>
-      <excerpt:encoded><![CDATA[OWASP Top 10 for LLMs 2025 — an executive summary of the critical security risks in LLM and agent deployments, and why every AI engineering team must treat it as required reading.]]></excerpt:encoded>
-      <wp:post_id>1016</wp:post_id>
-      <wp:post_date>2026-02-26 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-02-26 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[owasp-top-10-llm-agent-essential-reading]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="security"><![CDATA[Security]]></category>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
     </item>
     <item>
       <title><![CDATA[Agentic AI: Orchestration, Oversight, and the Remaking of Work]]></title>
+      <description><![CDATA[Agentic AI is not a smarter chatbot. It is a coordination system that reshapes knowledge work. A clear look at orchestration, oversight, and what autonomous AI systems mean in practice.]]></description>
       <link>https://riverthink.com/blog/agentic-ai-digital-workforce/</link>
-      <pubDate>Fri, 27 Feb 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/agentic-ai-digital-workforce/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-agentic-ai-digital-workforce</guid>
-      <description></description>
+      <pubDate>Fri, 27 Feb 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/agentic-ai-digital-workforce-hero-new.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/agentic-ai-digital-workforce-hero-new.jpg" alt="Agentic AI: Orchestration, Oversight, and the Remaking of Work"></figure>
 <p>There is a definition of agentic AI circulating inside most organisations right now, and it is the wrong one. The idea that agentic AI means a human asks a question, a large language model answers, and something useful happens — that describes a conversational AI interface. It does not describe an agentic system.</p>
 <p>The distinction carries real consequences for architecture, governance, workforce design, and competitive positioning.</p>
@@ -1704,30 +1573,15 @@ Bias can be built into systems, but there are countermeasures. You cannot contro
 </li>
 </ol>
 </section>]]></content:encoded>
-      <excerpt:encoded><![CDATA[Agentic AI is not a smarter chatbot. It is a coordination system that reshapes knowledge work. A clear look at orchestration, oversight, and what autonomous AI systems mean in practice.]]></excerpt:encoded>
-      <wp:post_id>1006</wp:post_id>
-      <wp:post_date>2026-02-27 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-02-27 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[agentic-ai-digital-workforce]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="executive-brief"><![CDATA[Executive Brief]]></category>
-      <category domain="post_tag" nicename="ai-strategy"><![CDATA[AI Strategy]]></category>
     </item>
     <item>
       <title><![CDATA[Baroness Martha Lane Fox on Skills, Access and the Next Digital Era]]></title>
+      <description><![CDATA[Baroness Martha Lane Fox at London Tech Show 2026 on digital access, skills inequality, and what the shift to AI demands from leaders, educators, and policymakers.]]></description>
       <link>https://riverthink.com/blog/london-tech-show-2026/</link>
-      <pubDate>Wed, 04 Mar 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/london-tech-show-2026/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-london-tech-show-2026</guid>
-      <description></description>
+      <pubDate>Wed, 04 Mar 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/london-tech-show-martha-lane-fox-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/london-tech-show-martha-lane-fox-hero.jpg" alt="Baroness Martha Lane Fox on Skills, Access and the Next Digital Era"></figure>
 <h2>At the <strong>London Tech Show 2026 at ExCeL</strong>, the stage lights turned to <strong>Baroness Martha Lane Fox</strong>, one of the UK’s most influential technology leaders and a co founder of lastminute.com. Martha has lived through the entire arc of the modern internet, from the early ecommerce experiments of the late 1990s to today’s rapidly evolving AI landscape.</h2>
 <p>Her talk offered something rare. Perspective.</p>
@@ -1859,30 +1713,15 @@ I want to tilt towards the light.
 <p>For the next generation entering the workforce, the tools available will be more powerful than anything previous generations imagined.</p>
 <p>Which makes this moment less about fear and more about responsibility.</p>
 <p>The future of work is being written right now.</p>]]></content:encoded>
-      <excerpt:encoded><![CDATA[Baroness Martha Lane Fox at London Tech Show 2026 on digital access, skills inequality, and what the shift to AI demands from leaders, educators, and policymakers.]]></excerpt:encoded>
-      <wp:post_id>1014</wp:post_id>
-      <wp:post_date>2026-03-04 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-03-04 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[london-tech-show-2026]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="londontechshow"><![CDATA[LondonTechShow]]></category>
-      <category domain="post_tag" nicename="future-work"><![CDATA[Future Work]]></category>
-      <category domain="post_tag" nicename="executive-brief"><![CDATA[Executive Brief]]></category>
     </item>
     <item>
       <title><![CDATA[What Neon Taught Me About AI and Real Skills]]></title>
+      <description><![CDATA[A flickering neon light exposes the gap between AI-generated knowledge and genuine skill — and what it means when you can follow instructions perfectly but don't understand what you're doing.]]></description>
       <link>https://riverthink.com/blog/Neon/</link>
-      <pubDate>Sat, 21 Mar 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/Neon/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-Neon</guid>
-      <description></description>
+      <pubDate>Sat, 21 Mar 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/8A0BAD40-71E0-4D0B-A7F8-47340A7B0238.png" length="0" type="image/png" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/8A0BAD40-71E0-4D0B-A7F8-47340A7B0238.png" alt="What Neon Taught Me About AI and Real Skills"></figure>
 <p>This morning it was a flickering neon strip in the garage. There was a faint buzz, an occasional strobe effect, and just enough inconsistency to make it irritating rather than urgent. The sort of problem you feel you should be able to solve.</p>
 <p>So I did what most of us now do. I took a photo, asked AI, and within seconds had a confident answer. Likely ballast failure. It even explained what a ballast was, how it worked, and what needed replacing.</p>
@@ -1950,30 +1789,15 @@ I want to tilt towards the light.
 <p>Somewhere between those two sits a category of skill that is becoming quietly more valuable.</p>
 <p>Not because it is new.</p>
 <p>Because fewer people are practising it.</p>]]></content:encoded>
-      <excerpt:encoded><![CDATA[A flickering neon light exposes the gap between AI-generated knowledge and genuine skill — and what it means when you can follow instructions perfectly but don't understand what you're doing.]]></excerpt:encoded>
-      <wp:post_id>1001</wp:post_id>
-      <wp:post_date>2026-03-21 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-03-21 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[Neon]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="ai-strategy"><![CDATA[AI Strategy]]></category>
-      <category domain="post_tag" nicename="executive-brief"><![CDATA[Executive Brief]]></category>
     </item>
     <item>
       <title><![CDATA[Google ADK vs LangChain vs LangGraph: The New Stack for Agent Engineering]]></title>
+      <description><![CDATA[A direct comparison of Google ADK, LangChain, and LangGraph for enterprise agent engineering — capabilities, tradeoffs, and how to choose the right framework for production AI.]]></description>
       <link>https://riverthink.com/blog/google-adk-vs-langchain-agent-engineering/</link>
-      <pubDate>Sun, 22 Mar 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/google-adk-vs-langchain-agent-engineering/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-google-adk-vs-langchain-agent-engineering</guid>
-      <description></description>
+      <pubDate>Sun, 22 Mar 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/EBBFD461-BFFB-420C-B7FB-13F3F248768E.png" length="0" type="image/png" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/EBBFD461-BFFB-420C-B7FB-13F3F248768E.png" alt="Google ADK vs LangChain vs LangGraph: The New Stack for Agent Engineering"></figure>
 <p>There has been a quiet shift in how we build with large language models. Not long ago, most systems began with a prompt, perhaps a few tools, and a chain stitched together to produce something useful. It worked, often surprisingly well, and for many teams that was enough.</p>
 <p>Then systems started to grow. What began as a simple interaction turned into multiple steps, dependencies, retries, and edge cases. At that point, the idea of a chain began to feel slightly optimistic, in the same way a whiteboard sketch sometimes survives longer than it should.</p>
@@ -2147,31 +1971,15 @@ I want to tilt towards the light.
 <li>LangChain Documentation — <a href="https://python.langchain.com">https://python.langchain.com</a></li>
 <li>LangGraph Documentation — <a href="https://langchain-ai.github.io/langgraph/">https://langchain-ai.github.io/langgraph/</a></li>
 </ol>]]></content:encoded>
-      <excerpt:encoded><![CDATA[A direct comparison of Google ADK, LangChain, and LangGraph for enterprise agent engineering — capabilities, tradeoffs, and how to choose the right framework for production AI.]]></excerpt:encoded>
-      <wp:post_id>1012</wp:post_id>
-      <wp:post_date>2026-03-22 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-03-22 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[google-adk-vs-langchain-agent-engineering]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="ai-architecture"><![CDATA[AI Architecture]]></category>
-      <category domain="post_tag" nicename="llm-frameworks"><![CDATA[LLM Frameworks]]></category>
-      <category domain="post_tag" nicename="enterprise-ai"><![CDATA[Enterprise AI]]></category>
     </item>
     <item>
       <title><![CDATA[Spec-Driven Development: The Power Inversion Your Engineering Team Won't Tell You About]]></title>
+      <description><![CDATA[Spec-driven development is inverting who holds power in software delivery. An executive guide to how structured specifications shift control from engineering to product and business leadership.]]></description>
       <link>https://riverthink.com/blog/spec-driven-development-executive-guide/</link>
-      <pubDate>Wed, 01 Apr 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/spec-driven-development-executive-guide/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-spec-driven-development-executive-guide</guid>
-      <description></description>
+      <pubDate>Wed, 01 Apr 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/sdd.png" length="0" type="image/png" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/sdd.png" alt="Spec-Driven Development: The Power Inversion Your Engineering Team Won&apos;t Tell You About"></figure>
 <h2>For thirty years, software development has operated on a simple, unspoken hierarchy. Specifications were inputs. Code was the output. The document you approved in a strategy meeting became a rough guide — a wish list that developers interpreted, adapted, and ultimately rewrote in the language of implementation. By the time software shipped, the original intent had been filtered through dozens of technical decisions that no one above engineering had visibility into or control over. That hierarchy is changing. And the implications for how you lead, govern, and invest in technology are significant.</h2>
 <hr>
@@ -2317,31 +2125,15 @@ I want to tilt towards the light.
 <li><strong>Agile Manifesto</strong> — <a href="https://agilemanifesto.org">agilemanifesto.org</a>. The original principles behind iterative development — and the implicit trade-offs that SDD now addresses.</li>
 <li><strong>Scaled Agile Framework (SAFe)</strong> — <a href="https://scaledagileframework.com">scaledagileframework.com</a>. Enterprise Agile framework context for understanding where SDD sits relative to existing delivery structures.</li>
 </ul>]]></content:encoded>
-      <excerpt:encoded><![CDATA[Spec-driven development is inverting who holds power in software delivery. An executive guide to how structured specifications shift control from engineering to product and business leadership.]]></excerpt:encoded>
-      <wp:post_id>1019</wp:post_id>
-      <wp:post_date>2026-04-01 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-04-01 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[spec-driven-development-executive-guide]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="executive-brief"><![CDATA[Executive Brief]]></category>
-      <category domain="post_tag" nicename="engineering-strategy"><![CDATA[Engineering Strategy]]></category>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="spec-driven-development"><![CDATA[Spec-Driven Development]]></category>
     </item>
     <item>
       <title><![CDATA[AI Agents and the New Cybersecurity Frontier]]></title>
+      <description><![CDATA[]]></description>
       <link>https://riverthink.com/blog/ai-agents-cybersecurity/</link>
-      <pubDate>Tue, 19 May 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/ai-agents-cybersecurity/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-ai-agents-cybersecurity</guid>
-      <description></description>
+      <pubDate>Tue, 19 May 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/cybersecurity.png" length="0" type="image/png" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/cybersecurity.png" alt="AI Agents and the New Cybersecurity Frontier"></figure>
 <p>Artificial intelligence is entering a very different phase.<br>
 For years, organisations focused on models that could generate text, summarise documents, or answer questions. That era already feels surprisingly quaint. The new generation of AI systems is beginning to act.</p>
@@ -2493,30 +2285,15 @@ And power always deserves governance.</p>
 <li>Google DeepMind. <em>Challenges in Securing Agentic AI Systems</em>.</li>
 <li>ENISA. <em>AI Threat Landscape and Security Guidance</em>.</li>
 </ol>]]></content:encoded>
-      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-      <wp:post_id>1009</wp:post_id>
-      <wp:post_date>2026-05-19 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-05-19 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[ai-agents-cybersecurity]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="cyber-security"><![CDATA[Cyber Security]]></category>
-      <category domain="post_tag" nicename="enterprise-ai"><![CDATA[Enterprise AI]]></category>
     </item>
     <item>
       <title><![CDATA[The 4 Ds Quietly Shaping Healthcare AI Deployments]]></title>
+      <description><![CDATA[The 4 Ds Quietly Shaping Healthcare AI Deployments]]></description>
       <link>https://riverthink.com/blog/4ds-of-agenticai-in-healthcare/</link>
-      <pubDate>Sat, 23 May 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/4ds-of-agenticai-in-healthcare/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-4ds-of-agenticai-in-healthcare</guid>
-      <description></description>
+      <pubDate>Sat, 23 May 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/agent-native-data-hero.jpg" length="0" type="image/jpeg" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/agent-native-data-hero.jpg" alt="The 4 Ds Quietly Shaping Healthcare AI Deployments"></figure>
 <p>After working on AI deployments across healthcare operations, command centres, and clinical workflows, I keep seeing the same pattern emerge. The technology itself usually performs reasonably well. The real challenge arrives when AI collides with the reality of hospitals.</p>
 <p>It almost always comes down to the “4 Ds”.</p>
@@ -2539,31 +2316,15 @@ Scaling inefficiency with AI still leaves you with inefficiency. It just arrives
 <p>The strongest deployments redesign workflows alongside the technology. They rethink escalation paths, operational ownership, and decision support from the ground up.</p>
 <p>That is where AI starts creating measurable impact.</p>
 <p>And occasionally, after enough workshops, architecture reviews, governance meetings, and coffee, everyone even agrees on what the workflow actually is.</p>]]></content:encoded>
-      <excerpt:encoded><![CDATA[The 4 Ds Quietly Shaping Healthcare AI Deployments]]></excerpt:encoded>
-      <wp:post_id>1000</wp:post_id>
-      <wp:post_date>2026-05-23 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-05-23 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[4ds-of-agenticai-in-healthcare]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="healthcare-ai"><![CDATA[Healthcare AI]]></category>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="operational-intelligence"><![CDATA[Operational Intelligence]]></category>
-      <category domain="post_tag" nicename="digital-transformation"><![CDATA[Digital Transformation]]></category>
     </item>
     <item>
       <title><![CDATA[Why the SpaceX IPO May Really Be About AI Infrastructure]]></title>
+      <description><![CDATA[]]></description>
       <link>https://riverthink.com/blog/spacex-ipo-grok-starlink/</link>
-      <pubDate>Mon, 25 May 2026 09:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://riverthink.com/blog/spacex-ipo-grok-starlink/</guid>
       <dc:creator><![CDATA[Peter Wood]]></dc:creator>
-      <guid isPermaLink="false">riverthink-import-spacex-ipo-grok-starlink</guid>
-      <description></description>
+      <pubDate>Mon, 25 May 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/spacex.png" length="0" type="image/png" />
       <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/spacex.png" alt="Why the SpaceX IPO May Really Be About AI Infrastructure"></figure>
 <p>Most people still think of SpaceX as a rocket company.</p>
 <p>That increasingly feels like looking at Amazon in 2006 and concluding it mainly sold books.</p>
@@ -2714,22 +2475,6 @@ Perhaps the most important signal is that multiple companies are converging on t
 <li>Tesla and Yahoo Finance reporting regarding A15 AI chip initiatives and embedded AI acceleration.</li>
 <li>Research notes and public reporting on Project Kuiper, AWS infrastructure expansion, and Blue Origin orbital initiatives.</li>
 </ol>]]></content:encoded>
-      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
-      <wp:post_id>1018</wp:post_id>
-      <wp:post_date>2026-05-25 09:00:00</wp:post_date>
-      <wp:post_date_gmt>2026-05-25 09:00:00</wp:post_date_gmt>
-      <wp:comment_status>closed</wp:comment_status>
-      <wp:ping_status>closed</wp:ping_status>
-      <wp:post_name><![CDATA[spacex-ipo-grok-starlink]]></wp:post_name>
-      <wp:status>draft</wp:status>
-      <wp:post_parent>0</wp:post_parent>
-      <wp:menu_order>0</wp:menu_order>
-      <wp:post_type>post</wp:post_type>
-      <wp:post_password></wp:post_password>
-      <wp:is_sticky>0</wp:is_sticky>
-      <category domain="post_tag" nicename="agentic-ai"><![CDATA[Agentic AI]]></category>
-      <category domain="post_tag" nicename="orbital-computing"><![CDATA[Orbital Computing]]></category>
-      <category domain="post_tag" nicename="ai-infrastructure"><![CDATA[AI Infrastructure]]></category>
     </item>
   </channel>
 </rss>
