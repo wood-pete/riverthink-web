@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Riverthink migration batch 03</title>
+    <link>https://riverthink.com/blog/</link>
+    <description>Riverthink articles prepared for migration to Substack</description>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 14 Sep 2026 16:27:02 GMT</lastBuildDate>
+    <atom:link href="https://riverthink.com/substack-import/batch-03.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Agentic Orchestration 101: What It Is and How It Compares to BMW's Five Levels of Driverless Automation]]></title>
+      <description><![CDATA[What BMW's five levels of driverless automation reveal about agentic AI maturity — a practical framework for assessing orchestration capability from prompt chaining to full autonomy.]]></description>
+      <link>https://riverthink.com/blog/agentic-orchestration-bmw-levels/</link>
+      <guid isPermaLink="true">https://riverthink.com/blog/agentic-orchestration-bmw-levels/</guid>
+      <dc:creator><![CDATA[Peter Wood]]></dc:creator>
+      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/agentic-orchestration-bmw-levels-hero.jpg" length="0" type="image/jpeg" />
+      <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/agentic-orchestration-bmw-levels-hero.jpg" alt="Agentic Orchestration 101: What It Is and How It Compares to BMW&apos;s Five Levels of Driverless Automation"></figure>
+<h2>Agentic orchestration is the discipline of coordinating multiple AI agents, tools, and data systems so they can complete complex tasks reliably. Instead of one model answering one question, orchestration manages a full workflow: planning, delegation, execution, validation, escalation, and audit.</h2>
+<p>If that sounds familiar, it should. The progression looks a lot like how autonomy evolves in cars.</p>
+<p>BMW and the wider automotive industry describe automation as a maturity curve from assisted driving to full autonomy. The same framing is useful for enterprise agent systems, where the question is not "does it work once?" but "can it operate safely at scale?"<sup><a href="#user-content-fn-bmw-road" id="user-content-fnref-bmw-road" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-sae-j3016" id="user-content-fnref-sae-j3016" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
+<h2>What Agentic Orchestration Actually Does</h2>
+<p>At a practical level, orchestration handles five core jobs:</p>
+<ol>
+<li><strong>Task decomposition</strong>: breaking a business request into smaller executable steps</li>
+<li><strong>Role assignment</strong>: selecting which agent or service should do each step</li>
+<li><strong>Control flow</strong>: deciding sequence, parallelism, retries, and fallbacks</li>
+<li><strong>Guardrails</strong>: enforcing policy, permissions, compliance, and quality thresholds</li>
+<li><strong>Observability</strong>: logging state transitions, outputs, decisions, and exceptions</li>
+</ol>
+<p>Without orchestration, agent systems often become fragile demos. With orchestration, they become operational systems.</p>
+<h2>A Simple Comparison Model: BMW's Five Levels and Agentic Maturity</h2>
+<p>BMW's driverless automation narrative is often presented in five levels (from assisted to fully autonomous). For AI teams, this is a useful analogy.<sup><a href="#user-content-fn-bmw-road" id="user-content-fnref-bmw-road-2" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-bmw-five-steps" id="user-content-fnref-bmw-five-steps" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>BMW automation level</th><th>Vehicle behavior</th><th>Agentic orchestration equivalent</th><th>Human role</th></tr></thead><tbody><tr><td><strong>Level 1: Driver Assistance</strong></td><td>Car can assist steering or speed in limited situations</td><td>Single agent assists a user in one step (for example, draft summary + one tool call)</td><td>Human leads every decision</td></tr><tr><td><strong>Level 2: Partial Automation</strong></td><td>Car can control steering and speed, but driver constantly supervises</td><td>Multi-step workflows execute automatically, but every critical action needs explicit approval</td><td>Human supervises continuously</td></tr><tr><td><strong>Level 3: Conditional Automation</strong></td><td>Car drives in specific conditions and requests takeover when needed</td><td>Agents run end-to-end in defined domains with confidence checks and escalation triggers</td><td>Human intervenes on exceptions</td></tr><tr><td><strong>Level 4: High Automation</strong></td><td>Car drives itself in geofenced domains without constant driver attention</td><td>Orchestrated multi-agent systems run autonomously in bounded business contexts with policy engines and runtime governance</td><td>Human monitors outcomes, not each action</td></tr><tr><td><strong>Level 5: Full Automation</strong></td><td>Car operates everywhere without driver intervention</td><td>Fully autonomous cross-domain orchestration with self-optimizing planning, robust memory, and universal policy compliance</td><td>Human sets goals and strategy only</td></tr></tbody></table>
+<p>The level descriptions above align with BMW's published five-level explainer and the SAE J3016 automation taxonomy used across the industry.<sup><a href="#user-content-fn-bmw-road" id="user-content-fnref-bmw-road-3" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-sae-chart" id="user-content-fnref-sae-chart" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup></p>
+<h2>Why This Analogy Helps Teams</h2>
+<p>Many organizations incorrectly jump from Level 1 prototypes to Level 4 expectations. They expect autonomous operations from systems that still need constant prompting and manual correction.</p>
+<p>Using a staged maturity model helps teams:</p>
+<ul>
+<li>set realistic rollout expectations</li>
+<li>design governance proportional to autonomy</li>
+<li>align architecture choices with actual risk tolerance</li>
+<li>measure progress with clear operational milestones</li>
+</ul>
+<p>In short, it turns vague "agent strategy" talk into an engineering roadmap.</p>
+<div class="quote">Reliable autonomy is not achieved by smarter prompts alone. It is achieved by orchestration, guardrails, and operational discipline.</div>
+<h2>Technical Markers for Each Stage</h2>
+<p>If you want to know your current stage, check for these markers:</p>
+<ul>
+<li><strong>Level 1-2 posture</strong>: prompt chaining, ad hoc tool use, low policy enforcement, weak tracing</li>
+<li><strong>Level 3 posture</strong>: workflow engine, deterministic checkpoints, approval gates, structured exception handling</li>
+<li><strong>Level 4 posture</strong>: policy-as-code, continuous evaluation, memory/state management, observability tied to SLAs</li>
+<li><strong>Level 5 posture</strong>: adaptive planning across domains, formal verification for safety-critical actions, autonomous optimization loops</li>
+</ul>
+<p>Most enterprise deployments today are between Level 2 and Level 3.</p>
+<h2>The Core Insight</h2>
+<p>Autonomy is not a model feature. It is a systems property.</p>
+<p>BMW did not reach higher levels of vehicle automation by adding only better sensors; it required integrated control systems, safety engineering, fallback logic, and regulatory alignment. Agentic orchestration follows the same pattern.<sup><a href="#user-content-fn-bmw-road" id="user-content-fnref-bmw-road-4" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-nhtsa-levels" id="user-content-fnref-nhtsa-levels" data-footnote-ref="" aria-describedby="footnote-label">5</a></sup></p>
+<p>If your architecture cannot explain who made a decision, why it was made, what constraints were applied, and how to recover when things fail, you do not yet have high autonomy. You have automation theater.</p>
+<h2>Where to Start</h2>
+<p>A pragmatic starting path for most teams is:</p>
+<ol>
+<li>Define one narrow domain where failure impact is controlled</li>
+<li>Implement orchestration with explicit state transitions and audit logs</li>
+<li>Add policy gates before any external side effects</li>
+<li>Introduce confidence-based escalation to humans</li>
+<li>Expand scope only after reliability and governance metrics are stable</li>
+</ol>
+<p>That path will not feel flashy, but it is how reliable autonomy is built.</p>
+<p>The same lesson from driverless systems applies directly to AI systems: maturity beats hype.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-bmw-road">
+<p>BMW Group. "The Road to Autonomous Driving at BMW Group." <a href="https://www.bmwgroup.com/en/innovation/automated-driving.html">https://www.bmwgroup.com/en/innovation/automated-driving.html</a> <a href="#user-content-fnref-bmw-road" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-bmw-road-2" data-footnote-backref="" aria-label="Back to reference 1-2" class="data-footnote-backref">↩<sup>2</sup></a> <a href="#user-content-fnref-bmw-road-3" data-footnote-backref="" aria-label="Back to reference 1-3" class="data-footnote-backref">↩<sup>3</sup></a> <a href="#user-content-fnref-bmw-road-4" data-footnote-backref="" aria-label="Back to reference 1-4" class="data-footnote-backref">↩<sup>4</sup></a></p>
+</li>
+<li id="user-content-fn-sae-j3016">
+<p>SAE International. "Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles (J3016)." <a href="https://www.sae.org/standards/content/j3016_202104/">https://www.sae.org/standards/content/j3016_202104/</a> <a href="#user-content-fnref-sae-j3016" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-bmw-five-steps">
+<p>BMW.com. "Autonomous driving: 5 steps to the self-driving car." <a href="https://www.bmw.com/en/automotive-life/autonomous-driving.html">https://www.bmw.com/en/automotive-life/autonomous-driving.html</a> <a href="#user-content-fnref-bmw-five-steps" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-sae-chart">
+<p>SAE International. "Levels of Driving Automation Visual Chart (J3016)." <a href="https://www.sae.org/binaries/content/assets/cm/content/blog/sae-j3016-visual-chart_5.3.21.pdf">https://www.sae.org/binaries/content/assets/cm/content/blog/sae-j3016-visual-chart_5.3.21.pdf</a> <a href="#user-content-fnref-sae-chart" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-nhtsa-levels">
+<p>NHTSA. "Levels of Automation." <a href="https://www.nhtsa.gov/document/levels-automation">https://www.nhtsa.gov/document/levels-automation</a> <a href="#user-content-fnref-nhtsa-levels" data-footnote-backref="" aria-label="Back to reference 5" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[AWS Agentic Services Map: A Practical Guide to Agents, AgentCore, and the Surrounding Stack]]></title>
+      <description><![CDATA[A practical guide to AWS agentic services in 2026 — mapping Bedrock agents, AgentCore, and the surrounding infrastructure stack for teams building production AI on AWS.]]></description>
+      <link>https://riverthink.com/blog/aws-agentic-services-map/</link>
+      <guid isPermaLink="true">https://riverthink.com/blog/aws-agentic-services-map/</guid>
+      <dc:creator><![CDATA[Peter Wood]]></dc:creator>
+      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/aws-agentic-services-map-hero.jpg" length="0" type="image/jpeg" />
+      <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/aws-agentic-services-map-hero.jpg" alt="AWS Agentic Services Map: A Practical Guide to Agents, AgentCore, and the Surrounding Stack"></figure>
+<h2>If you are trying to understand AWS agentic services in 2026, the key is to separate <strong>agent building</strong>, <strong>agent runtime infrastructure</strong>, and <strong>agent governance/data plumbing</strong>.</h2>
+<p>At a high level, AWS now offers a coherent stack centered on Amazon Bedrock Agents and Amazon Bedrock AgentCore, with adjacent services for orchestration, retrieval, and safety.<sup><a href="#user-content-fn-bedrock-agents" id="user-content-fnref-bedrock-agents" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-agentcore-overview" id="user-content-fnref-agentcore-overview" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
+<div class="quote">"Amazon Bedrock AgentCore is an agentic platform to build, deploy and operate highly capable agents securely at scale."</div>
+<h2>The AWS Agentic Service Landscape (What matters most)</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Layer</th><th>AWS service/capability</th><th>What it does</th><th>When to use it</th></tr></thead><tbody><tr><td>Agent application layer</td><td><strong>Amazon Bedrock Agents</strong></td><td>Builds agents that plan and execute multi-step tasks using models, APIs, and enterprise data</td><td>You want managed agent orchestration with fast setup</td></tr><tr><td>Multi-agent coordination</td><td><strong>Bedrock Multi-agent Collaboration</strong></td><td>Coordinates specialist agents under a supervisor agent</td><td>You need role-specialized agent teams for complex workflows</td></tr><tr><td>Agent runtime platform</td><td><strong>Amazon Bedrock AgentCore</strong></td><td>Production platform to deploy/operate agents with security, identity, memory, gateway, and observability controls</td><td>You need production-grade operations, not only prototype agents</td></tr><tr><td>Retrieval and grounding</td><td><strong>Amazon Bedrock Knowledge Bases</strong></td><td>Managed RAG with ingestion, retrieval APIs, source attribution, and structured/unstructured support</td><td>Your agents need grounded answers from enterprise data</td></tr><tr><td>Workflow composition</td><td><strong>Amazon Bedrock Flows</strong></td><td>Visual workflow builder linking prompts, agents, knowledge bases, and AWS services</td><td>You want explicit, auditable multi-step GenAI flows</td></tr><tr><td>Safety and policy</td><td><strong>Amazon Bedrock Guardrails</strong></td><td>Configurable safeguards (moderation, PII, prompt-attack protection, grounding checks) across models and workflows</td><td>You need policy-aligned behavior and safer outputs</td></tr><tr><td>Ecosystem procurement</td><td><strong>AI Agents &#x26; Tools in AWS Marketplace</strong></td><td>Catalog to discover and procure partner agents/tools, including MCP/A2A-aware offerings</td><td>You want faster buy/build hybrid delivery</td></tr></tbody></table>
+<p>AWS added Bedrock multi-agent collaboration in March 2025 and launched AI agents/tools in AWS Marketplace in July 2025, which accelerated both build and buy paths for agent programs.<sup><a href="#user-content-fn-multi-agent-ga" id="user-content-fnref-multi-agent-ga" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup><sup><a href="#user-content-fn-marketplace-agents" id="user-content-fnref-marketplace-agents" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup></p>
+<h2>AgentCore: The new center of gravity for production</h2>
+<p>AgentCore entered preview on <strong>July 16, 2025</strong> and became generally available on <strong>October 13, 2025</strong>.<sup><a href="#user-content-fn-agentcore-preview" id="user-content-fnref-agentcore-preview" data-footnote-ref="" aria-describedby="footnote-label">5</a></sup><sup><a href="#user-content-fn-agentcore-ga" id="user-content-fnref-agentcore-ga" data-footnote-ref="" aria-describedby="footnote-label">6</a></sup></p>
+<p>AWS positions it as modular services you can adopt independently:</p>
+<ul>
+<li><strong>Runtime</strong>: serverless execution for agents/tools, including long-running workloads</li>
+<li><strong>Gateway</strong>: tool connectivity and discovery, including MCP connectivity and API/Lambda transformation</li>
+<li><strong>Policy (Preview)</strong>: real-time policy enforcement integrated with Gateway</li>
+<li><strong>Evaluations (Preview)</strong>: live interaction scoring and quality monitoring</li>
+<li><strong>Identity</strong>: agent authN/authZ for AWS and third-party systems</li>
+<li><strong>Memory</strong>: persistent agent memory handling</li>
+<li><strong>Observability</strong>: CloudWatch/OTel-compatible tracing and metrics</li>
+<li><strong>Browser</strong>: secure browser runtime for web actions</li>
+<li><strong>Code Interpreter</strong>: sandboxed code execution for agent tasks<sup><a href="#user-content-fn-agentcore-overview" id="user-content-fnref-agentcore-overview-2" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup><sup><a href="#user-content-fn-agentcore-ga" id="user-content-fnref-agentcore-ga-2" data-footnote-ref="" aria-describedby="footnote-label">6</a></sup></li>
+</ul>
+<p>This matters because Bedrock Agents helps you build agent behavior, while AgentCore helps you run that behavior reliably in production.</p>
+<h2>How Bedrock Agents and AgentCore fit together</h2>
+<p>A practical mental model:</p>
+<ol>
+<li><strong>Bedrock Agents</strong> defines how the agent reasons, plans, and invokes actions.<sup><a href="#user-content-fn-bedrock-agents" id="user-content-fnref-bedrock-agents-2" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-agents-ga" id="user-content-fnref-agents-ga" data-footnote-ref="" aria-describedby="footnote-label">7</a></sup></li>
+<li><strong>Knowledge Bases</strong> provides grounded context and citations for retrieval-heavy tasks.<sup><a href="#user-content-fn-knowledge-bases" id="user-content-fnref-knowledge-bases" data-footnote-ref="" aria-describedby="footnote-label">8</a></sup></li>
+<li><strong>Guardrails</strong> enforces safety and policy constraints across model and workflow steps.<sup><a href="#user-content-fn-guardrails" id="user-content-fnref-guardrails" data-footnote-ref="" aria-describedby="footnote-label">9</a></sup></li>
+<li><strong>Flows</strong> composes larger multi-step paths around prompts, agents, and services.<sup><a href="#user-content-fn-bedrock-flows" id="user-content-fnref-bedrock-flows" data-footnote-ref="" aria-describedby="footnote-label">10</a></sup></li>
+<li><strong>AgentCore</strong> hardens runtime operations (identity, memory, gateway, observability, runtime isolation).<sup><a href="#user-content-fn-agentcore-overview" id="user-content-fnref-agentcore-overview-3" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup><sup><a href="#user-content-fn-agentcore-ga" id="user-content-fnref-agentcore-ga-3" data-footnote-ref="" aria-describedby="footnote-label">6</a></sup></li>
+</ol>
+<p>If your team is moving from PoC to production, this sequence avoids the common trap of building clever demos without operational controls.</p>
+<h2>What is actually "agentic" in AWS today</h2>
+<p>If we define "agentic services" as AWS offerings directly intended to build, coordinate, secure, or operate autonomous/semi-autonomous agent workflows, the core list is:</p>
+<ol>
+<li>Amazon Bedrock Agents</li>
+<li>Bedrock Multi-agent Collaboration</li>
+<li>Amazon Bedrock AgentCore (Runtime, Gateway, Policy, Evaluations, Identity, Memory, Observability, Browser, Code Interpreter)</li>
+<li>Amazon Bedrock Knowledge Bases</li>
+<li>Amazon Bedrock Flows</li>
+<li>Amazon Bedrock Guardrails</li>
+<li>AI Agents and Tools in AWS Marketplace</li>
+</ol>
+<p>That is the clearest current map for architecture and investment decisions as of <strong>February 26, 2026</strong>.</p>
+<h2>Executive summary</h2>
+<p>AWS now has a full agent stack, not just a single "agent" feature.</p>
+<ul>
+<li><strong>Build behavior</strong> with Bedrock Agents</li>
+<li><strong>Coordinate specialists</strong> with multi-agent collaboration</li>
+<li><strong>Ground responses</strong> with Knowledge Bases</li>
+<li><strong>Compose workflows</strong> with Flows</li>
+<li><strong>Enforce safety</strong> with Guardrails</li>
+<li><strong>Run at scale</strong> with AgentCore</li>
+<li><strong>Extend quickly</strong> through Marketplace agent/tool offerings</li>
+</ul>
+<p>For most enterprises, AgentCore plus Bedrock Agents is the critical boundary between pilot velocity and production reliability.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-bedrock-agents">
+<p>Amazon Bedrock Agents. <a href="https://aws.amazon.com/bedrock/agents/">https://aws.amazon.com/bedrock/agents/</a> <a href="#user-content-fnref-bedrock-agents" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-bedrock-agents-2" data-footnote-backref="" aria-label="Back to reference 1-2" class="data-footnote-backref">↩<sup>2</sup></a></p>
+</li>
+<li id="user-content-fn-agentcore-overview">
+<p>Amazon Bedrock AgentCore overview. <a href="https://aws.amazon.com/bedrock/agentcore/">https://aws.amazon.com/bedrock/agentcore/</a> <a href="#user-content-fnref-agentcore-overview" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-agentcore-overview-2" data-footnote-backref="" aria-label="Back to reference 2-2" class="data-footnote-backref">↩<sup>2</sup></a> <a href="#user-content-fnref-agentcore-overview-3" data-footnote-backref="" aria-label="Back to reference 2-3" class="data-footnote-backref">↩<sup>3</sup></a></p>
+</li>
+<li id="user-content-fn-multi-agent-ga">
+<p>AWS What's New. "Amazon Bedrock now supports multi-agent collaboration" (Mar 10, 2025). <a href="https://aws.amazon.com/about-aws/whats-new/2025/03/amazon-bedrock-multi-agent-collaboration/">https://aws.amazon.com/about-aws/whats-new/2025/03/amazon-bedrock-multi-agent-collaboration/</a> <a href="#user-content-fnref-multi-agent-ga" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-marketplace-agents">
+<p>AWS What's New. "Introducing AI agents and tools in AWS Marketplace" (Jul 16, 2025). <a href="https://aws.amazon.com/about-aws/whats-new/2025/07/ai-agents-tools-aws-marketplace/">https://aws.amazon.com/about-aws/whats-new/2025/07/ai-agents-tools-aws-marketplace/</a> <a href="#user-content-fnref-marketplace-agents" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-agentcore-preview">
+<p>AWS What's New. "Amazon Bedrock AgentCore now available in preview" (Jul 16, 2025). <a href="https://aws.amazon.com/about-aws/whats-new/2025/07/amazon-bedrock-agentcore-preview/">https://aws.amazon.com/about-aws/whats-new/2025/07/amazon-bedrock-agentcore-preview/</a> <a href="#user-content-fnref-agentcore-preview" data-footnote-backref="" aria-label="Back to reference 5" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-agentcore-ga">
+<p>AWS What's New. "Amazon Bedrock AgentCore is now generally available" (Oct 13, 2025). <a href="https://aws.amazon.com/about-aws/whats-new/2025/10/amazon-bedrock-agentcore-available/">https://aws.amazon.com/about-aws/whats-new/2025/10/amazon-bedrock-agentcore-available/</a> <a href="#user-content-fnref-agentcore-ga" data-footnote-backref="" aria-label="Back to reference 6" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-agentcore-ga-2" data-footnote-backref="" aria-label="Back to reference 6-2" class="data-footnote-backref">↩<sup>2</sup></a> <a href="#user-content-fnref-agentcore-ga-3" data-footnote-backref="" aria-label="Back to reference 6-3" class="data-footnote-backref">↩<sup>3</sup></a></p>
+</li>
+<li id="user-content-fn-agents-ga">
+<p>AWS News Blog. "Agents for Amazon Bedrock is now available with improved control of orchestration and visibility into reasoning" (Nov 28, 2023). <a href="https://aws.amazon.com/blogs/aws/agents-for-amazon-bedrock-is-now-available-with-improved-control-of-orchestration-and-visibility-into-reasoning/">https://aws.amazon.com/blogs/aws/agents-for-amazon-bedrock-is-now-available-with-improved-control-of-orchestration-and-visibility-into-reasoning/</a> <a href="#user-content-fnref-agents-ga" data-footnote-backref="" aria-label="Back to reference 7" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-knowledge-bases">
+<p>Amazon Bedrock Knowledge Bases. <a href="https://aws.amazon.com/bedrock/knowledge-bases/">https://aws.amazon.com/bedrock/knowledge-bases/</a> <a href="#user-content-fnref-knowledge-bases" data-footnote-backref="" aria-label="Back to reference 8" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-guardrails">
+<p>Amazon Bedrock Guardrails. <a href="https://aws.amazon.com/bedrock/guardrails/">https://aws.amazon.com/bedrock/guardrails/</a> <a href="#user-content-fnref-guardrails" data-footnote-backref="" aria-label="Back to reference 9" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-bedrock-flows">
+<p>AWS What's New. "Amazon Bedrock Flows is now generally available with two new capabilities" (Nov 22, 2024). <a href="https://aws.amazon.com/about-aws/whats-new/2024/11/amazon-bedrock-flows-new-capabilities/">https://aws.amazon.com/about-aws/whats-new/2024/11/amazon-bedrock-flows-new-capabilities/</a> <a href="#user-content-fnref-bedrock-flows" data-footnote-backref="" aria-label="Back to reference 10" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[The OWASP GenAI Security Project: The Community That Is Setting the Standard for Secure AI]]></title>
+      <description><![CDATA[The OWASP GenAI Security Project is setting the community standard for secure AI. Why its frameworks matter for every enterprise deploying LLMs and agents in regulated environments.]]></description>
+      <link>https://riverthink.com/blog/owasp-genai-security-project-critical-role/</link>
+      <guid isPermaLink="true">https://riverthink.com/blog/owasp-genai-security-project-critical-role/</guid>
+      <dc:creator><![CDATA[Peter Wood]]></dc:creator>
+      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/owasp-genai-security-project-critical-role-hero.jpg" length="0" type="image/jpeg" />
+      <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/owasp-genai-security-project-critical-role-hero.jpg" alt="The OWASP GenAI Security Project: The Community That Is Setting the Standard for Secure AI"></figure>
+<h2>Artificial intelligence is moving from experimentation into critical infrastructure. Boards are asking whether their organisations are safe. Regulators are starting to catch up. And yet, for most enterprises, the question of how to systematically evaluate and govern AI security risk still lacks a clear, authoritative answer.</h2>
+<p>The OWASP GenAI Security Project is the closest thing the industry has to one.</p>
+<p>It is not a vendor product, a proprietary framework, or a compliance checkbox. It is an open, community-driven initiative that has become the most widely cited reference for LLM and generative AI security risk, used by security teams, architects, regulators, and AI builders across the world.<sup><a href="#user-content-fn-owasp-flagship" id="user-content-fnref-owasp-flagship" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup></p>
+<div class="pullquote pullquote-right">
+The OWASP GenAI Security Project went from a lab initiative to one of OWASP's only Flagship-status projects in under 18 months, driven by over 600 contributing experts from more than 18 countries.
+</div>
+<p>For executives making decisions about AI adoption, governance, and risk tolerance, and for architects designing systems that depend on LLMs and agents, understanding this project is not optional. It is foundational.</p>
+<hr>
+<h2>From Web Security to AI Security: A Brief History of OWASP</h2>
+<p>The Open Worldwide Application Security Project was founded on September 9, 2001, by Mark Curphey. The OWASP Foundation was formally incorporated as a United States non-profit on April 21, 2004.<sup><a href="#user-content-fn-owasp-history" id="user-content-fnref-owasp-history" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
+<p>Its founding mission was direct: make application security visible so that organisations and individuals could make informed decisions about real security risks. In a landscape where most security knowledge lived inside vendors, consultancies, and closed research groups, OWASP's open approach was radical.</p>
+<p>The early tools included the OWASP Guide, a practical security handbook, and WebGoat, a deliberately vulnerable application used for training. But the resource that made OWASP a household name in security was the OWASP Top 10: a regularly updated, community-curated list of the most critical application security risks.</p>
+<p>Over two decades, OWASP grew into the pre-eminent open-source foundation for application security, with more than 250 local chapters worldwide and thousands of contributors producing standards, tools, guides, and cheatsheets consumed globally.<sup><a href="#user-content-fn-owasp-history" id="user-content-fnref-owasp-history-2" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
+<p>In February 2023, the board voted to rename the organisation from the "Open Web Application Security Project" to the "Open Worldwide Application Security Project," reflecting that the scope had long since extended well beyond the web.<sup><a href="#user-content-fn-owasp-history" id="user-content-fnref-owasp-history-3" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
+<hr>
+<h2>The Birth of the GenAI Security Project</h2>
+<p>As large language models moved from research curiosity to enterprise deployment in 2023, it quickly became apparent that existing security frameworks did not adequately address the risks they introduced. Prompt injection, training data poisoning, model extraction, and excessive agent autonomy were not part of the standard threat model.</p>
+<p>Steve Wilson, then of Contrast Security, launched the OWASP Top 10 for Large Language Model Applications in 2023 as a community response to this gap. What began as a small group of security professionals addressing an urgent need rapidly expanded. By 2024, the project had attracted more than 600 contributing experts from over 18 countries and nearly 8,000 active community members.<sup><a href="#user-content-fn-owasp-launch" id="user-content-fnref-owasp-launch" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup></p>
+<div class="quote">This is critical for anyone building AI systems to understand: the OWASP GenAI Security Project is not a list of theoretical problems. It is a living record of how real AI systems fail, and what to do about it.</div>
+<p>In March 2025, OWASP took the significant step of formally elevating the initiative: the Top 10 for LLM Applications became the OWASP GenAI Security Project, and it was promoted to Flagship status by vote of the Global Board of Directors.<sup><a href="#user-content-fn-owasp-flagship" id="user-content-fnref-owasp-flagship-2" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup> Flagship status is reserved for OWASP's most mature, active, and strategically important projects. The GenAI Security Project earned it in under 18 months.</p>
+<p>The project now covers LLMs, agentic AI systems, red teaming, incident response, supply chain, data governance, and the full emerging landscape of AI-powered applications.</p>
+<hr>
+<h2>Key Resources: What the Project Produces</h2>
+<p>The OWASP GenAI Security Project is a prolific producer of open, vendor-neutral guidance. The table below summarises the primary resources available as of early 2026, with direct links.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Resource</th><th>Description</th><th>Link</th></tr></thead><tbody><tr><td><strong>OWASP Top 10 for LLM Applications 2025</strong></td><td>The core risk taxonomy for LLM applications, covering the ten most critical vulnerability classes with mitigations</td><td><a href="https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/">View resource</a></td></tr><tr><td><strong>OWASP Top 10 for Agentic Applications 2026</strong></td><td>The first globally peer-reviewed framework for autonomous and agentic AI security risks, developed with over 100 industry contributors</td><td><a href="https://genai.owasp.org/2025/12/09/owasp-genai-security-project-releases-top-10-risks-and-mitigations-for-agentic-ai-security/">View resource</a></td></tr><tr><td><strong>GenAI Red Teaming Guide</strong></td><td>Practical methodology for adversarial evaluation of LLM and GenAI systems, covering model evaluation, implementation testing, infrastructure, and runtime behaviour</td><td><a href="https://genai.owasp.org/resource/genai-red-teaming-guide/">View resource</a></td></tr><tr><td><strong>Vendor Evaluation Criteria for AI Red Teaming Providers &#x26; Tooling v1.0</strong></td><td>Criteria for assessing red teaming vendors and automated testing tools, from simple chatbots to advanced multi-agent and MCP architectures</td><td><a href="https://genai.owasp.org/resource/owasp-vendor-evaluation-criteria-for-ai-red-teaming-providers-tooling-v1-0/">View resource</a></td></tr><tr><td><strong>Agentic AI Threats and Mitigations</strong></td><td>Comprehensive threat taxonomy for agentic systems with mitigation guidance, covering planning, tool use, memory, and multi-agent coordination</td><td><a href="https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/">View resource</a></td></tr><tr><td><strong>Agentic AI Secure Development Guide</strong></td><td>Practical guidance for designing, building, and deploying secure agentic applications</td><td><a href="https://genai.owasp.org/initiatives/agentic-security-initiative/">View resource</a></td></tr><tr><td><strong>GenAI Incident Response Guide</strong></td><td>Guidelines and best practices for responding to security incidents involving GenAI applications</td><td><a href="https://genai.owasp.org/resources/">View resource</a></td></tr><tr><td><strong>State of Agentic AI Security and Governance</strong></td><td>A comprehensive landscape view of today's autonomous AI security and governance challenges</td><td><a href="https://genai.owasp.org/resources/">View resource</a></td></tr><tr><td><strong>Solutions Reference Guide (Q2–Q3 2025)</strong></td><td>Vendor-agnostic reference for organisations securing LLM and Agentic AI applications</td><td><a href="https://genai.owasp.org/resource/owasp-genai-security-project-solutions-reference-guide-q2_q325/">View resource</a></td></tr><tr><td><strong>AI Security Solutions Landscape</strong></td><td>A mapped view of the AI security product ecosystem aligned to the DevOps-SecOps intersection</td><td><a href="https://genai.owasp.org/resources/">View resource</a></td></tr><tr><td><strong>OWASP AIBOM Generator</strong></td><td>Open-source tool for generating AI Bills of Materials (AI SBOMs) to improve AI supply chain transparency</td><td><a href="https://genai.owasp.org/resources/">View resource</a></td></tr><tr><td><strong>A Practical Guide for Secure MCP Server Development</strong></td><td>Security guidance for teams building on the Model Context Protocol</td><td><a href="https://genai.owasp.org/resources/">View resource</a></td></tr><tr><td><strong>FinBot Agentic Security CTF</strong></td><td>A Capture the Flag challenge for hands-on learning about agentic AI security</td><td><a href="https://genai.owasp.org/initiatives/agentic-security-initiative/">View resource</a></td></tr></tbody></table>
+<p>All resources are published under Creative Commons Attribution-ShareAlike v4.0 and available at <a href="https://genai.owasp.org/resources/">genai.owasp.org/resources</a>.<sup><a href="#user-content-fn-owasp-resources" id="user-content-fnref-owasp-resources" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup></p>
+<hr>
+<h2>What Is Red Teaming — and Why Does It Matter for AI?</h2>
+<p>Red teaming is a concept with roots in military and national security practice. Historically, a "red team" was an independent group tasked with adopting the perspective of an adversary: to challenge assumptions, probe defences, and surface vulnerabilities that internal teams, anchored by familiarity bias, could not see.<sup><a href="#user-content-fn-redteaming-origins" id="user-content-fnref-redteaming-origins" data-footnote-ref="" aria-describedby="footnote-label">5</a></sup></p>
+<p>In cybersecurity, red teaming evolved into structured adversarial simulation: systematically attacking systems before malicious actors do, using the same techniques and mindset as real threat actors.</p>
+<div class="pullquote pullquote-right">
+"GenAI Red Teaming combines traditional adversarial testing with AI-specific methodologies, addressing risks like prompt injection, toxic outputs, model extraction, bias, knowledge risks, and hallucinations."
+— OWASP GenAI Red Teaming Guide[^owasp-redteam]
+</div>
+<p>For generative AI systems, red teaming takes on new dimensions. Traditional penetration testing looks for memory corruption, authentication bypass, and injection flaws in deterministic code. AI systems are probabilistic, context-sensitive, and instruction-following by design. Their attack surface includes inputs, system prompts, training data, retrieval pipelines, tool integrations, and the chain of automated decisions made by autonomous agents.</p>
+<p>The OWASP GenAI Red Teaming Guide defines five threat categories that structured AI red teaming must address:</p>
+<details>
+<summary>Adversarial Attacks</summary>
+<div class="accordion-content">
+<p>Attempts to manipulate model behaviour through crafted inputs. The most prevalent form is <strong>prompt injection</strong>, where malicious content embedded in user input, retrieved documents, or tool responses overrides the model's intended instructions.</p>
+<p>In agentic systems, successful prompt injection can redirect an agent's entire task plan, cause it to leak sensitive information, invoke unintended tools, or take actions with real-world consequences such as sending communications, modifying data, or escalating permissions.</p>
+<p>Red teaming in this category tests whether the system resists direct injection, indirect injection through data sources, multi-turn manipulation, and role-playing exploits.</p>
+</div>
+</details>
+<details>
+<summary>Alignment Risks</summary>
+<div class="accordion-content">
+<p>Alignment failures occur when a model's outputs deviate from organisational values, policies, or safety requirements, even without an explicit attack. This includes generating harmful, biased, or ethically problematic content, inconsistently applying policy across different user populations or inputs, and following technically valid but unintended instructions that violate the spirit of the deployment.</p>
+<p>Red teaming in this category probes edge cases in safety tuning, assesses consistency under adversarial framing, and evaluates whether the model's implicit values match the organisation's explicit requirements.</p>
+<p>For executives, alignment failures represent reputational, legal, and compliance risk that may not surface through standard functional testing.</p>
+</div>
+</details>
+<details>
+<summary>Data Risks</summary>
+<div class="accordion-content">
+<p>AI systems can expose sensitive information through several mechanisms: training data memorisation, retrieval pipeline leakage, system prompt exposure, and excessive verbosity in responses.</p>
+<p>In enterprise deployments, data risks extend to customer PII, intellectual property, confidential business logic encoded in system prompts, and the contents of internal knowledge bases used in retrieval-augmented generation.</p>
+<p>Red teaming in this category tests for extraction of training data, retrieval of out-of-scope documents, and leakage of system configuration through adversarial prompting strategies.</p>
+</div>
+</details>
+<details>
+<summary>Interaction Risks</summary>
+<div class="accordion-content">
+<p>Interaction risks arise from the way users, models, and systems engage in real deployments: jailbreaking, social engineering of AI personas, multi-turn manipulation that gradually shifts model behaviour, and exploitation of role-playing or hypothetical framing to bypass guardrails.</p>
+<p>In agentic contexts, interaction risks also include chain-of-thought manipulation, where an attacker poisons the reasoning steps an agent takes before arriving at a final action.</p>
+<p>Red teaming in this category requires creative adversarial prompting, persona manipulation, and evaluation of whether guardrails hold under sustained pressure across multi-turn conversations.</p>
+</div>
+</details>
+<details>
+<summary>Knowledge Risks</summary>
+<div class="accordion-content">
+<p>Knowledge risks cover the accuracy, currency, and reliability of the information an AI system produces or retrieves. This includes hallucination, misinformation generation, confident assertion of incorrect facts, and the potential for AI outputs to propagate errors at machine speed in automated workflows.</p>
+<p>For agentic systems making decisions autonomously, knowledge risks can translate directly into operational failures: incorrect data written to databases, erroneous decisions communicated to customers, or flawed analysis driving executive decisions.</p>
+<p>Red teaming in this category evaluates factual reliability, RAG retrieval quality under adversarial document injection, and the system's capacity to express uncertainty rather than confabulate.</p>
+</div>
+</details>
+<div class="quote">Red teaming is not a one-time audit. It is a continuous practice that must evolve as models, architectures, and threat landscapes change. The OWASP framework provides the methodology to make it systematic.</div>
+<p>The OWASP Red Teaming Guide is structured around four evaluation domains: model evaluation, implementation testing, infrastructure assessment, and runtime behaviour analysis. Together, these cover the full stack from the model itself to the operational environment in which it runs.<sup><a href="#user-content-fn-owasp-redteam" id="user-content-fnref-owasp-redteam" data-footnote-ref="" aria-describedby="footnote-label">6</a></sup></p>
+<hr>
+<h2>The Active Initiatives: Where the Work Happens</h2>
+<p>Beyond published documents, the OWASP GenAI Security Project runs several active initiatives that produce ongoing research, tooling, and community engagement.</p>
+<details>
+<summary>Agentic Security Initiative (ASI)</summary>
+<div class="accordion-content">
+<p>The Agentic Security Initiative is the project's most active research programme, addressing the security implications of autonomous AI systems: agents that plan, use tools, access memory, delegate tasks, and operate without continuous human supervision.</p>
+<p>The ASI has produced the Agentic AI Threats and Mitigations taxonomy, the Secure Agentic Development Guide, the State of Agentic AI Security and Governance report, the OWASP Top 10 for Agentic Applications, and the FinBot CTF challenge. It is directly relevant to any organisation building or deploying AI agents in production.</p>
+</div>
+</details>
+<details>
+<summary>Red Teaming Initiative</summary>
+<div class="accordion-content">
+<p>This initiative develops and maintains standardised red teaming methodology for AI systems. It produces benchmarks, testing frameworks, and evaluation criteria, and it published both the GenAI Red Teaming Guide and the Vendor Evaluation Criteria for AI Red Teaming Providers.</p>
+<p>The initiative is specifically designed to help organisations avoid the trap of superficial "jailbreak-only" testing and establish a rigorous, full-spectrum adversarial evaluation practice.</p>
+</div>
+</details>
+<details>
+<summary>AI Supply Chain and AIBOM</summary>
+<div class="accordion-content">
+<p>The OWASP AIBOM Generator addresses a growing concern in enterprise AI governance: the opacity of AI system dependencies. Just as Software Bills of Materials (SBOMs) became a compliance and security standard for software supply chains, AI Bills of Materials (AIBOMs) aim to provide transparency into the models, datasets, fine-tuning pipelines, and plugins that constitute an AI system.</p>
+<p>This initiative is particularly relevant for regulated industries where provenance, auditability, and third-party risk management are compliance requirements.</p>
+</div>
+</details>
+<hr>
+<h2>Why This Matters: An Executive and Architecture Perspective</h2>
+<p>The OWASP GenAI Security Project is not a technical curiosity. It is a governance instrument.</p>
+<p>For executives, it provides:</p>
+<ul>
+<li><strong>A shared risk language</strong> that can be used consistently across engineering, security, legal, and risk management</li>
+<li><strong>A baseline</strong> against which to assess vendor claims, system designs, and third-party AI integrations</li>
+<li><strong>Alignment with emerging regulation</strong>, as regulators and standards bodies increasingly reference OWASP frameworks in AI governance guidance</li>
+<li><strong>A due diligence record</strong> — having demonstrably mapped your AI systems against an open, peer-reviewed framework is increasingly expected in board reporting and risk assessment</li>
+</ul>
+<p>For architects, it provides:</p>
+<ul>
+<li><strong>Threat models</strong> that account for the full attack surface of LLM and agentic systems, including surfaces that traditional threat modelling misses</li>
+<li><strong>Mitigation patterns</strong> for prompt injection, excessive agency, supply chain risk, and retrieval pipeline weaknesses</li>
+<li><strong>Red teaming methodology</strong> to validate that security controls work under adversarial conditions</li>
+<li><strong>Agentic-specific guidance</strong> for systems with autonomous planning, tool use, and multi-agent coordination</li>
+</ul>
+<div class="quote">The organisations that are ahead on AI security are not necessarily those with the largest security budgets. They are those that started with the right frameworks early and applied them consistently across architecture, development, and operations.</div>
+<hr>
+<h2>Where to Start</h2>
+<p>The most effective starting point depends on where your organisation sits today.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Your current stage</th><th>Recommended entry point</th></tr></thead><tbody><tr><td>Early AI adoption, limited security review</td><td>OWASP Top 10 for LLM Applications 2025</td></tr><tr><td>Deploying or planning AI agents</td><td>OWASP Top 10 for Agentic Applications 2026 + Agentic AI Threats and Mitigations</td></tr><tr><td>Evaluating AI security posture</td><td>GenAI Red Teaming Guide + Vendor Evaluation Criteria</td></tr><tr><td>Building an AI governance programme</td><td>Solutions Reference Guide + State of Agentic AI Security and Governance</td></tr><tr><td>Developing on MCP or multi-agent frameworks</td><td>Secure MCP Development Guide + Agentic Security Development Guide</td></tr></tbody></table>
+<p>The full resource library is at <a href="https://genai.owasp.org/resources/">genai.owasp.org/resources</a>. All materials are free, open, and vendor-neutral.</p>
+<hr>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-owasp-flagship">
+<p>OWASP Foundation. "OWASP Promotes GenAI Security Project to Flagship Status." March 26, 2025. <a href="https://genai.owasp.org/2025/03/26/project-owasp-promotes-genai-security-project-to-flagship-status/">https://genai.owasp.org/2025/03/26/project-owasp-promotes-genai-security-project-to-flagship-status/</a> <a href="#user-content-fnref-owasp-flagship" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-owasp-flagship-2" data-footnote-backref="" aria-label="Back to reference 1-2" class="data-footnote-backref">↩<sup>2</sup></a></p>
+</li>
+<li id="user-content-fn-owasp-history">
+<p>OWASP Foundation. "About the OWASP Foundation." <a href="https://owasp.org/about/">https://owasp.org/about/</a> See also: Wikipedia. "OWASP." <a href="https://en.wikipedia.org/wiki/OWASP">https://en.wikipedia.org/wiki/OWASP</a> <a href="#user-content-fnref-owasp-history" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-owasp-history-2" data-footnote-backref="" aria-label="Back to reference 2-2" class="data-footnote-backref">↩<sup>2</sup></a> <a href="#user-content-fnref-owasp-history-3" data-footnote-backref="" aria-label="Back to reference 2-3" class="data-footnote-backref">↩<sup>3</sup></a></p>
+</li>
+<li id="user-content-fn-owasp-launch">
+<p>OWASP Foundation. "OWASP Top 10 for Large Language Model Applications." <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/">https://owasp.org/www-project-top-10-for-large-language-model-applications/</a> <a href="#user-content-fnref-owasp-launch" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-owasp-resources">
+<p>OWASP GenAI Security Project. "Resources Archive." <a href="https://genai.owasp.org/resources/">https://genai.owasp.org/resources/</a> <a href="#user-content-fnref-owasp-resources" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-redteaming-origins">
+<p>RAND Corporation. "Red Teaming: The Art of Challenging Assumptions." <a href="https://www.rand.org/pubs/perspectives/PE198.html">https://www.rand.org/pubs/perspectives/PE198.html</a> <a href="#user-content-fnref-redteaming-origins" data-footnote-backref="" aria-label="Back to reference 5" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-owasp-redteam">
+<p>OWASP GenAI Security Project. "GenAI Red Teaming Guide." January 2025. <a href="https://genai.owasp.org/resource/genai-red-teaming-guide/">https://genai.owasp.org/resource/genai-red-teaming-guide/</a> <a href="#user-content-fnref-owasp-redteam" data-footnote-backref="" aria-label="Back to reference 6" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[OWASP Top 10 for LLMs (2025): Executive Summary and Why It Is Essential Reading for Agent Development]]></title>
+      <description><![CDATA[OWASP Top 10 for LLMs 2025 — an executive summary of the critical security risks in LLM and agent deployments, and why every AI engineering team must treat it as required reading.]]></description>
+      <link>https://riverthink.com/blog/owasp-top-10-llm-agent-essential-reading/</link>
+      <guid isPermaLink="true">https://riverthink.com/blog/owasp-top-10-llm-agent-essential-reading/</guid>
+      <dc:creator><![CDATA[Peter Wood]]></dc:creator>
+      <pubDate>Thu, 26 Feb 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/owasp-top-10-llm-agent-essential-reading-hero.jpg" length="0" type="image/jpeg" />
+      <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/owasp-top-10-llm-agent-essential-reading-hero.jpg" alt="OWASP Top 10 for LLMs (2025): Executive Summary and Why It Is Essential Reading for Agent Development"></figure>
+<h2>If you are building AI agents in production, the OWASP Top 10 for LLMs and GenAI is not optional reading. It is one of the clearest, community-driven security baselines for how modern LLM and agentic systems fail, and how teams should reduce those failures in real deployments.<sup><a href="#user-content-fn-owasp-project" id="user-content-fnref-owasp-project" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-owasp-llm-top10" id="user-content-fnref-owasp-llm-top10" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></h2>
+<p>OWASP now positions this work under the broader GenAI Security Project, explicitly covering LLMs, agentic AI systems, and AI-driven applications. That scope makes it directly relevant for agent architects, platform teams, security leaders, and engineering executives making delivery and governance decisions.<sup><a href="#user-content-fn-owasp-project" id="user-content-fnref-owasp-project-2" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-owasp-flagship" id="user-content-fnref-owasp-flagship" data-footnote-ref="" aria-describedby="footnote-label">3</a></sup></p>
+<h2>Executive Summary</h2>
+<p>The 2025 OWASP Top 10 identifies ten recurring risk classes that show up across the LLM and GenAI application lifecycle: development, deployment, and operations.<sup><a href="#user-content-fn-owasp-llm-top10" id="user-content-fnref-owasp-llm-top10-2" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup></p>
+<p>The main executive takeaway is simple: most critical failures in agent systems are not model-IQ problems. They are systems-security and control-plane problems.</p>
+<p>When translated to agent development, the OWASP list says that teams must secure:</p>
+<ul>
+<li>inputs and instructions (prompt injection, system prompt leakage)</li>
+<li>data and model lineage (supply chain, data/model poisoning)</li>
+<li>tool execution boundaries (improper output handling, excessive agency)</li>
+<li>retrieval and memory surfaces (vector and embedding weaknesses)</li>
+<li>decision quality and operational resilience (misinformation, unbounded consumption)</li>
+<li>confidentiality controls (sensitive information disclosure)</li>
+</ul>
+<p>In short, safe agent development is less about one strong prompt and more about layered controls around planning, tool use, memory, identity, validation, and monitoring.</p>
+<div class="quote">This is critical for anyone building AI agents to understand before shipping to production.</div>
+<h2>OWASP 2025 Top 10 Through an Agent Development Lens</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>OWASP risk</th><th>What it means in practice</th><th>Why agent teams should care</th></tr></thead><tbody><tr><td><strong>LLM01: Prompt Injection</strong></td><td>Malicious or crafted input manipulates model behavior</td><td>Agents can be pushed into unsafe tool calls, policy bypass, or hidden instruction following</td></tr><tr><td><strong>LLM02: Sensitive Information Disclosure</strong></td><td>Confidential data leaks through prompts, context, or outputs</td><td>Agents often touch internal knowledge, APIs, and user data, increasing leak impact</td></tr><tr><td><strong>LLM03: Supply Chain</strong></td><td>Compromised models, datasets, plugins, or dependencies</td><td>Agent stacks depend on many third-party components and connectors</td></tr><tr><td><strong>LLM04: Data and Model Poisoning</strong></td><td>Training/fine-tuning/embedding data is tampered with</td><td>Poisoned knowledge can silently alter agent behavior and trustworthiness</td></tr><tr><td><strong>LLM05: Improper Output Handling</strong></td><td>LLM output is consumed without validation/sanitization</td><td>Unsafe outputs can become executable actions in downstream systems</td></tr><tr><td><strong>LLM06: Excessive Agency</strong></td><td>Agents get too much autonomy or privilege</td><td>Over-scoped permissions turn normal mistakes into high-impact incidents</td></tr><tr><td><strong>LLM07: System Prompt Leakage</strong></td><td>Hidden instructions are exposed and exploited</td><td>Revealed policy logic makes bypass attempts easier and more targeted</td></tr><tr><td><strong>LLM08: Vector and Embedding Weaknesses</strong></td><td>Weaknesses in retrieval/indexing pipelines</td><td>RAG-enabled agents can be manipulated through poisoned or adversarial retrieval content</td></tr><tr><td><strong>LLM09: Misinformation</strong></td><td>Confident but incorrect outputs influence decisions</td><td>Agentic automation can propagate bad decisions at machine speed</td></tr><tr><td><strong>LLM10: Unbounded Consumption</strong></td><td>Uncontrolled usage of tokens/compute/tooling</td><td>Agent loops and broad tool access can create cost spikes and service instability</td></tr></tbody></table>
+<p>Risk names and descriptions above are based on the OWASP 2025 Top 10 content and linked risk pages.<sup><a href="#user-content-fn-owasp-llm-top10" id="user-content-fnref-owasp-llm-top10-3" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup><sup><a href="#user-content-fn-owasp-llm01" id="user-content-fnref-owasp-llm01" data-footnote-ref="" aria-describedby="footnote-label">4</a></sup></p>
+<h2>Why This Is Essential Reading for Agent Development</h2>
+<ol>
+<li>It gives a shared language across engineering, security, and leadership for AI risk prioritization.</li>
+<li>It reframes agent failures as architecture and governance issues, not only model behavior issues.</li>
+<li>It aligns security planning to the full lifecycle (build, deploy, operate), which is where most agent incidents emerge.</li>
+<li>It is directly connected to OWASP's broader agentic security work, making it practical for teams moving from LLM apps to autonomous agents.<sup><a href="#user-content-fn-owasp-project" id="user-content-fnref-owasp-project-3" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup><sup><a href="#user-content-fn-owasp-asi" id="user-content-fnref-owasp-asi" data-footnote-ref="" aria-describedby="footnote-label">5</a></sup></li>
+</ol>
+<h2>What to Do Next (Executive Action)</h2>
+<ul>
+<li>Adopt the OWASP Top 10 as a baseline control framework for all new agent initiatives.</li>
+<li>Map each agent workflow to the Top 10 and identify where controls are currently missing.</li>
+<li>Prioritize guardrails around tool invocation, privilege boundaries, output validation, and retrieval integrity first.</li>
+<li>Add continuous monitoring for prompt attacks, data leakage, cost anomalies, and unsafe autonomous actions.</li>
+<li>Re-review architecture decisions whenever agent scope or autonomy increases.</li>
+</ul>
+<p>Agent development is now a security-critical discipline. Teams that treat this OWASP guidance as foundational design input, rather than post-launch compliance, will ship faster with fewer high-severity failures.</p>
+<section data-footnotes="" class="footnotes"><h2 class="sr-only" id="footnote-label">Footnotes</h2>
+<ol>
+<li id="user-content-fn-owasp-project">
+<p>OWASP Foundation. "OWASP Top 10 for Large Language Model Applications." <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/">https://owasp.org/www-project-top-10-for-large-language-model-applications/</a> <a href="#user-content-fnref-owasp-project" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-owasp-project-2" data-footnote-backref="" aria-label="Back to reference 1-2" class="data-footnote-backref">↩<sup>2</sup></a> <a href="#user-content-fnref-owasp-project-3" data-footnote-backref="" aria-label="Back to reference 1-3" class="data-footnote-backref">↩<sup>3</sup></a></p>
+</li>
+<li id="user-content-fn-owasp-llm-top10">
+<p>OWASP GenAI Security Project. "2025 Top 10 Risk &#x26; Mitigations for LLMs and Gen AI Apps." <a href="https://genai.owasp.org/llm-top-10/">https://genai.owasp.org/llm-top-10/</a> <a href="#user-content-fnref-owasp-llm-top10" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-owasp-llm-top10-2" data-footnote-backref="" aria-label="Back to reference 2-2" class="data-footnote-backref">↩<sup>2</sup></a> <a href="#user-content-fnref-owasp-llm-top10-3" data-footnote-backref="" aria-label="Back to reference 2-3" class="data-footnote-backref">↩<sup>3</sup></a></p>
+</li>
+<li id="user-content-fn-owasp-flagship">
+<p>OWASP GenAI Security Project. "OWASP Top 10 for LLM is now the GenAI Security Project and promoted to OWASP Flagship status" (March 26, 2025). <a href="https://genai.owasp.org/2025/03/26/project-owasp-promotes-genai-security-project-to-flagship-status/">https://genai.owasp.org/2025/03/26/project-owasp-promotes-genai-security-project-to-flagship-status/</a> <a href="#user-content-fnref-owasp-flagship" data-footnote-backref="" aria-label="Back to reference 3" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-owasp-llm01">
+<p>OWASP GenAI Security Project. "LLM01:2025 Prompt Injection." <a href="https://genai.owasp.org/llmrisk/llm01-prompt-injection/">https://genai.owasp.org/llmrisk/llm01-prompt-injection/</a> <a href="#user-content-fnref-owasp-llm01" data-footnote-backref="" aria-label="Back to reference 4" class="data-footnote-backref">↩</a></p>
+</li>
+<li id="user-content-fn-owasp-asi">
+<p>OWASP GenAI Security Project. "OWASP Agentic Security Initiative (ASI)." <a href="https://owasp.org/www-project-top-10-for-large-language-model-applications/initiatives/agent_security_initiative/">https://owasp.org/www-project-top-10-for-large-language-model-applications/initiatives/agent_security_initiative/</a> <a href="#user-content-fnref-owasp-asi" data-footnote-backref="" aria-label="Back to reference 5" class="data-footnote-backref">↩</a></p>
+</li>
+</ol>
+</section>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

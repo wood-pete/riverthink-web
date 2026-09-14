@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Riverthink migration batch 02</title>
+    <link>https://riverthink.com/blog/</link>
+    <description>Riverthink articles prepared for migration to Substack</description>
+    <language>en-GB</language>
+    <lastBuildDate>Mon, 14 Sep 2026 16:27:02 GMT</lastBuildDate>
+    <atom:link href="https://riverthink.com/substack-import/batch-02.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Healthcare AI Reaches a Turning Point as LLMs and Agentic Systems Enter Clinical Reality]]></title>
+      <description><![CDATA[Healthcare AI reached an inflection point in January 2026. Four developments showed how LLMs and agentic systems are moving from experimentation into governed, measurable clinical use.]]></description>
+      <link>https://riverthink.com/blog/january-2025/</link>
+      <guid isPermaLink="true">https://riverthink.com/blog/january-2025/</guid>
+      <dc:creator><![CDATA[Peter Wood]]></dc:creator>
+      <pubDate>Wed, 14 Jan 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/january-2025-hero.jpg" length="0" type="image/jpeg" />
+      <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/january-2025-hero.jpg" alt="Healthcare AI Reaches a Turning Point as LLMs and Agentic Systems Enter Clinical Reality"></figure>
+<p>January 2026 marks a clear inflection point for artificial intelligence in healthcare. Over the course of just a few weeks, four major developments revealed how large language models and agentic AI are moving from broad experimentation into domains where trust, safety, and measurable impact matter deeply. Together, these updates tell a connected story about maturity. They show an industry learning where AI fits, where it does not, and how it must be governed when human health is involved.</p>
+<div class="quote">Rather than a single breakthrough, this moment reflects a transition. AI is no longer only about impressive demonstrations. It is about accountability, regulation, and integration into clinical and scientific workflows.</div>
+<h2>When General AI Meets Health Risk</h2>
+<p>On <strong>2 January 2026</strong>, an investigation by <em>The Guardian</em> brought renewed scrutiny to AI generated health information appearing in consumer search results. Google had been rolling out AI Overviews that summarised answers at the top of search pages. While many worked as intended, several health related summaries were found to contain misleading or incomplete medical advice.</p>
+<p>Examples included incorrect interpretations of blood test ranges and oversimplified nutritional guidance that lacked clinical context. Medical professionals warned that such summaries could be harmful when detached from patient specific factors such as age, sex, medical history, or medication use. In response, Google removed a number of these health related AI summaries and stated that improvements were underway to reduce the risk of harm.</p>
+<p>This moment matters because it highlights a fundamental truth. General purpose AI systems, when placed in front of millions of people, can influence health decisions even when they were not designed to act as medical tools. The issue was not malicious intent, but misplaced authority. A short summary presented with confidence can feel definitive, even when medicine rarely is.</p>
+<p>The takeaway was not that AI has no role in health, but that <strong>context and safeguards are essential</strong>. Without them, scale amplifies error.</p>
+<h2>A Shift Toward Regulated Clinical AI</h2>
+<p>Just days later, OpenAI announced the launch of <strong>ChatGPT for Healthcare</strong>, reframing how LLMs are positioned in medical environments. Unlike consumer chat tools, this offering is designed explicitly for hospitals, clinics, and healthcare organisations operating under strict regulatory frameworks.</p>
+<p>Crucially, the platform is <strong>HIPAA compliant</strong>, supporting encryption, audit logs, access controls, and Business Associate Agreements. These features acknowledge a reality long understood by healthcare providers. Innovation without compliance is not adoption.</p>
+<p>The intent behind ChatGPT for Healthcare is not to diagnose patients or replace clinicians. Instead, it focuses on supporting workflows that already exist. Examples include summarising clinical notes, assisting with documentation, helping staff navigate internal policies, and synthesising large volumes of structured and unstructured information.</p>
+<p>This distinction matters. Where consumer AI struggled by offering answers without sufficient guardrails, this model is embedded within governance. The system is constrained by design, monitored by organisations, and operated by trained professionals. It reflects a growing understanding that healthcare AI must be <strong>enterprise first</strong>, not consumer first.</p>
+<p>The contrast with the earlier search controversy is striking. One highlights the risks of uncontextualised medical information at scale. The other shows what happens when AI is deployed inside regulated boundaries with accountability built in.</p>
+<h2>From Language to Discovery in the Lab</h2>
+<p>While clinical workflows were evolving, another development expanded the scope of healthcare AI far beyond text. In <strong>January 2026</strong>, NVIDIA and Eli Lilly announced an expanded partnership focused on AI driven drug discovery. Their collaboration centres on using advanced AI platforms to accelerate the identification and development of new therapies.</p>
+<p>Drug discovery is a slow and expensive process. Traditional pipelines can take over a decade and cost billions. The partnership aims to change that by applying AI systems that can analyse biological data, simulate molecular interactions, and guide experimental decisions. This is where agentic AI becomes especially relevant.</p>
+<p>Unlike simple prediction models, agentic systems can manage sequences of tasks. They can evaluate results, propose next experiments, and optimise workflows over time. In this context, AI does not just analyse data. It participates in the research process itself.</p>
+<p>The significance here is scale. This is not a pilot or proof of concept. It is a strategic investment by a major pharmaceutical company and one of the world’s leading AI infrastructure providers. It signals confidence that AI is ready to influence the earliest stages of medicine, long before a patient ever enters a clinic.</p>
+<p>It also shows how healthcare AI is diversifying. Language models support people. Agentic systems support discovery. Both are needed, but they operate in very different risk profiles and timelines.</p>
+<p><img src="https://riverthink.com/blog/llm.jpg" alt="alt"></p>
+<h2>Seeing and Hearing Medicine with MedGemma</h2>
+<p>Completing this picture, Google Research released <strong>MedGemma 1.5</strong> in January 2026, extending AI capabilities into medical imaging and clinical speech. This update builds on earlier MedGemma models by improving interpretation of medical images and introducing advanced medical speech to text functionality.</p>
+<p>MedGemma 1.5 reflects a broader shift toward multimodal AI. Healthcare data is rarely just text. It includes scans, images, spoken notes, and signals. Bringing these together allows AI systems to understand clinical situations more holistically.</p>
+<p>In practical terms, this means radiology images can be analysed alongside dictated observations, or spoken clinical notes can be transcribed and structured with medical awareness. Early benchmarks suggest strong performance in specific imaging tasks, pointing toward AI that can meaningfully assist specialists rather than simply automate clerical work.</p>
+<p>Importantly, MedGemma is positioned as a research and development tool, not a standalone diagnostic authority. This reinforces a pattern seen across all four developments. The most credible progress comes when AI is framed as an assistant within expert led systems.</p>
+<h2>An Emerging Pattern of Maturity</h2>
+<p>Viewed together, these January updates reveal how healthcare AI is growing up.</p>
+<p>The removal of misleading search summaries shows the limits of general AI when applied without context. The launch of a HIPAA compliant clinical platform demonstrates how those limits can be addressed through governance and design. The NVIDIA and Lilly partnership illustrates AI’s role in accelerating scientific discovery where human experimentation alone struggles with scale. MedGemma 1.5 highlights the move toward multimodal systems that reflect how medicine actually works.</p>
+<p>What connects these stories is not technology alone, but <strong>intent</strong>. The industry is learning to ask better questions. Where should AI speak directly to patients, if at all. Where should it support clinicians behind the scenes. Where can it safely explore possibilities in laboratories and research environments.</p>
+<p>This moment does not signal an end state. It signals a recalibration. LLMs and agentic AI are no longer novelties in healthcare. They are tools being shaped by regulation, ethics, and real world constraints. The progress of January 2026 shows that the future of healthcare AI will be defined less by bold claims and more by careful integration into systems that already carry profound responsibility.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[API Gateways Are Becoming Agent Gateways - MCP, A2A, and the New Control Plane for AI Agents]]></title>
+      <description><![CDATA[How AI agents are changing what enterprise API gateways must do — covering MCP, A2A, and the new governance requirements for agent-to-tool and agent-to-agent interactions at scale.]]></description>
+      <link>https://riverthink.com/blog/agent-gateways/</link>
+      <guid isPermaLink="true">https://riverthink.com/blog/agent-gateways/</guid>
+      <dc:creator><![CDATA[Peter Wood]]></dc:creator>
+      <pubDate>Sat, 24 Jan 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/agent-gateways-hero.jpg" length="0" type="image/jpeg" />
+      <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/agent-gateways-hero.jpg" alt="API Gateways Are Becoming Agent Gateways - MCP, A2A, and the New Control Plane for AI Agents"></figure>
+<h2>Enterprise integration is entering a new phase. For more than a decade, API gateways have been the practical centre of gravity for exposing services, enforcing security policies, and observing traffic across microservices and partner APIs. That model still matters, but the “client” on the other side of the gateway is changing. Increasingly, the caller is not a mobile app or a web front end. It is an AI agent planning a multi step task, invoking tools, streaming results, and delegating subtasks to other agents.</h2>
+<div class="pullquote pullquote-right">
+API gateways taught us how to govern traffic. Agent gateways will teach us how to govern decisions. That shift is not about AI experimentation, it is about operational control at machine scale.
+</div>
+<p>That shift is exactly why the agent gateway concept is gaining momentum: it extends the governance and control strengths of API gateways into agent to tool and agent to agent interactions, including emerging protocols such as Model Context Protocol and Agent to Agent.</p>
+<h2>What changes when the caller is an agent</h2>
+<p>A traditional gateway is optimised for stateless request response patterns: validate credentials, apply rate limits, route to a backend, log outcomes, repeat. An agent workflow is different in three important ways:</p>
+<ol>
+<li>
+<p><strong>Stateful, multi step interactions</strong><br>
+Agents operate across sessions, often chaining tool calls with accumulated context, streaming responses, and intermediate reasoning. Gateways must therefore understand sessions and workflows, not just individual calls.</p>
+</li>
+<li>
+<p><strong>Protocol native tool calling and agent messaging</strong><br>
+Agent gateways increasingly natively support MCP for tool invocation and A2A for agent coordination, brokering these interactions under central governance rather than leaving them embedded in application code.</p>
+</li>
+<li>
+<p><strong>A larger governance surface area</strong><br>
+Governance now extends beyond API access to include which agent can call which tool, under what policy, cost limits, and safety constraints, with full auditability of behaviour.</p>
+</li>
+</ol>
+<h2>The capability stack that defines an agent gateway</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Capability area</th><th>API gateway default</th><th>Agent gateway expectation</th></tr></thead><tbody><tr><td>Protocol handling</td><td>HTTP, REST, gRPC</td><td>MCP tool calls, A2A messaging, protocol mediation</td></tr><tr><td>Identity and access</td><td>OAuth, JWT, API keys</td><td>Machine identity, zero trust agent and tool boundaries</td></tr><tr><td>Traffic controls</td><td>Rate limits, quotas</td><td>Token limits, semantic caching, budget enforcement</td></tr><tr><td>Discovery</td><td>Static endpoints</td><td>Dynamic tool and agent catalogues</td></tr><tr><td>Observability</td><td>Request metrics</td><td>Step level traces, cost analytics, audit replay</td></tr><tr><td>Orchestration</td><td>Limited</td><td>Workflow mediation and tool sequencing</td></tr></tbody></table>
+<p>The point is not that all of this must be deployed at once. It is that the architectural boundary for governance is shifting towards where agent actions occur.</p>
+<h2>How the major vendors are signalling the shift</h2>
+<h3>Google Apigee: enterprise ready AI gateway capabilities</h3>
+<p>Google positions Apigee as an AI ready API management platform, adding model abstraction, multicloud model routing, request and response enrichment, semantic caching, token monitoring, and agent connectivity. These features are designed to help organisations control cost, latency, and risk as agents consume and orchestrate AI services.</p>
+<h3>Kong: MCP governance and production tooling</h3>
+<p>Kong has been explicit about supporting MCP within its AI Gateway, including MCP based tool discovery via its developer portal, alongside observability and governance for tools, prompts, and workflows. Kong also places strong emphasis on machine identity for AI agents and autonomous systems, aligning agent security with existing zero trust patterns.</p>
+<h3>Gravitee: agent management as a platform layer</h3>
+<p>Gravitee frames the transition as AI agent management, covering agent gateways, agent catalogues, and tool servers. It highlights governance of agent to agent communication using A2A, as well as authentication, rate limiting, monitoring, and discovery as first class concerns for agent ecosystems.</p>
+<h3>Tyk: governance agents and distributed synchronisation</h3>
+<p>Tyk takes a distributed approach, using deployable governance agents that synchronise API and policy inventories back to a central hub over secure channels. This reflects real world hybrid estates and supports a gradual evolution towards agent aware governance without assuming a single centralised runtime.</p>
+<h2>What executives and architects should focus on</h2>
+<p>Four themes consistently emerge when organisations move beyond experimentation:</p>
+<ol>
+<li>
+<p><strong>Tool boundary design and permissions</strong><br>
+Per tool RBAC and clear scoping are essential to prevent uncontrolled agent behaviour.</p>
+</li>
+<li>
+<p><strong>Cost governance that can be enforced</strong><br>
+Token budgets, caching strategies, and routing policies must be part of integration architecture, not just model configuration.</p>
+</li>
+<li>
+<p><strong>Traceability for risk and compliance</strong><br>
+Multi step audit trails and replayable execution histories are required when agents influence operational or financial outcomes.</p>
+</li>
+<li>
+<p><strong>Alignment with platform engineering</strong><br>
+Policies, configurations, and agent gateway behaviour need to integrate cleanly with infrastructure as code and DevSecOps practices.</p>
+</li>
+</ol>
+<p>If there is one lesson learned early, it is that retrofitting governance after agents are in production is far harder than establishing it upfront.</p>
+<h2>Questions to ask your API gateway experts</h2>
+<details>
+<summary>1. How do you govern agent to tool and agent to agent interactions at runtime?</summary>
+<div class="accordion-content">
+<p>Agent support is not about exposing tools, it is about controlling behaviour during execution. Without runtime governance, multi step agent workflows quickly become opaque and risky.</p>
+<p><strong>Listen for</strong></p>
+<ul>
+<li>Native support for MCP and A2A with runtime policy enforcement</li>
+<li>Per agent and per tool authorisation that persists across sessions</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>2. How do you provide observability and auditability across multi step agent workflows?</summary>
+<div class="accordion-content">
+<p>Once agents reason and act across multiple steps, traditional API logging is insufficient. Organisations need visibility that supports operational assurance, investigation, and compliance.</p>
+<p><strong>Listen for</strong></p>
+<ul>
+<li>End to end tracing across reasoning, tool calls, and responses</li>
+<li>Replayable execution and audit trails</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>3. How do you enforce cost, usage, and safety limits for agents in production? </summary>
+<div class="accordion-content">
+Unbounded agent execution creates immediate financial and operational risk. Cost and safety controls must be enforced at runtime, not left to application logic.
+<p><strong>Listen for</strong></p>
+<ul>
+<li>Token and budget enforcement per agent and per tool</li>
+<li>Prompt and response filtering with policy driven guardrails</li>
+</ul>
+</div>
+</details>
+<details>
+<summary>4. How does your agent support integrate with existing API, DevSecOps, and platform engineering practices?</summary>
+<div class="accordion-content">
+Agent governance cannot operate as a parallel control plane. If it does not integrate with existing delivery, security, and identity models, it will not scale beyond pilots.
+<p><strong>Listen for</strong></p>
+<ul>
+<li>Infrastructure as code and GitOps compatibility</li>
+<li>Alignment with existing API gateway and IAM investments</li>
+</ul>
+</div>
+</details>
+<p>Most organisations will evolve their existing API gateways rather than replace them. The practical move is to assess which agent gateway capabilities are required now, such as MCP support, machine identity, cost controls, and deep observability, and which can follow later. Framing agent gateways as the next evolution of API management keeps control with architecture and platform teams, while still enabling rapid agent adoption.</p>
+<hr>
+<h2>References</h2>
+<ol>
+<li>
+<p>Google Cloud – <em>Apigee AI and API Management</em><br>
+<a href="https://cloud.google.com/solutions/apigee-ai">https://cloud.google.com/solutions/apigee-ai</a></p>
+</li>
+<li>
+<p>Kong – <em>Press releases and AI Gateway announcements</em><br>
+<a href="https://konghq.com/company/press-room/press-release">https://konghq.com/company/press-room/press-release</a></p>
+</li>
+<li>
+<p>Gravitee – <em>AI Agent Management Platform</em><br>
+<a href="https://www.gravitee.io/platform/ai-agent-management">https://www.gravitee.io/platform/ai-agent-management</a></p>
+</li>
+<li>
+<p>Tyk – <em>Agent Management and Governance</em><br>
+<a href="https://tyk.io/docs/tyk-governance/agent-management">https://tyk.io/docs/tyk-governance/agent-management</a></p>
+</li>
+</ol>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[You Don’t Need a Vector Store for Agent Memory in Most Agent Architectures]]></title>
+      <description><![CDATA[Vector stores are oversold for agent memory. When key-value, relational, and graph databases serve agentic AI better than embeddings — and how to design memory that fits the task.]]></description>
+      <link>https://riverthink.com/blog/storing-memory/</link>
+      <guid isPermaLink="true">https://riverthink.com/blog/storing-memory/</guid>
+      <dc:creator><![CDATA[Peter Wood]]></dc:creator>
+      <pubDate>Sun, 25 Jan 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/storing-memory-hero.jpg" length="0" type="image/jpeg" />
+      <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/storing-memory-hero.jpg" alt="You Don’t Need a Vector Store for Agent Memory in Most Agent Architectures"></figure>
+<p>Vector databases have become almost synonymous with LLM memory. That association is understandable. Semantic search is powerful, and embeddings underpin modern retrieval augmented generation. However, once we move beyond chatbots and into agentic systems that operate real workflows, the assumption that all memory must live in a vector store starts to unravel.</p>
+<p>The underlying issue is simple but often overlooked. Memory and knowledge are different problems, and they benefit from very different storage and retrieval strategies.</p>
+<h2>Memory and Knowledge Solve Different Jobs</h2>
+<p>Knowledge retrieval focuses on finding relevant information by meaning, typically from unstructured sources such as policies, research papers, or historical conversations. Memory, in contrast, is about preserving facts, state, preferences, and outcomes over time so that future decisions are consistent, safe, and correct.</p>
+<div class="pullquote pullquote-right">
+“We reached for embeddings out of habit, not because the agent actually needed them.”
+</div>
+<p>Most of what operational agents need to remember is highly structured. Examples include whether consent has been captured, which workflow step is currently active, which actions have already been taken, or which constraints apply to a specific user, patient, or case. These are not fuzzy concepts. They are deterministic facts.</p>
+<p>That distinction becomes clearer when viewed side by side.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Aspect</th><th>Knowledge Retrieval</th><th>Agent Memory</th></tr></thead><tbody><tr><td>Primary goal</td><td>Find relevant text by meaning</td><td>Preserve facts and state over time</td></tr><tr><td>Data type</td><td>Unstructured or semi structured text</td><td>Structured or strongly typed data</td></tr><tr><td>Typical queries</td><td>“Find similar guidance”</td><td>“What is the current status?”</td></tr><tr><td>Tolerance for approximation</td><td>High</td><td>Very low</td></tr><tr><td>Compliance suitability</td><td>Limited</td><td>High</td></tr></tbody></table>
+<p>When an agent needs to know whether a patient has been transferred to theatre, or whether a customer has already been contacted, cosine similarity is not just unnecessary. It introduces risk. In these cases the correct operation is a primary key lookup or a filtered query, not a probabilistic match.</p>
+<h2>Where Vector Stores Actually Add Value</h2>
+<p>Vector databases excel when an agent needs to reason over large volumes of narrative content. Common examples include searching clinical notes, locating relevant policies, recalling earlier conversations by topic, or discovering related incidents across a corpus.</p>
+<p>Problems emerge when teams attempt to use vector stores as a general purpose memory layer. This often leads to higher cost, increased latency, weaker explainability, and more complex data governance, without improving decision quality for most operational tasks.</p>
+<p>In mature agent architectures, vector memory is therefore complementary rather than foundational. The dominant pattern is hybrid memory, where structured systems hold authoritative state and vector systems provide contextual enrichment when semantic reasoning is genuinely required.</p>
+<h2>What Usually Works Better Than Embeddings for Memory</h2>
+<p>For most long term agent memory, conventional data stores are not only sufficient, they are preferable.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Storage type</th><th>Why it works well for memory</th><th>Typical uses in agents</th></tr></thead><tbody><tr><td>Relational databases (Postgres, MySQL)</td><td>Strong consistency, transactions, joins, auditability</td><td>Profiles, workflow state, approvals, patient records</td></tr><tr><td>Document databases (MongoDB, DynamoDB)</td><td>Flexible schemas, JSON native storage</td><td>Session memory, evolving agent state models</td></tr><tr><td>Key value stores (Redis)</td><td>Extremely fast access, ideal for checkpoints</td><td>Conversation state, resumable workflows</td></tr><tr><td>Vector databases</td><td>Semantic similarity over text</td><td>Notes, policies, summaries, long narratives</td></tr></tbody></table>
+<p>Relational databases are particularly well suited to operational agents because they align with how enterprises already manage critical data. They support transactional safety, deterministic queries, and established governance models, which are essential in regulated environments such as healthcare and finance.</p>
+<p>Document databases are useful where agent memory structures evolve rapidly or differ by agent type. Key value stores are commonly used for checkpointing long running workflows, allowing execution to pause and resume safely without reconstructing state.</p>
+<p>None of these require embeddings. In many cases, embeddings actively complicate the design.</p>
+<h2>How Agents Actually Retrieve Memory</h2>
+<p>Modern agent frameworks do not treat memory as passive context that is blindly injected into prompts. Instead, memory is typically accessed through explicit retrieval steps in the agent graph, often implemented as tools or dedicated nodes.</p>
+<p>This allows the agent to reason about whether memory is required, which memory is relevant, and how that information should influence the next action. Retrieval may occur before execution begins to hydrate the graph with known state, or during execution when a decision requires additional context.</p>
+<p>From the agent’s perspective, retrieving memory via a SQL query, an API call, or a key value lookup is no different from calling a vector search endpoint. What matters is that the retrieval mechanism matches the nature of the data and the decision being made.</p>
+<p>For most operational decisions, deterministic queries are faster, cheaper, easier to explain, and easier to govern.</p>
+<h2>Why This Matters in Regulated and Operational Domains</h2>
+<p>In healthcare, public sector, and financial services, memory must be traceable, correct, and explainable. If an agent recommends an action, it must be possible to demonstrate which facts were used and why.</p>
+<p>Vector similarity can suggest that two documents are related, but it cannot establish causality or guarantee factual correctness. That makes it unsuitable as the primary store of authoritative memory in environments where auditability is mandatory.</p>
+<p>This is why production agent architectures increasingly separate concerns. Structured systems manage truth and state, while vector systems provide supporting context when narrative reasoning is required. This approach also aligns with emerging interoperability patterns such as the Model Context Protocol, where memory and tools are externalised as services rather than embedded inside prompts.</p>
+<h2>TLDR;</h2>
+<p>Vector databases are excellent for semantic knowledge retrieval, but they are not a universal memory layer for agents.</p>
+<p>If an agent needs to remember facts, preferences, workflow state, or prior decisions, conventional databases are almost always the right starting point. They are cheaper, faster, easier to govern, and better aligned with enterprise and clinical operating models.</p>
+<p>Vector memory should be added deliberately, and only where semantic recall over unstructured text genuinely improves reasoning. In well designed agent systems, memory is treated as data first and embeddings second.</p>
+<hr>
+<h2>References</h2>
+<p>LangGraph Persistence and Checkpointing Concepts — LangChain<br>
+<a href="https://langchain-ai.github.io/langgraph/concepts/persistence/">https://langchain-ai.github.io/langgraph/concepts/persistence/</a></p>
+<p>LangChain RAG and Vector Retrieval Patterns<br>
+<a href="https://python.langchain.com/docs/use_cases/question_answering/">https://python.langchain.com/docs/use_cases/question_answering/</a></p>
+<p>Model Context Protocol (MCP) — Externalised Context and Tools<br>
+<a href="https://modelcontextprotocol.io/">https://modelcontextprotocol.io/</a></p>
+<p>Anthropic Research: Agent Architectures and Tool Use<br>
+<a href="https://www.anthropic.com/engineering/building-effective-agents">https://www.anthropic.com/engineering/building-effective-agents</a></p>]]></content:encoded>
+    </item>
+    <item>
+      <title><![CDATA[Agent Native Data and Why Enterprises Are Relearning What Data Is For]]></title>
+      <description><![CDATA[Enterprise data built for dashboards fails AI agents. A look at agent-native data architecture — structured for reasoning, retrieval, and autonomous decision-making rather than human consumption.]]></description>
+      <link>https://riverthink.com/blog/agent-native-data/</link>
+      <guid isPermaLink="true">https://riverthink.com/blog/agent-native-data/</guid>
+      <dc:creator><![CDATA[Peter Wood]]></dc:creator>
+      <pubDate>Sat, 31 Jan 2026 09:00:00 GMT</pubDate>
+      <enclosure url="https://riverthink.com/blog/agent-native-data-hero.jpg" length="0" type="image/jpeg" />
+      <content:encoded><![CDATA[<figure><img src="https://riverthink.com/blog/agent-native-data-hero.jpg" alt="Agent Native Data and Why Enterprises Are Relearning What Data Is For"></figure>
+<h2>Most enterprise conversations about data still orbit analytics, dashboards, and reporting. Even recent excitement around AI has largely reframed data as something to retrieve and summarise rather than something that actively shapes behaviour. Agent native data challenges that framing.</h2>
+<p>The term is intentionally provocative. It suggests that data is no longer designed primarily for people to read, analyse, or debate in meetings that could probably have been emails. Instead, it is designed for software agents that observe environments, reason over current conditions, and take actions inside real workflows.</p>
+<div class="pullquote pullquote-right">
+Agent native data is what happens when you stop asking what humans want to see and start asking what autonomous systems must know in order to act safely.
+</div>
+<p>This shift has implications at business, executive, and technical levels, and it explains why so many agent initiatives quietly fail when built on data platforms optimised for yesterday’s problems.</p>
+<h2>A concise definition</h2>
+<p>Agent native data is data that is stateful, actionable, machine interpretable, and policy aware. It exists to support autonomous or semi autonomous decision making systems, not retrospective analysis.</p>
+<h2>How agent native data differs from what came before</h2>
+<p>Traditional enterprise data has been shaped by business intelligence and analytics. RAG oriented data has been shaped by document retrieval for large language models. Agent native data is shaped by execution.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Dimension</th><th>Traditional analytics data</th><th>RAG oriented data</th><th>Agent native data</th></tr></thead><tbody><tr><td>Primary purpose</td><td>Reporting and trends</td><td>Knowledge lookup</td><td>Decision making and action</td></tr><tr><td>Typical structure</td><td>Tables, logs, metrics</td><td>Documents, chunks, embeddings</td><td>Structured state, events, constraints</td></tr><tr><td>Time sensitivity</td><td>Batch or near real time</td><td>Mostly static</td><td>Real time and transactional</td></tr><tr><td>Mutability</td><td>Periodic updates</td><td>Read mostly</td><td>Continuously updated by actions</td></tr><tr><td>Semantics</td><td>Human interpreted</td><td>LLM interpreted</td><td>Machine executable</td></tr><tr><td>Governance</td><td>Process driven</td><td>Content filters</td><td>Policy enforced at data layer</td></tr></tbody></table>
+<p>The key distinction is that agent native data is not just observed. It is acted upon, updated, and relied on as a source of operational truth.</p>
+<h2>Autonomy demands discipline</h2>
+<p>Executives often ask whether agents can be trusted. The uncomfortable truth is that trust does not come from better prompts or larger models. It comes from disciplined data foundations.</p>
+<p>Agent native data embeds constraints directly into the operational layer. Permissions, entitlements, and policies are checked before actions occur, not after incidents are reviewed.</p>
+<h2>The technical view: designed for observe reason act loops</h2>
+<p>Technically, agent native data aligns with how agents actually operate. Agents run <strong>observe reason act</strong> loops. They do not continuously reread documents. They observe state changes, reason over structured inputs, and invoke tools.</p>
+<p>This drives several design characteristics.</p>
+<details>
+<summary>Stateful by design</summary>
+<div class="accordion-content">
+<p>Agents need durable memory of what has happened and what is currently true. This is typically modelled using relational databases, key value stores, or graph models. Vector databases are useful for knowledge retrieval but are ill suited for representing workflow state or commitments.</p>
+</div>
+</details>
+<details>
+<summary>Event driven and observable</summary>
+<div class="accordion-content">
+<p>Agents react to change. Event streams, change data capture, and message buses allow agents to observe transitions as they happen. Querying static snapshots is not enough.</p>
+</div>
+</details>
+<details>
+<summary>Action compatible semantics</summary>
+<div class="accordion-content">
+<p>Agent native data encodes valid states and valid transitions. Preconditions and postconditions are explicit. This allows agents to validate actions before execution and avoid illegal state changes.</p>
+<p>In healthcare, for example, a bed is not just free or occupied. It moves through defined operational states, and not all transitions are allowed.</p>
+</div>
+</details>
+<details>
+<summary>Policy embedded at the data layer</summary>
+<div class="accordion-content">
+<p>Because agents can act, access control cannot be bolted on later. Attribute based access control, purpose limitation, and full lineage are integral. This is where many experimental agent systems quietly fail in production environments.</p>
+</div>
+</details>
+<details>
+<summary>Optimised for tools, not prompts</summary>
+<div class="accordion-content">
+<p>Agent native data is accessed through APIs and tools that return typed objects. Language models reason over structured summaries rather than raw data dumps. This aligns naturally with MCP style tool contracts and agent to agent interoperability, where structure matters more than eloquence.</p>
+</div>
+</details>
+<h2>An architectural interpretation</h2>
+<p>In practice, agent native data spans three architectural planes.</p>
+<div class="grey-box">
+<p><strong>The operational state plane</strong> contains workflow state, task queues, short term memory, and transactional facts. This is where decisions are grounded.</p>
+</div>
+<div class="grey-box">
+<p><strong>The knowledge plane</strong> contains policies, rules, reference data, and documents. This supports reasoning but does not drive execution on its own.</p>
+</div>
+<div class="grey-box">
+<p><strong>The coordination plane</strong> contains events, inter agent messages, traces, and telemetry. This enables safe collaboration between agents.</p>
+</div>
+<p>Most current AI platforms over invest in the knowledge plane. Agent native systems succeed by strengthening the operational state and coordination planes first.</p>
+<hr>
+<h2>References and further reading</h2>
+<p>ReAct Synergizing Reasoning and Acting in Language Models<br>
+<a href="https://arxiv.org/abs/2210.03629">https://arxiv.org/abs/2210.03629</a></p>
+<p>LangGraph durable execution and state management<br>
+<a href="https://langchain-ai.github.io/langgraph/">https://langchain-ai.github.io/langgraph/</a></p>
+<p>Event Driven Architecture by Martin Fowler<br>
+<a href="https://martinfowler.com/articles/201701-event-driven.html">https://martinfowler.com/articles/201701-event-driven.html</a></p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

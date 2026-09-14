@@ -156,19 +156,19 @@ ${posts.map((post) => postXml(post, status)).join('\n')}
 `;
 }
 
-function rss(posts) {
+function rss(posts, feedName = 'feed.xml', title = 'Riverthink legacy blog archive') {
   return `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Riverthink legacy blog archive</title>
+    <title>${xml(title)}</title>
     <link>${SITE_URL}/blog/</link>
     <description>Riverthink articles prepared for migration to Substack</description>
     <language>en-GB</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    <atom:link href="${SITE_URL}/substack-import/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="${SITE_URL}/substack-import/${xml(feedName)}" rel="self" type="application/rss+xml" />
 ${posts.map((post) => `    <item>
       <title><![CDATA[${cdata(post.title)}]]></title>
       <description><![CDATA[${cdata(post.description)}]]></description>
@@ -230,12 +230,25 @@ const excluded = allPosts.filter((post) => post.excluded).sort((a, b) => a.date.
 const publishedXml = wxr(included, 'publish');
 const draftXml = wxr(included, 'draft');
 const rssXml = rss(included);
+const batches = [included.slice(0, 1)];
+for (let start = 1; start < included.length; start += 4) {
+  batches.push(included.slice(start, start + 4));
+}
+const batchFiles = batches.map((posts, index) => {
+  const number = String(index + 1).padStart(2, '0');
+  const filename = `batch-${number}.xml`;
+  return {
+    filename,
+    xml: rss(posts, filename, `Riverthink migration batch ${number}`),
+  };
+});
 await Promise.all([
   fs.writeFile(path.join(OUTPUT_DIR, 'riverthink-substack-import.xml'), publishedXml),
   fs.writeFile(path.join(OUTPUT_DIR, 'riverthink-substack-import-draft.xml'), draftXml),
   fs.writeFile(path.join(PUBLIC_OUTPUT_DIR, 'riverthink-substack-import.xml'), publishedXml),
   fs.writeFile(path.join(PUBLIC_OUTPUT_DIR, 'riverthink-substack-import-draft.xml'), draftXml),
   fs.writeFile(path.join(PUBLIC_OUTPUT_DIR, 'feed.xml'), rssXml),
+  ...batchFiles.map((batch) => fs.writeFile(path.join(PUBLIC_OUTPUT_DIR, batch.filename), batch.xml)),
 ]);
 await fs.writeFile(path.join(OUTPUT_DIR, 'migration-report.md'), report(allPosts, included, excluded));
 
