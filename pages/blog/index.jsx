@@ -59,18 +59,14 @@ async function addMissingImages(posts, headers) {
       if (post.image) return post;
 
       try {
-        const postResponse = await fetch(post.url, { headers });
+        const slug = new URL(post.url).pathname.split('/').filter(Boolean).pop();
+        const postResponse = await fetch(`${SUBSTACK_URL}api/v1/posts/${encodeURIComponent(slug)}`, { headers });
         if (!postResponse.ok) throw new Error(`post returned ${postResponse.status}`);
 
-        const html = await postResponse.text();
-        const ogImage = html.match(
-          /<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i
-        )?.[1] || html.match(
-          /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i
-        )?.[1];
+        const postDetails = await postResponse.json();
 
-        if (ogImage) {
-          return { ...post, image: ogImage.replace(/&amp;/g, '&') };
+        if (postDetails.cover_image) {
+          return { ...post, image: postDetails.cover_image };
         }
       } catch (error) {
         console.warn(`Post image lookup failed for ${post.url}: ${error.message}. Trying RSS image.`);
