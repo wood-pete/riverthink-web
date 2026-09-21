@@ -43,6 +43,28 @@ function parseRelayedArchive(text) {
   return parseSubstackArchive(JSON.parse(text.slice(start + marker.length).trim()));
 }
 
+async function addRssImages(posts, headers) {
+  if (posts.every((post) => post.image)) return posts;
+
+  try {
+    const response = await fetch(RSS_FALLBACK_URL, { headers });
+    if (!response.ok) throw new Error(`RSS image lookup returned ${response.status}`);
+
+    const rssPosts = parseRssFallback(await response.json());
+    const imagesByUrl = new Map(
+      rssPosts.filter((post) => post.image).map((post) => [post.url, post.image])
+    );
+
+    return posts.map((post) => ({
+      ...post,
+      image: post.image || imagesByUrl.get(post.url) || '',
+    }));
+  } catch (error) {
+    console.warn(`RSS image lookup failed: ${error.message}. Continuing without missing images.`);
+    return posts;
+  }
+}
+
 async function loadSubstackPosts() {
   const headers = { 'User-Agent': 'Riverthink.com RSS reader' };
 
@@ -51,7 +73,7 @@ async function loadSubstackPosts() {
     if (!response.ok) throw new Error(`Substack archive returned ${response.status}`);
     const posts = parseSubstackArchive(await response.json());
     if (posts.length === 0) throw new Error('Substack returned an empty archive');
-    return posts;
+    return addRssImages(posts, headers);
   } catch (archiveError) {
     console.warn(`Direct Substack archive request failed: ${archiveError.message}. Trying relay.`);
     try {
@@ -59,7 +81,7 @@ async function loadSubstackPosts() {
       if (!response.ok) throw new Error(`Archive relay returned ${response.status}`);
       const posts = parseRelayedArchive(await response.text());
       if (posts.length === 0) throw new Error('Archive relay returned an empty archive');
-      return posts;
+      return addRssImages(posts, headers);
     } catch (relayError) {
       console.warn(`Substack archive relay failed: ${relayError.message}. Trying RSS fallback.`);
       const response = await fetch(RSS_FALLBACK_URL, { headers });
