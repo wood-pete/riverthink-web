@@ -43,7 +43,7 @@ function parseRelayedArchive(text) {
   return parseSubstackArchive(JSON.parse(text.slice(start + marker.length).trim()));
 }
 
-async function addRssImages(posts, headers) {
+async function addMissingImages(posts, headers) {
   if (posts.every((post) => post.image)) return posts;
 
   try {
@@ -55,9 +55,28 @@ async function addRssImages(posts, headers) {
       rssPosts.filter((post) => post.image).map((post) => [post.url, post.image])
     );
 
-    return posts.map((post) => ({
-      ...post,
-      image: post.image || imagesByUrl.get(post.url) || '',
+    return Promise.all(posts.map(async (post) => {
+      if (post.image) return post;
+
+      try {
+        const postResponse = await fetch(post.url, { headers });
+        if (!postResponse.ok) throw new Error(`post returned ${postResponse.status}`);
+
+        const html = await postResponse.text();
+        const ogImage = html.match(
+          /<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i
+        )?.[1] || html.match(
+          /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i
+        )?.[1];
+
+        if (ogImage) {
+          return { ...post, image: ogImage.replace(/&amp;/g, '&') };
+        }
+      } catch (error) {
+        console.warn(`Post image lookup failed for ${post.url}: ${error.message}. Trying RSS image.`);
+      }
+
+      return { ...post, image: imagesByUrl.get(post.url) || '' };
     }));
   } catch (error) {
     console.warn(`RSS image lookup failed: ${error.message}. Continuing without missing images.`);
@@ -73,7 +92,7 @@ async function loadSubstackPosts() {
     if (!response.ok) throw new Error(`Substack archive returned ${response.status}`);
     const posts = parseSubstackArchive(await response.json());
     if (posts.length === 0) throw new Error('Substack returned an empty archive');
-    return addRssImages(posts, headers);
+    return addMissingImages(posts, headers);
   } catch (archiveError) {
     console.warn(`Direct Substack archive request failed: ${archiveError.message}. Trying relay.`);
     try {
@@ -81,7 +100,7 @@ async function loadSubstackPosts() {
       if (!response.ok) throw new Error(`Archive relay returned ${response.status}`);
       const posts = parseRelayedArchive(await response.text());
       if (posts.length === 0) throw new Error('Archive relay returned an empty archive');
-      return addRssImages(posts, headers);
+      return addMissingImages(posts, headers);
     } catch (relayError) {
       console.warn(`Substack archive relay failed: ${relayError.message}. Trying RSS fallback.`);
       const response = await fetch(RSS_FALLBACK_URL, { headers });
